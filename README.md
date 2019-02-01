@@ -1,3 +1,13 @@
+![Build](https://img.shields.io/travis/glaucia86/glaucialemos.com/master.svg)
+![GHTopLanguages](https://img.shields.io/github/languages/top/glaucia86/glaucialemos.com.svg?colorB=gree)
+![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/glaucia86/glaucialemos.com.svg)
+![RepoSize](https://img.shields.io/github/repo-size/glaucia86/glaucialemos.com.svg?colorB=gree)
+![Downloads](https://img.shields.io/github/downloads/glaucia86/glaucialemos.com/total.svg)
+![Issues](https://img.shields.io/github/issues/glaucia86/glaucialemos.com.svg)
+![PullRequests](https://img.shields.io/github/issues-pr/glaucia86/glaucialemos.com.svg)
+![License](https://img.shields.io/github/license/glaucia86/glaucialemos.com.svg?colorB=gree)
+[![HitCount](http://hits.dwyl.io/glaucia86/glaucialemos.com.svg)](http://hits.dwyl.io/glaucia86/glaucialemos.com)
+
 # My Personal Website: [glaucialemos.com]()
 
 Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com]()**.
