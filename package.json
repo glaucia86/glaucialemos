@@ -6,7 +6,7 @@
     "start": "node metalsmith build",
     "deploy": "node metalsmith deploy",
     "watch": "node metalsmith watch",
-    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix"
+    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter --fix"
   },
   "repository": {
     "type": "git",
