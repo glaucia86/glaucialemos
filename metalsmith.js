@@ -51,7 +51,7 @@ const buildCompleted = () => {
       config.destination,
       {
         branch: "wedeploy",
-        repo: "git@github.com:zenorocha/zenorocha.com.git"
+        repo: "git@github.com:glaucia86/glaucialemos.com.git"
       },
       err => {
         if (err) throw err;

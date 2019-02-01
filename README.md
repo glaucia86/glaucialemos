@@ -38,15 +38,21 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 > npm install
 ```
 
-2. Depois, executar o seguinte comando:
+2. Execute o comando abaixo para que possa efetuar o build da aplicação:
 
 ```
-> npm run dev
+> npm run build
 ```
 
-3. Após isso, abrir o browser em **localhost:8000**
+3. Depois, executar o seguinte comando:
+
+```
+> npm start
+```
+
+4. Após isso, abrir o browser em **localhost:8000**
 
 ## Dúvidas?! 🚩
 
-Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o ambiente bastam criar uma **[ISSUE](https://github.com/glaucia86/glaucialemos.com/issues)** no repositório que estarei respondendo a todos vocês!! ❤️ ❤️ ❤️ 😊
+Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o ambiente bastam criar uma **[ISSUE](https://github.com/glaucia86/glaucialemos.com/issues)** no repositório que estarei respondendo a todos vocês!! ❤️❤️ ❤️😊
 
