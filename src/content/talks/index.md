@@ -1,6 +1,6 @@
 ---
 layout: main.html
 title: Talks
-tagline: 10 countries. 112 talks.
-image: /images/map-opt.jpg
+tagline: Share Knowledge. Tech Talks. Open Source.
+image: /images/meetup-coders-in-rio.jpg
 ---

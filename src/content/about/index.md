@@ -1,10 +1,10 @@
 ---
 layout: main.html
 title: About
-tagline: Let's talk!
+tagline: Let's Talk About ...
 page_class: about-page
-image: /images/pic.jpg
+image: /images/foto-eu-01.jpg
 
 ---
 
-## About me
+## Um Pouco Sobre mim...

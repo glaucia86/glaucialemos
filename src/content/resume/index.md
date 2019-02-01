@@ -1,7 +1,10 @@
 ---
 layout: resume.html
 title: Resume
-tagline: Experience matters.
+tagline: Coding. Experience. Projects.
 page_class: resume-page
-image: /images/pc-screen.jpg
+image: /images/monitores-02.jpeg
 ---
+
+## Currículo
+
