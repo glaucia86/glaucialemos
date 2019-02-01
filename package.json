@@ -1,0 +1,20 @@
+{
+  "name": "glaucialemos.com",
+  "version": "1.0.0",
+  "description": "Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com]()**.\r Esse projeto foi baseado em dois outros projetos:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaucia86/glaucialemos.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glaucia86/glaucialemos.com/issues"
+  },
+  "homepage": "https://github.com/glaucia86/glaucialemos.com#readme"
+}
