@@ -1,4 +1,4 @@
-![Build](https://img.shields.io/travis/glaucia86/glaucialemos.com/master.svg)
+[![Build Status](https://travis-ci.org/glaucia86/glaucialemos.com.svg?branch=master)](https://travis-ci.org/glaucia86/glaucialemos.com)
 ![GHTopLanguages](https://img.shields.io/github/languages/top/glaucia86/glaucialemos.com.svg?colorB=gree)
 ![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/glaucia86/glaucialemos.com.svg)
 ![RepoSize](https://img.shields.io/github/repo-size/glaucia86/glaucialemos.com.svg?colorB=gree)
