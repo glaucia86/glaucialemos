@@ -41,13 +41,13 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 2. Execute o comando abaixo para que possa efetuar o build da aplicação:
 
 ```
-> npm run build
+> npm starts
 ```
 
 3. Depois, executar o seguinte comando:
 
 ```
-> npm start
+> npm run watch
 ```
 
 4. Após isso, abrir o browser em **localhost:8000**
