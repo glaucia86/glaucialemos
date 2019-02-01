@@ -1,0 +1,21 @@
+diff a/src/assets/js/main.js b/src/assets/js/main.js	(rejected hunks)
+@@ -1 +1 @@
+-document.addEventListener('DOMContentLoaded', function() {
++document.addEventListener("DOMContentLoaded", function() {
+@@ -4 +4 @@ document.addEventListener('DOMContentLoaded', function() {
+-  app.on('endNavigate', function(event) {
++  app.on("endNavigate", function(event) {
+@@ -19 +19 @@ function initNavbar() {
+-  var header = document.querySelector('.site-header');
++  var header = document.querySelector(".site-header");
+@@ -46,2 +46,2 @@ function trackPageViews(event) {
+-    ga('set', 'page', event.path);
+-    ga('send', 'pageview');
++    ga("set", "page", event.path);
++    ga("send", "pageview");
+@@ -54 +54 @@ function fixHeroHeight() {
+-  var postHeader = document.querySelector('.post-header');
++  var postHeader = document.querySelector(".post-header");
+@@ -57 +57 @@ function fixHeroHeight() {
+-    postHeader.style.height = document.documentElement.clientHeight + 'px';
++    postHeader.style.height = document.documentElement.clientHeight + "px";

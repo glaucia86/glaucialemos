@@ -1,0 +1,6 @@
+diff a/src/assets/wedeploy.json b/src/assets/wedeploy.json	(rejected hunks)
+@@ -2,2 +2,2 @@
+-	"id": "ui",
+-	"image": "wedeploy/hosting"
++  "id": "ui",
++  "image": "wedeploy/hosting"

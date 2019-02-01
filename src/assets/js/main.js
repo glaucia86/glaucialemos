@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var app = senna.dataAttributeHandler.getApp();
+document.addEventListener("DOMContentLoaded", () => {
+  const app = senna.dataAttributeHandler.getApp();
 
-  app.on("endNavigate", function(event) {
+  app.on("endNavigate", event => {
     initNavbar();
     fixHeroHeight();
     trackPageViews(event);
@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Keeps the primary navigation in close proximity to the user
 // by fixing it when scrolling up and disappearing when scrolling down
-var headroom;
+let headroom;
 
 function initNavbar() {
-  var header = document.querySelector(".site-header");
+  const header = document.querySelector(".site-header");
 
   if (headroom) {
     headroom.destroy();
@@ -51,9 +51,9 @@ function trackPageViews(event) {
 // Converts hero image's height to pixels in order
 // to fix a weird behavior with 100vh on mobile devices
 function fixHeroHeight() {
-  var postHeader = document.querySelector(".post-header");
+  const postHeader = document.querySelector(".post-header");
 
   if (postHeader) {
-    postHeader.style.height = document.documentElement.clientHeight + "px";
+    postHeader.style.height = `${document.documentElement.clientHeight}px`;
   }
 }

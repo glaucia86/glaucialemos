@@ -5,8 +5,7 @@
   "scripts": {
     "start": "node metalsmith build",
     "deploy": "node metalsmith deploy",
-    "watch": "node metalsmith watch",
-    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix"
+    "watch": "node metalsmith watch"
   },
   "repository": {
     "type": "git",
@@ -26,16 +25,11 @@
   },
   "homepage": "https://github.com/glaucia86/glaucialemos.com#readme",
   "devDependencies": {
-    "eslint": "^5.12.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.1"
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-plugin-html": "^5.0.0",
     "gh-pages": "^2.0.1",
     "handlebars": "^4.0.12",
     "load-metalsmith-plugins": "^0.1.1",
@@ -59,12 +53,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run lint"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*{.js,.html,.json}": [
+    "*{.js,.json}": [
       "prettier --write",
       "git add"
     ]
