@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node metalsmith build",
     "deploy": "node metalsmith deploy",
-    "watch": "node metalsmith watch"
+    "watch": "node metalsmith watch",
+    "dev": "npm start & npm run watch"
   },
   "repository": {
     "type": "git",
