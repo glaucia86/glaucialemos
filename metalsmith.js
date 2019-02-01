@@ -1,15 +1,15 @@
 const start = process.hrtime();
-const task = process.argv[2];
+const task  = process.argv[2];
 
 /* Dependencies
    ========================================================================== */
 
-const config = require("./config");
-const chalk = require("chalk");
-const ghpages = require("gh-pages");
-const plugins = require("load-metalsmith-plugins")();
-const prettytime = require("pretty-hrtime");
-const metalsmith = require("metalsmith")(__dirname);
+const config     = require('./config');
+const chalk      = require('chalk');
+const ghpages    = require('gh-pages');
+const plugins    = require('load-metalsmith-plugins')();
+const prettytime = require('pretty-hrtime');
+const metalsmith = require('metalsmith')(__dirname);
 
 /* Pipeline
    ========================================================================== */
@@ -29,39 +29,37 @@ metalsmith
   .use(plugins.layouts(config.layouts))
   .use(plugins.inPlace(config.inPlace));
 
-if (task === "watch") {
-  metalsmith.use(plugins.serve(config.serve)).use(plugins.watch(config.watch));
+if (task === 'watch') {
+  metalsmith
+    .use(plugins.serve(config.serve))
+    .use(plugins.watch(config.watch));
 }
 
 /* Generate
    ========================================================================== */
 
-metalsmith.build(err => {
+metalsmith.build((err) => {
   if (err) throw err;
   else buildCompleted();
 });
 
 const buildCompleted = () => {
-  if (task === "build") {
+  if (task === 'build') {
     buildDuration();
   }
 
-  if (task === "deploy") {
-    ghpages.publish(
-      config.destination,
-      {
-        branch: "wedeploy",
-        repo: "git@github.com:glaucia86/glaucialemos.com.git"
-      },
-      err => {
-        if (err) throw err;
-        else buildDuration();
-      }
-    );
+  if (task === 'deploy') {
+    ghpages.publish(config.destination, {
+      branch: 'wedeploy',
+      repo: 'git@github.com:zenorocha/zenorocha.com.git'
+    }, (err) => {
+      if (err) throw err;
+      else buildDuration();
+    });
   }
-};
+}
 
 const buildDuration = () => {
   const end = prettytime(process.hrtime(start));
   console.log(`> done in ${chalk.green(end)}`);
-};
+}
