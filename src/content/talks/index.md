@@ -4,15 +4,21 @@ title: Talks
 tagline: Share Knowledge. Tech Talks. Networking. Open Source.
 image: /images/palestra.jpg
 ---
-<p style='text-align: justify;'> Aqui vocês podem encontrar todas as palestras técnicas que realizei em eventos técnicos, incluso também vídeos tutoriais, webinars e workshops. </p>
 
-<p style='text-align: justify;'> Gosto de contribuir em Comunidades Técnicas! Gosto e amo o que faço! Assim que, caso queiram alguma palestra minha ou workshop na sua região, cidade ou estado, vocês poderão ter a mais plena certeza 
-de que farei com: muito amor e dedicação - visando justamente entregar o melhor conteúdo: tanto para 
-a organização do evento e principalmente para o público-alvo. Então, não hesitem de entrar em contato
-comigo através do e-mail: <b><a href="glaucia_lemos86@hotmail.com">AQUI</a></b>. Estarei entrando em contato com vocês
-o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em palestrar no seu evento! ❤️❤️❤️</p>
+<p style='text-align: justify;'> 
+  Aqui vocês podem encontrar todas as palestras técnicas que realizei em eventos técnicos, incluso também vídeos tutoriais, webinars e workshops. 
+</p>
 
-<p style='text-align: justify;'> Caso desejam saber mais detalhes dos temas que abordo, o que esperar das minhas palestras e as minhas expectativas em relação a participações em eventos técnicos, bastam acessar o link <b><a href="https://github.com/glaucia86/presenter-glaucia-lemos">AQUI</a></b>.</p>
+<p style='text-align: justify;'> 
+  Gosto de contribuir em Comunidades Técnicas! Gosto e amo o que faço! Assim que, caso queiram alguma palestra minha ou workshop na sua região, cidade ou estado, vocês poderão ter a mais plena certeza 
+  de que farei com: muito amor e dedicação - visando justamente entregar o melhor conteúdo: tanto para 
+  a organização do evento e principalmente para o público-alvo. Então, não hesitem de entrar em contato
+  comigo através do e-mail: <b><a href="glaucia_lemos86@hotmail.com">AQUI</a></b>. Estarei entrando em contato com vocês o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em palestrar no seu evento! ❤️❤️❤️
+</p>
+
+<p style='text-align: justify;'> 
+  Caso desejam saber mais detalhes dos temas que abordo, o que esperar das minhas palestras e as minhas expectativas em relação a participações em eventos técnicos, bastam acessar o link <b><a href="https://github.com/glaucia86/presenter-glaucia-lemos">AQUI</a></b>.
+</p>
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
 
@@ -58,13 +64,13 @@ o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em p
 * **Participantes:** ≈10
 * **Tema:** Desenvolvendo um Office Add-in com VueJs & Typescript
 
-## [Organizer - Coders in Rio Summit 2018](https://codersinrio.com.br/)
-* **Quando:**
+## [Organizer - Coders in Rio Summit 2018](https://www.meetup.com/pt-BR/Coders-in-Rio/events/255061646/)
+* **Quando:** 10/11
 * **Onde:** Rio de Janeiro, RJ - Brasil
 * **Participantes:** ≈150 
 
 ## [Semana de Meninas e Mulheres na Ciência](http://www.mmciencia.com.br/)
-* **Quando:**
+* **Quando:** 08/11
 * **Onde:** Rio de Janeiro, RJ - Brasil
 * **Participantes:** ≈100
 * **Tema:** Minha Trajetória: de Estudante à Engenheira de Software!
