@@ -33,6 +33,27 @@ code {
   padding: 5px;
 }
 
+.resource-img {
+  width: 100%;
+  height: 30px;
+  object-fit: contain;
+}
+
+.resource-img-profile {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.resource-img-social-medias {
+  width: 100%;
+  height: 30px;
+  margin: auto 5px;
+  float: left;
+  object-fit: contain;
+}
+
+
 /* Navbar
    ========================================================================== */
 

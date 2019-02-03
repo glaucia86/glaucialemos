@@ -7,8 +7,7 @@ image: /images/monitores-02.jpeg
 ---
 
 # Mini Bio
-
-<b><a href="http://bit.ly/2DN5xFa">MY RESUME - ENGLISH</a></b>
+<blockquote><a href="http://bit.ly/2DN5xFa">My English Resume Here</a></blockquote>
 
 <p style='text-align: justify;'>
   Glaucia Lemos é Software Developer com especialização em .NET & Node.js/Javascript com experiência nacional e
@@ -25,11 +24,13 @@ image: /images/monitores-02.jpeg
 </p>
 
 <p style='text-align: justify;'>
-  Aqui seguem as principais informações em contribuições minhas tanto em Comunidades Técnicas e Experiência Profissional. Porém, sintam-se à vontade em ver com mais detalhes todas as minhas experiências por meio do meu perfil do <b><a href="https://www.linkedin.com/in/glaucialemos/">Linkedin</a></b>:
+  Aqui seguem as principais informações em contribuições minhas tanto em <b>Comunidades Técnicas</b> e <b>Experiência Profissional</b>. Porém, sintam-se à vontade em ver com mais detalhes todas as minhas experiências por meio do meu perfil no <b><a href="https://www.linkedin.com/in/glaucialemos/">Linkedin</a></b>:
 </p>
 
 - **[Iniciativas em Comunidades Técnicas](#iniciativas-em-comunidades-tecnicas)**
-- **[Experiência Profissional](#experiencia-profissional)**
+- **[Experiencia Profissional](#experiencia-profissional)**
+- **[Idiomas](#idiomas)**
+- **[Formação Educacional](#formação-educacional)**
 
 # Iniciativas em Comunidades Técnicas
 
@@ -37,25 +38,25 @@ image: /images/monitores-02.jpeg
 * **Cargo:** Member | Contributor
 * **Localização:** Remote | Online
 * **Período:** Dez 2018 - Atual
-* **Descrição:** <p style='text-align: justify;'>contribuições para o site **[nodejs.org](nodejs.org)** pertecendo ao grupo Internacionalização do site, ajudando a manter e atualizar a tradução do Nodejs.org para o português.</p>
+* **Descrição:**<p style='text-align: justify;'>Contribuições para o site **[Nodejs.org](https://nodejs.org/pt-br/)** pertecendo ao grupo de Internacionalização do site. Ajudando a manter e atualizar a tradução do Nodejs.org para o português.</p>
 
 ## [WoMakersCode](http://womakerscode.org/)
 * **Cargo:** Tech Evangelist | Tech Speaker
 * **Localização:** Remote | Online | Todo Brasil
 * **Período:** Jan 2018 - Atual
-* **Descrição:** <p style='text-align: justify;'>Atuando como Tech Evangelist & Tech Speaker no Rio de Janeiro e Brasil, oferecendo treinamento em programação, em especial para linguagens open source para mulheres que realmente gostam de trabalhar em Tecnologia e Desenvolvimento. Objetivo principal: inspirar e capacitar ainda mais mulheres em tecnologia e ajudá-las a obter uma oportunidade de emprego.</p>
+* **Descrição:** <p style='text-align: justify;'>Atuando como Tech Evangelist & Tech Speaker no Rio de Janeiro e Brasil, oferecendo treinamento em programação, em especial para linguagens open source para mulheres que apreciam e desejam trabalhar na áre de Tecnologia e Desenvolvimento. Objetivo principal: inspirar e capacitar ainda mais mulheres na área de tecnologia e ajudá-las a obter uma oportunidade de emprego.</p>
 
 ## [Coders in Rio Meetup](https://www.meetup.com/pt-BR/Coders-in-Rio/)
 * **Cargo:** Co-Founder | Community Leader
 * **Localização:** Rio de Janeiro, RJ - Brasil | Online
 * **Período:** Mai 2017 - Atual
-* **Descrição:** <p style='text-align: justify;'>Co-fundadora do grupo Meetup: Coders in Rio. Também atuando como Líder da Comunidade Técnica e Palestrante do Meetup: Coders in Rio. O principal objetivo é: movimentar ainda mais a Comunidade Técnica aqui no Rio de Janeiro e tornar-se referência para outros grupos de Meetups em Desenvolvimento de TI. Hoje temos quase 3000 pessoas pertencentes ao nosso grupo de encontro. Também sou responsável por moderar o grupo, organizar novas reuniões de encontros e dar algumas palestras sobre tecnologia.</p>
+* **Descrição:** <p style='text-align: justify;'>Co-fundadora do grupo Meetup Coders in Rio. Também atuando como Líder da Comunidade Técnica e Palestrante do Meetup Coders in Rio. O principal objetivo é: movimentar ainda mais a Comunidade Técnica aqui no Rio de Janeiro e tornar-se referência para outros grupos de Meetups em Desenvolvimento de T.I. Hoje temos mais de 3000 membros pertencentes a nossa Meetup. Também sou responsável por moderar o grupo, organizar novas meetups e realizar algumas palestras sobre desenvolvimento web.</p>
 
 ## [Microsoft MVP](http://bit.ly/2TpZBHL)
 * **Cargo:** Category: Developer Technologies in Open Source Languages
 * **Localização:** Todo Brasil
 * **Período:** Abr 2017 - Atual
-* **Descrição:** <p style='text-align: justify;'>Atuando como Tech Evangelist realizando eventos, escrevendo artigos técnicos e treinamentos com o objetivo de disseminar o conhecimento no campo de desenvolvimento de programação, especialmente em linguagens open source como o Node.js.</p>
+* **Descrição:** <p style='text-align: justify;'>Atuando como Tech Evangelist realizando eventos, escrevendo artigos técnicos, live coding e vídeos tutoriais e treinamentos com o objetivo de disseminar o conhecimento no campo de desenvolvimento de programação, especialmente em linguagens open source como o Node.js.</p>
 
 ## [Portal iMasters](https://imasters.com.br/perfil/glaucialemos)
 * **Cargo:** Technical Author iMasters
@@ -67,21 +68,21 @@ image: /images/monitores-02.jpeg
 * **Cargo:** Tech Evangelist in Open Source Languages
 * **Localização:** Online | Remote 
 * **Período:** Abr 2014 - Atual
-* **Descrição:**<p style='text-align: justify;'>Canal do Youtube com a intenção de ensinar novas linguagens de programação, especialmente tecnologias de código aberto. Hoje o canal tem mais de 3500 assinantes e uma média de 5000 visualizações/mês e mais de 70 mil visualizações/ano.</p>  
+* **Descrição:**<p style='text-align: justify;'>Canal do Youtube com a intenção de ensinar novas linguagens de programação, especialmente em linguagens open source. Hoje o canal possui mais de 3500 inscritos e uma média de 5000 visualizações/mês e mais de 70 mil visualizações/ano.</p>  
 
-# Experiência Profissional
+# Experiencia Profissional
 
 ## [Zoox Smart Data](https://zooxsmart.com/pt-br/)
 * **Cargo:** Software Developer
 * **Localização:** Rio de Janeiro, RJ - Brasil
 * **Período:** Set 2018 - Atual
-* **Descrição:**<p style='text-align: justify;'>Desenvolvimento de diferentes e especialmente inovadores produtos Hoteleiros com a equipe Zoox Labs. Incluindo um aplicativo inovador chamado: Zoox Smart Pass, que é um check-in auto-atendimento que faz uso do reconhecimento facial. Tecnologias desenvolvidas no projeto: Node.js (Estrutura Koa.js), Angular 6, Typescript, Vue.js, APIs REST, Desenvolvimento Orientado a Testes (TDD), Plataformas Cloud (AWS), Inteligência Artificial usando Reconhecimento Facial, Arquitetura Microservice, Controle de Versão e Metodologia Ágil / Scrum e Jira.</p>
+* **Descrição:**<p style='text-align: justify;'>Desenvolvimento de diferentes e especialmente inovadores produtos Hoteleiros com a equipe Zoox Labs. Incluindo um aplicativo inovador chamado: Zoox Smart Pass, que é um check-in de auto-atendimento que faz uso da api da AWS de reconhecimento facial. Tecnologias desenvolvidas no projeto: Node.js (Estrutura Koa.js), Angular 6, Typescript, Vue.js, APIs REST, Desenvolvimento Orientado a Testes (TDD), Plataformas Cloud (AWS), Inteligência Artificial usando Reconhecimento Facial, Arquitetura de Microserviços, Controle de Versão via Bitbucket e Metodologia Ágil/Scrum e Jira.</p>
 
 ## [HackDev](https://www.linkedin.com/company/hackdev)
 * **Cargo:** Software Developer | Founder
 * **Localização:** Rio de Janeiro, RJ - Brasil | Remote
 * **Período:** Abr 2014 - Atual
-* **Descrição:**<p style='text-align: justify;'>Consultoria, Treinamento e Desenvolvimento de Projetos em diferentes linguagens de programação, tais como: MEAN (MongoDb, Express.Js, Angular.Js e Node.js), ASP.NET e ASP.NET CORE, C #, entre outras linguagens de programação. Fornecendo, portanto, consultoria, desenvolvimento web e propondo novas soluções com o uso de boas práticas em desenvolvimento. Projetos que já atuei:</p> 
+* **Descrição:**<p style='text-align: justify;'>Consultoria, Treinamento e Desenvolvimento de Projetos em diferentes linguagens de programação, tais como: MEAN (MongoDb, Express.Js, Angular.Js e Node.js), ASP.NET e ASP.NET CORE, C#, entre outras linguagens de programação. Fornecendo, portanto, consultoria, desenvolvimento web e propondo novas soluções com o uso de boas práticas em desenvolvimento. Projetos que já atuei:</p> 
 
 + Raro Interatividade: 04/2016 - 11/2017;
 + Software 2PC: 11/2017 - 12/2017 (Axa);
@@ -102,10 +103,31 @@ Tecnologias desenvolvidas no projeto: Front-End, Multi-Cloud e Back-End.
 * **Cargo:** Software Developer
 * **Localização:** Buenos Aires, BsAs - Argentina
 * **Período:** Mai 2015 - Dez 2015
-* **Descrição:**<p style='text-align: justify;'>Desenvolvimento de um projeto para um cliente no Brasil, mas desenvolvido em Buenos Aires, Argentina. Desenvolvimento das regras de negócio em C# .NET e manutenção WEB da Aplicação para uma das maiores seguradoras do mundo. Tecnologias desenvolvidas no projeto: Front-End, Multi-Cloud e Back-End.</p>
+* **Descrição:**<p style='text-align: justify;'>Desenvolvimento de um projeto para um cliente no Brasil, mas desenvolvido presencialmente em Buenos Aires, Argentina. Desenvolvimento das regras de negócio em C# .NET e manutenção WEB da Aplicação para uma das maiores seguradoras do mundo. Tecnologias desenvolvidas no projeto: Front-End, Multi-Cloud e Back-End.</p>
 
 ## [TopDown Sistemas](http://topdown.com.br/)
 * **Cargo:** Sofware Developer
 * **Localização:** Rio de Janeiro, RJ - Brasil
 * **Período:** Dez 2013 - Dez 2014
 * **Descrição:**<p style='text-align: justify;'>Desenvolvimento, customizações, testes e manutenção do Sistema Integrado de Saúde Amil, utilizando banco de dados Oracle 11g juntamente com programação PL/SQL e Asp Clássico e C# Asp.NET. Front-End: JavaScript, HTML, CSS e jQuery. Tecnologias desenvolvidas no projeto: Front-End & Back-End.</p>
+
+# Idiomas
+
+## Português: 
+* **Nível:** Nativo
+
+## Inglês
+* **Nível:** Intermediário - Realização da Prova PTE: **[PTE Test Score Report - HERE](https://pt.slideshare.net/secret/1EyG8Wvdll5CQB)**
+
+## Espanhol
+* **Nível:** Avançado/Fluente (Vivência de 1 ano na Argentina, Buenos Aires - 02/2015 - 12/2015)
+
+## Chinês/Mandarim
+* **Nível:** Básico
+
+# Formação Educacional
+
+* **Grau de Escolaridade:** Ensino Superior Completo
+* **Formação:** Análise e Desenvolvimento de Sistemas
+* **Instituição:** Faculdades Integradas de Jacarepágua
+* **Período:** 02/2011 - 12/2013
