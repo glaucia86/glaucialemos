@@ -41,7 +41,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 2. Execute o comando abaixo para que possa efetuar o build da aplicação:
 
 ```
-> npm starts
+> npm start
 ```
 
 3. Depois, executar o seguinte comando:
