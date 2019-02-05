@@ -30,7 +30,7 @@ image: /images/monitores-02.jpeg
 - **[Iniciativas em Comunidades Técnicas](#iniciativas-em-comunidades-tecnicas)**
 - **[Experiencia Profissional](#experiencia-profissional)**
 - **[Idiomas](#idiomas)**
-- **[Formação Educacional](#formação-educacional)**
+- **[Formacao Educacional](#formacao-educacional)**
 
 # Iniciativas em Comunidades Técnicas
 
@@ -125,7 +125,7 @@ Tecnologias desenvolvidas no projeto: Front-End, Multi-Cloud e Back-End.
 ## Chinês/Mandarim
 * **Nível:** Básico
 
-# Formação Educacional
+# Formacao Educacional
 
 * **Grau de Escolaridade:** Ensino Superior Completo
 * **Formação:** Análise e Desenvolvimento de Sistemas
