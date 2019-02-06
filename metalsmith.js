@@ -50,7 +50,7 @@ const buildCompleted = () => {
 
   if (task === 'deploy') {
     ghpages.publish(config.destination, {
-      branch: 'wedeploy',
+      branch: 'deploy-master',
       repo: 'git@github.com:glaucia86/glaucialemos.com.git'
     }, (err) => {
       if (err) throw err;
