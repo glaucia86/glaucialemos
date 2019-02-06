@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cartão Pessoal em NPX - É Possível?! // Glaucia Lemos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="/code.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/highlight.css" />
+    <link rel="stylesheet" href="/css/senna.css" />
+
+    <script src="/js/senna.min.js"></script>
+    <script src="/js/headroom.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- Inspectlet -->
+    <script>
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 772378335]);
+      (function () {
+        function __ldinsp() {
+          const insp = document.createElement('script');
+          insp.type = 'text/javascript';
+          insp.async = true;
+          insp.id = 'inspsync';
+          insp.src = `${document.location.protocol == 'https:' ? 'https' : 'http'
+    }://cdn.inspectlet.com/inspectlet.js`;
+          const x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(insp, x);
+        }
+        if (window.attachEvent) {
+          window.attachEvent('onload', __ldinsp);
+        } else {
+          window.addEventListener('load', __ldinsp, false);
+        }
+      }());
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i.GoogleAnalyticsObject = r;
+        (i[r] = i[r]
+    || function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+        (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      }(
+  window,
+  document,
+  'script',
+  '//www.google-analytics.com/analytics.js',
+  'ga',
+));
+      ga('create', 'UA-4114546-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body data-senna data-senna-surface>
+    <div class="senna-loading-bar"></div>
+
+    <header class="site-header site-header-white">
+      <a href="/" class="logo">Glaucia Lemos</a>
+    
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/articles/">Artigos</a></li>
+          <li><a href="/resume/">Currículo</a></li>
+          <li><a href="/talks/">Palestras</a></li>
+          <li><a href="/projects/">Projetos</a></li>
+          <li><a href="/about/">Sobre Mim</a></li>
+          <li><a href="/thoughts/">Pensamentos</a></li>
+          <li><a href="/contact/">Entre em Contato</a></li>
+        </ul>
+      </nav>
+    
+      <div class="nav-social">
+        <a href="https://github.com/glaucia86" title="GitHub">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+  </body>
+</html>
+
+<main class="post">
+  <div class="post-content post-article">
+    <div class="post-container">
+      <h1 class="post-title">Cartão Pessoal em NPX - É Possível?!</h1>
+      <h2 class="post-subtitle">21 Jan, 2019</h2>
+       <p align="center">
+  <img src="https://i.imgsafe.org/27/2779c5a323.png"/>  
+</p>
+
+<p style='text-align: justify;'>
+  A resposta para a pergunta do título deste artigo é: sim. E teremos um passo a passo ensinando a criar um em NPX.
+</p>
+
+<p style='text-align: justify;'>Como surgiu a ideia?</p>
+
+<p style='text-align: justify;'>
+  Essa ideia surgiu de um artigo do meu amigo <b><a href="https://twitter.com/bitandbang">Tierney Cyren</a></b>, que é Senior Cloud Developer Advocate da Microsoft e membro do comité do Node.js Foundation. Recomendo seguir o Tierney no Twitter – de vez em quando ele posta coisas muito bacanas.
+</p>
+
+<p style='text-align: justify;'>
+  Todo crédito a ele, que criou esse  projeto! Graças ao seu trabalho, vários desenvolvedores que o seguem no Twitter começaram a criar os seus próprios NPX Personal Cards. E, claro, eu criei o meu também, como podem ver no começo do artigo.
+</p>
+
+<p style='text-align: justify;'>
+  Querem aprender a criar um parecido? Vamos lá!
+</p>
+
+<p>O que preciso para Desenvolver um Cartão Pessoal em NPX?</p>
+<h4 id="recursos-usados-">Recursos Usados:</h4>
+<ul>
+<li>Visual Studio Code</li>
+<li>JavaScript</li>
+<li>Node.js</li>
+<li>Npm (criar uma conta pessoal no site npmjs.com)</li>
+</ul>
+<h4 id="uso-de-pacotes-">Uso de Pacotes:</h4>
+<ul>
+<li>Boxen</li>
+<li>Chalk</li>
+<li>Standard</li>
+<li>Commander</li>
+</ul>
+<p style='text-align: justify;'>
+  É muito importante que você – antes de começar a criar seu cartão – crie uma conta pessoal no site do <b><a href="npmjs.com">npmjs.com</a></b>.
+</p>
+
+<h2 id="criando-um-cart-o-pessoal">Criando um Cartão Pessoal</h2>
+<p style='text-align: justify;'>
+  Vamos ao passo a passo. A primeira coisa que precisamos fazer é criar uma pasta do projeto de acordo com o seu nome do GitHub e digitar os seguintes comandos no prompt de comando (incluindo, claro, o seu nome):
+</p>
+
+<pre><code class="hljs">&gt; <span class="hljs-built_in">mkdir</span> glaucia86</code></pre>
+
+<pre><code class="hljs">&gt; <span class="hljs-built_in">cd</span> glaucia86</code></pre>
+
+<pre><code class="hljs">&gt; <span class="hljs-built_in">npm</span> init</code></pre>
+
+<pre><code class="hljs">&gt; <span class="hljs-built_in">mkdir</span> bin</code></pre>
+
+<pre><code class="hljs">&gt; <span class="hljs-selector-tag">touch</span> <span class="hljs-selector-tag">card</span><span class="hljs-selector-class">.js</span></code></pre>
+
+<p style='text-align: justify;'>
+  Depois que criar a estrutura do projeto, abra o prompt de comando novamente e digite o comando abaixo (dentro da pasta do projeto) para criar o arquivo <b>package.json</b>:
+</p>
+
+<pre><code class="hljs">&gt; <span class="hljs-built_in">npm</span> init</code></pre>
+<p style='text-align: justify;'>
+  Em seguida, basta instalar os pacotes necessários para começarmos a desenvolver nosso Cartão Pessoal. Digitem os comandos abaixo:
+</p>
+
+<pre><code class="hljs">&gt; npm install standard --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span></code></pre>
+
+<pre><code class="hljs">&gt; npm install chalk <span class="hljs-comment">--save</span></code></pre>
+
+<pre><code class="hljs">&gt; npm <span class="hljs-keyword">install </span><span class="hljs-keyword">boxen </span>--save</code></pre>
+
+<pre><code class="hljs">&gt; npm install commander <span class="hljs-comment">--save</span></code></pre>
+
+<p style='text-align: justify;'>
+  Ao fazer isso estaremos instalando como Dependencies, os pacotes: <b>chalk</b>, <b>boxen</b>, <b>commander</b>, e como DevDependencies: <b>Standard</b>:
+</p>
+
+<pre><code class="hljs json">(...)
+
+"dependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"</code></pre>
+
+<p>A estrutura do seu projeto deverá estar como na imagem abaixo:</p>
+<p align="left">
+  <img src="https://static.imasters.com.br/wp-content/uploads/2019/01/18092729/ssk.jpg"/>  
+</p>
+
+<p>Agora abra o arquivo card.js e copie o código abaixo (inclua seus dados):</p>
+<pre><code class="hljs javascript"><span class="hljs-meta">#!/usr/bin/env node</span>
+<span class="hljs-comment">// Usado para dizer ao Node.js que se trata de uma ferramenta do CLI</span>
+
+<span class="hljs-comment">// Declarando os módulos:</span>
+<span class="hljs-keyword">const</span> chalk = <span class="hljs-built_in">require</span>(<span class="hljs-string">'chalk'</span>)
+<span class="hljs-keyword">const</span> boxen = <span class="hljs-built_in">require</span>(<span class="hljs-string">'boxen'</span>)
+
+<span class="hljs-comment">// Definindo as opções para o ‘boxen’:</span>
+<span class="hljs-keyword">const</span> options = {
+  <span class="hljs-attr">padding</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">margin</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">borderStyle</span>: <span class="hljs-string">'round'</span>
+}
+
+<span class="hljs-comment">// Inclusão do Text e mais as definições do ‘chalk’:</span>
+<span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">name</span>: chalk.white(<span class="hljs-string">'Glaucia Lemos /'</span>),
+  <span class="hljs-attr">handle</span>: chalk.cyan(<span class="hljs-string">'glaucia_lemos86'</span>),
+  <span class="hljs-attr">work</span>: chalk.white(<span class="hljs-string">'Software Developer at HackDev'</span>),
+  <span class="hljs-attr">twitter</span>: chalk.cyan(<span class="hljs-string">'https://twitter.com/glaucia_lemos86'</span>),
+  <span class="hljs-attr">github</span>: chalk.cyan(<span class="hljs-string">'https://github.com/glaucia86'</span>),
+  <span class="hljs-attr">linkedin</span>: chalk.cyan(<span class="hljs-string">'https://www.linkedin.com/in/glaucialemos/'</span>),
+  <span class="hljs-attr">web</span>: chalk.cyan(<span class="hljs-string">'https://code4coders.wordpress.com/'</span>),
+  <span class="hljs-attr">npx</span>: chalk.white(<span class="hljs-string">'npx glaucia_lemos86'</span>),
+  <span class="hljs-attr">labelWork</span>: chalk.white.bold(<span class="hljs-string">'      Work:'</span>),
+  <span class="hljs-attr">labelTwitter</span>: chalk.white.bold(<span class="hljs-string">'   Twitter:'</span>),
+  <span class="hljs-attr">labelGitHub</span>: chalk.white.bold(<span class="hljs-string">'    GitHub:'</span>),
+  <span class="hljs-attr">labelLinkedIn</span>: chalk.white.bold(<span class="hljs-string">'  LinkedIn:'</span>),
+  <span class="hljs-attr">labelWeb</span>: chalk.white.bold(<span class="hljs-string">'       Web:'</span>),
+  <span class="hljs-attr">labelCard</span>: chalk.white.bold(<span class="hljs-string">'      Card:'</span>)
+}
+
+<span class="hljs-comment">// Aqui será a saída do nosso Cartão Pessoal em NPX:</span>
+<span class="hljs-keyword">const</span> newline = <span class="hljs-string">'\n'</span>
+<span class="hljs-keyword">const</span> heading = <span class="hljs-string">`<span class="hljs-subst">${data.name}</span> <span class="hljs-subst">${data.handle}</span>`</span>
+<span class="hljs-keyword">const</span> working = <span class="hljs-string">`<span class="hljs-subst">${data.labelWork}</span>  <span class="hljs-subst">${data.work}</span>`</span>
+<span class="hljs-keyword">const</span> twittering = <span class="hljs-string">`<span class="hljs-subst">${data.labelTwitter}</span>  <span class="hljs-subst">${data.twitter}</span>`</span>
+<span class="hljs-keyword">const</span> githubing = <span class="hljs-string">`<span class="hljs-subst">${data.labelGitHub}</span>  <span class="hljs-subst">${data.github}</span>`</span>
+<span class="hljs-keyword">const</span> linkedining = <span class="hljs-string">`<span class="hljs-subst">${data.labelLinkedIn}</span>  <span class="hljs-subst">${data.linkedin}</span>`</span>
+<span class="hljs-keyword">const</span> webing = <span class="hljs-string">`<span class="hljs-subst">${data.labelWeb}</span>  <span class="hljs-subst">${data.web}</span>`</span>
+<span class="hljs-keyword">const</span> carding = <span class="hljs-string">`<span class="hljs-subst">${data.labelCard}</span>  <span class="hljs-subst">${data.npx}</span>`</span>
+
+<span class="hljs-comment">// Aqui devemos colocar toda a nossa saída numa única variável para que possamos usar</span>
+<span class="hljs-comment">// o ‘boxen de maneira efetiva:</span>
+<span class="hljs-keyword">const</span> output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+
+<span class="hljs-built_in">console</span>.log(chalk.green(boxen(output, options)));</code></pre>
+<p style='text-align: justify;'>
+  Agora executaremos o comando abaixo para verificar a versão do npm (nesse momento é muito importante possuir uma conta no site npmjs.org):
+</p>
+
+<pre><code class="hljs">&gt; npm <span class="hljs-built_in">version</span> major</code></pre>
+
+<p>Após verificar a versão do npm, vamos executar um outro comando:</p>
+<pre><code class="hljs">&gt; <span class="hljs-built_in">npm</span> adduser</code></pre>
+
+<p style='text-align: justify;'>
+  E então publicaremos o nosso pacote para o site do npmjs. Para isso, basta executar o comando abaixo:
+</p>
+
+<pre><code class="hljs">&gt; <span class="hljs-built_in">npm</span> publish</code></pre>
+
+<p style='text-align: justify;'>
+  Depois de publicar, execute o comando a seguir para visualizar o cartão criado:
+</p>
+
+<pre><code class="hljs">&gt; npx glauci<span class="hljs-built_in">a_lemos86</span></code></pre>
+
+<p style='text-align: justify;'>
+  Se tudo der certo, na janela do prompt aparecerá o seu Cartão Pessoal em NPX, conforme na imagem abaixo (fiz alterações no meu card):
+</p>
+
+<p align="center">
+  <img src="https://i.imgsafe.org/27/2779c5a323.png"/>  
+</p>
+
+<p>Simples, não é mesmo?</p>
+<p style='text-align: justify;'>
+  Se quiserem fazer de maneira colorida, assim como eu, basta acessar meu código no repositório.
+</p>
+
+<h2 id="conclus-o">Conclusão</h2>
+<p style='text-align: justify;'>Vocês podem criar da maneira que acharem melhor. E se quiserem dar uma olhada no código desenvolvido, acessem este <b><a href="https://github.com/glaucia86/glaucia86">link</a></b>.</p>
+
+<p style='text-align: justify;'>
+  Caso queiram ver o meu cartão de maneira local em suas máquinas, já está liberado no <b><a href="https://www.npmjs.com/package/glaucia_lemos86">npmjs</a></b>. Basta digitar o seguinte comando:
+</p>
+
+<pre><code class="hljs">&gt; npm install glauci<span class="hljs-built_in">a_lemos86</span></code></pre>
+
+<p style='text-align: justify;'>
+  Quer contribuir ou ajudar a melhorar esse cartão? Não deixe de abrir issues no repositório, beleza?
+</p>
+
+<p>Até a próxima pessoal! 😍😍</p>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
