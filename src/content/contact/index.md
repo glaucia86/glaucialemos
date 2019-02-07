@@ -12,7 +12,7 @@ image: /images/monitores-03.jpeg
   Sintam-se à vontade em entrar em contato comigo em qualquer um dos canais listados abaixo. Terei o maior prazer em responder cada um de vocês - especialmente se o assunto for sobre: fazer networking, realização de palestras técnicas, webinars, workshops e desenvolvimento de projetos Open Source! 😃
 </p>
 
-<img class="resource-img-profile" src="/images/perfil-glaucia-2019.png">
+<img class="resource-img-profile" src="/images/foto-perfil-02.png">
 
 # Informações Pessoais
 
