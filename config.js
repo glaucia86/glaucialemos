@@ -28,7 +28,7 @@ module.exports = {
     }
   },
   dateFormatter: {
-    format: 'DD MMM, YYYY',
+    format: 'MMM DD, YYYY',
   },
   permalinks: {
     linksets: [{

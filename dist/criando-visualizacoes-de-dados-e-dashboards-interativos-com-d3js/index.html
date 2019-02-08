@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Criando Visualizações de Dados e Dashboards Interativos com D3.js // Glaucia Lemos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="/code.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/highlight.css" />
+    <link rel="stylesheet" href="/css/senna.css" />
+
+    <script src="/js/senna.min.js"></script>
+    <script src="/js/headroom.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- Inspectlet -->
+    <script>
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 772378335]);
+      (function () {
+        function __ldinsp() {
+          const insp = document.createElement('script');
+          insp.type = 'text/javascript';
+          insp.async = true;
+          insp.id = 'inspsync';
+          insp.src = `${document.location.protocol == 'https:' ? 'https' : 'http'
+    }://cdn.inspectlet.com/inspectlet.js`;
+          const x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(insp, x);
+        }
+        if (window.attachEvent) {
+          window.attachEvent('onload', __ldinsp);
+        } else {
+          window.addEventListener('load', __ldinsp, false);
+        }
+      }());
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i.GoogleAnalyticsObject = r;
+        (i[r] = i[r]
+    || function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+        (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      }(
+  window,
+  document,
+  'script',
+  '//www.google-analytics.com/analytics.js',
+  'ga',
+));
+      ga('create', 'UA-4114546-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body data-senna data-senna-surface>
+    <div class="senna-loading-bar"></div>
+
+    <header class="site-header site-header-white">
+      <a href="/" class="logo">Glaucia Lemos</a>
+    
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/articles/">Artigos</a></li>
+          <li><a href="/resume/">Currículo</a></li>
+          <li><a href="/talks/">Palestras</a></li>
+          <li><a href="/projects/">Projetos</a></li>
+          <li><a href="/about/">Sobre Mim</a></li>
+          <li><a href="/thoughts/">Pensamentos</a></li>
+          <li><a href="/contact/">Entre em Contato</a></li>
+        </ul>
+      </nav>
+    
+      <div class="nav-social">
+        <a href="https://github.com/glaucia86" title="GitHub">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+  </body>
+</html>
+
+<main class="post">
+  <div class="post-content post-article">
+    <div class="post-container">
+      <h1 class="post-title">Criando Visualizações de Dados e Dashboards Interativos com D3.js</h1>
+      <h2 class="post-subtitle">Jul 20, 2018</h2>
+       <p>Fala, pessoal! Beleza?</p>
+<p style='text-align: justify;'>
+  Bom, neste artigo falarei sobre como podemos criar visualizações de dados & Dashboards totalmente interativos com a bibliotecas do JavaScript: D3.js.
+</p>
+
+<p>Já estava sentindo saudades de vocês! Vamos matar essa saudade agora?</p>
+<h2 id="o-que-d3-js-">O que é D3.js?</h2>
+<p align="center">
+  <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/19091809/D3D.jpg"/>  
+</p>
+
+<p style='text-align: justify;'>
+  O <b><a href="https://d3js.org/">D3.js</a></b> é uma biblioteca do JavaScript que ajuda a manipular documentos baseados em dados, e o mais legal dessa biblioteca é que você pode fazer a integração desses dados usando: HTML, CSS e SVG.
+</p>
+
+<p style='text-align: justify;'>
+  Por que eu resolvi escrever sobre isso? Porque eu estava realizando um trabalho dentro de uma empresa de seguros (a qual não posso mencionar), e eles precisavam fazer uso de alguma biblioteca que precisasse integrar as informações/dados do sistema para a WEB.
+</p>
+
+<p style='text-align: justify;'>
+  E a solução (até o momento) que eles estavam pensando, era o <b><a href="https://neo4j.com/">Neo4j Graph</a></b>, outra excelente biblioteca – a qual poderei escrever outro artigo a respeito. Mas, devido a alta complexidade da biblioteca e falta de documentação, acabaram desistindo e indo para uma outra opção (agora não sei, uma vez que não estou mais lá).
+</p>
+
+<p style='text-align: justify;'>
+  Bom, como sou uma pessoa super curiosa, quando cheguei em casa eu procurei realmente testar o Neo4j e também achei um pouco complexo. Mas, quando eu encontrei o D3.js, foi desse jeito:
+</p>
+
+<p align="center">
+  <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/19091839/image11.jpg"/>  
+</p>
+
+<p style='text-align: justify;'>
+  Por que do nome D3.js? Significa “Data-Driven Documents”, e o melhor disso; é <b><a href="https://github.com/d3/d3">open source</a></b> e vocês podem ajudar na contribuição dessa maravilhosa biblioteca!
+</p>
+
+<p style='text-align: justify;'>
+  Os recursos que essa biblioteca nos fornece são inúmeros! Entre eles: geração de visualizações simples e complexas, interações com o usuário e efeitos de transição, fácil manipulação, já que faz uso de programação declarativa, e entre vários outros recursos!
+</p>
+
+<p style='text-align: justify;'>
+  E os benefícios também são inúmeros entre elas: você não precisa de nenhum plugin, ótima visualização de dados, e a melhor parte: permite a manipulação do DOM.
+</p>
+
+<p>Veja abaixo alguns gráficos feitos usando o D3.js:</p>
+<ul>
+<li><strong><a href="https://bl.ocks.org/mbostock/raw/4063269/">Bubble Chart</a></strong></li>
+<li><strong><a href="https://bl.ocks.org/mbostock/raw/4061961/">Bullet Charts</a></strong></li>
+<li><strong><a href="https://bl.ocks.org/mbostock/raw/4062085/">Population Pyramid</a></strong></li>
+<li><strong><a href="https://github.com/d3/d3/wiki/Gallery">Outros exemplos</a></strong></li>
+</ul>
+<p style='text-align: justify;'>
+  Ok, eu falei bastante sobre os benefícios e recursos que essa biblioteca JavaScript nos dá, mas, como todo bom desenvolvedor(a), vamos começar a brincar!
+</p>
+
+<h2 id="demo-demo-demo-">Demo! Demo! Demo!</h2>
+<p style='text-align: justify;'>
+  Calma, gente! Vamos à demo, então. Para isso, peço que usem os seguintes recursos:
+</p>
+
+<ul>
+<li><strong>Visual Studio Code</strong></li>
+<li><strong>Node.Js</strong></li>
+</ul>
+<p style='text-align: justify;'>
+  Sim, simplesmente disso que precisaremos. Vamos agora, passo a passo, desenvolver um simples gráfico usando o D3.js.
+</p>
+
+<p style='text-align: justify;'>
+  Primeira coisa: peço que procurem estruturar o projeto, conforme a imagem abaixo:
+</p>
+
+<p align="center">
+  <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/19091904/image31.png"/>  
+</p>
+
+<p>Notem que incluí três arquivos na pasta &#39;src&#39;:</p>
+<ul>
+<li><strong>index.html</strong></li>
+<li><strong>index.js</strong></li>
+<li><strong>index.css</strong></li>
+</ul>
+<p style='text-align: justify;'>
+  Vamos focar nesses três arquivos contidos dentro da pasta src! É justamente aí que toda a brincadeira vai começar! Vamos instalar o D3.js via npm no projeto. Para isso, peço que executem os seguintes comandos:
+</p>
+
+<pre><code class="hljs javascript">&gt; npm install http-server -g
+&gt; npm install --save-dev d3</code></pre>
+
+<p style='text-align: justify;'>
+  Feito isso, podemos agora começar a desenvolver. Abram o Visual Studio Code e vamos começar criando o estilo para o nosso gráfico. Para isso, vamos começar a desenvolver o arquivo: <b>index.css</b>:
+</p>
+
+<pre><code class="hljs css"><span class="hljs-selector-class">.chart</span> <span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">font</span>: <span class="hljs-number">12px</span>sans-serif;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#8A2BE2</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">4px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">2px</span>;
+    <span class="hljs-attribute">color</span>:  <span class="hljs-number">#FFF8DC</span>;
+}</code></pre>
+
+<p style='text-align: justify;'>
+  Até aqui, nada diferente. Estamos criando uma classe chamada ‘chart’, a qual, dentro dessa div, haverá todo esse estilo pré-determinado aqui!
+</p>
+
+<p style='text-align: justify;'>
+  Bom, vamos ao segundo passo, dessa vez, no arquivo <b>index.html</b>. Inclua o seguinte código abaixo:
+</p>
+
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chart"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<p style='text-align: justify;'>
+  Beleza! Agora vamos para o arquivo onde a brincadeira vai funcionar! Abra o arquivo <b>index.js</b> e coloque o seguinte bloco de código abaixo:
+</p>
+
+<pre><code class="hljs javascript"><span class="hljs-comment">/**
+*
+* Arquivo: index.js
+* Data: 17/07/2018
+* Descrição: Desenvolvimento de um simples gráfico usando a biblioteca do Js: D3.js
+* Author: Glaucia Lemos
+*
+*/</span>
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">56</span>, <span class="hljs-number">89</span>, <span class="hljs-number">125</span>, <span class="hljs-number">264</span>, <span class="hljs-number">397</span>, <span class="hljs-number">451</span>, <span class="hljs-number">582</span>, <span class="hljs-number">654</span>];
+
+d3.select(<span class="hljs-string">".chart"</span>)
+ .selectAll(<span class="hljs-string">"div"</span>)
+ .data(data)
+ .enter()
+ .append(<span class="hljs-string">"div"</span>)
+ .style(<span class="hljs-string">"width"</span>, (d) =&gt; {
+ <span class="hljs-keyword">return</span> <span class="hljs-string">'R$ '</span>+ d;
+});</code></pre>
+
+<p style='text-align: justify;'>
+  Bom, vamos entender alguns pontos aqui. Na linha 10 podemos ver a criação de um array com oito valores que estarão no nosso bar chart.</p>
+
+<p style='text-align: justify;'>
+  Das linhas 14 a 19, já estamos definindo alguns itens que serão importantes para a criação do nosso gráfico. O <b>selectAll</b> pegará todos os itens dentro de uma determinada <b>div</b>. Já o método <b>data</b> retornará o nosso array declarado acima e o método <b>enter</b> servirá para retornar um determinado elemento do DOM, que será encontrado. Já o método ‘append‘ retornará uma nova seleção contendo elementos anexados, que neste exemplo é a <b>div</b>.
+</p>
+
+<p style='text-align: justify;'>
+  Bom, explicando agora o que é cada parte, vamos prosseguir com o nosso desenvolvimento.
+
+<p>  Voltemos ao arquivo <b>index.html</b>. Inclua o seguinte bloco de código:</p>
+</p> 
+
+<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"pt-br"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Gráfico de Ganhos - iMasters<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Inclusão da biblioteca do D3.js via cdn --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://d3js.org/d3.v3.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Inclusão do estilo do gráfico --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"index.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dashboard"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Ganhos de Vendas<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chart"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- Chamada do arquivo 'index.js' (parte da lógica) --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"index.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+
+<p style='text-align: justify;'>
+  Feito isso, vamos voltar agora para o arquivo <b>index.css</b> para fazer algumas alterações por lá. Vejam o código abaixo:
+</p>
+
+
+<pre><code class="hljs css"><span class="hljs-selector-class">.chart</span> <span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">font</span>: <span class="hljs-number">12px</span> sans-serif;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#8A2BE2</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">4px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">2px</span>;
+    <span class="hljs-attribute">color</span>:  <span class="hljs-number">#FFF8DC</span>;
+}
+
+<span class="hljs-selector-id">#dashboard</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">450px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
+}
+
+<span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+}</code></pre>
+
+<p style='text-align: justify;'>
+  Aqui, incluímos os estilos para <b>dashboard</b> e <b>p;</b> simples assim e em seguida, vamos para o arquivo <b>index.js</b>:
+</p>
+
+<pre><code class="hljs javascript"><span class="hljs-comment">/**
+ *
+ * Arquivo: index.js
+ * Data: 17/07/2018
+ * Descrição: Desenvolvimento de um simples gráfico usando a biblioteca do Js: D3.js
+ * Author: Glaucia Lemos
+ *
+ */</span>
+
+<span class="hljs-keyword">var</span> data = [<span class="hljs-number">56</span>, <span class="hljs-number">89</span>, <span class="hljs-number">125</span>, <span class="hljs-number">264</span>, <span class="hljs-number">397</span>, <span class="hljs-number">451</span>, <span class="hljs-number">582</span>, <span class="hljs-number">654</span>];
+
+<span class="hljs-keyword">var</span> scale = d3.scale.linear()
+    .domain([<span class="hljs-number">0</span>, <span class="hljs-number">654</span>])
+    .range([<span class="hljs-number">0</span>, <span class="hljs-number">400</span>])
+
+d3.select(<span class="hljs-string">".chart"</span>)
+    .selectAll(<span class="hljs-string">"div"</span>)
+    .data(data)
+    .enter()
+    .append(<span class="hljs-string">"div"</span>)
+    .style(<span class="hljs-string">"width"</span>, (d) =&gt; { <span class="hljs-keyword">return</span> scale(d) + <span class="hljs-string">'px'</span> })
+    .text(<span class="hljs-function">(<span class="hljs-params">d</span>) =&gt;</span> {<span class="hljs-keyword">return</span> <span class="hljs-string">'R$ '</span> + d; });</code></pre>
+
+<p style='text-align: justify;'>
+  Notem que houve uma alteração no código comparado a primeira parte do desenvolvimento desse arquivo. Incluímos uma variável 'scale', justamente para determinar o range do tamanho do gráfico dentro da div!
+
+<p>  Vamos ver como vai ficará em ação? Abram o prompt de comando dentro da pasta onde vocês criaram o projeto e execute o seguinte comando:</p>
+</p>
+
+<pre><code class="hljs">&gt; http-<span class="hljs-keyword">server</span></code></pre>
+
+<p align="center">
+  <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/19131810/YELLOWW.jpg"/>  
+</p>
+
+<p>Vá até o browser e digite: localhost:8080/src/index.html e veja o resultado:</p>
+<p align="center">
+  <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/19131833/image41.png"/>  
+</p>
+
+<p style='text-align: justify;'>
+  Lindo, não? Dá para fazer muita coisa com o D3.js. Basta dar uma olhada nos examples contidos no repositório da biblioteca, neste <b><a href="https://github.com/d3/d3">link</a></b>.
+</p>
+
+
+<h2 id="palavras-finais">Palavras finais</h2>
+<p style='text-align: justify;'>
+  Já venho mostrando em alguns artigos o poder que o JavaScript nos dá. Simplesmente podemos fazer qualquer coisa – mas qualquer coisa quando fazemos uso do JavaScript. Procurem sempre estudar JS e terão o poder em suas mãos!
+
+<p>  Falando em estudar, estou com o seguinte workshop: “Criando uma App REST API com Node.js &amp; MongoDb” voltado para níveis iniciante a intermediário! Para quem quiser, está um preço muito bom e será totalmente online.</p>
+<p>  Caso estejam interessados, façam a inscrição através deste <b><a href="https://www.sympla.com.br/criando-uma-app-rest-api-com-nodejs--mongodb__322154">link</a></b>, mesmo que não dê para fazer online no dia, não tem problema, eu enviarei o material do workshop por e-mail para cada participante que se inscrever.</p>
+<p>  É isso, pessoal! Até a próxima.</p>
+</p>
+
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
