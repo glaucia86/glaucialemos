@@ -3,7 +3,7 @@ layout: main.html
 title: Contact Me
 tagline: Networking. People. Keep in Touch.
 page_class: contact-page
-image: /images/monitores-03.jpeg
+image: /images/foto-eu-03.jpg
 ---
 
 # Fazer Networking?! Sempre!
