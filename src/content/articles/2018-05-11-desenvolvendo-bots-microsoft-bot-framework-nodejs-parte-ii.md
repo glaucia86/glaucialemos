@@ -139,7 +139,7 @@ Agora, sim, podemos executar o Emulator!
 </p>
 
 <p style='text-align: justify;'>
-  Lindo, não é mesmo? Notem como fica mais fluido o fluxo de conversação do nosso ChatBot! Há muitas outras coisas envolvidas nessa parte do Bot! Caso queiram se inteirar mais a respeito desse assunto, peço que deem uma olhada nos vídeos que ando fazendo sobre o assunto – especialmente as aulas 09 a 11 **[AQUI](https://www.youtube.com/watch?v=-pB48tj_9_w)**:
+  Lindo, não é mesmo? Notem como fica mais fluido o fluxo de conversação do nosso ChatBot! Há muitas outras coisas envolvidas nessa parte do Bot! Caso queiram se inteirar mais a respeito desse assunto, peço que deem uma olhada nos vídeos que ando fazendo sobre o assunto – especialmente as aulas 09 a 11 <b><a href="https://www.youtube.com/watch?v=-pB48tj_9_w">AQUI</a></b>:
 </p>
 
 ## Palavras finais
