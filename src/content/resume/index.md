@@ -34,6 +34,12 @@ image: /images/monitores-02.jpeg
 
 # Iniciativas em Comunidades Técnicas
 
+## [React](https://github.com/reactjs)
+* **Cargo:** Member | Contributor
+* **Localização:** Remote | Online
+* **Período:** Fev 2019 - Atual
+* **Descrição:**<p style='text-align: justify;'>Contribuições para o site **[Reactjs.org](https://reactjs.org)** pertecendo ao grupo de Internacionalização do site. Responsável por realizar os code reviews e moderar o grupo. Ajudando a manter e atualizar a tradução do Reactjs.org para o português.</p>
+
 ## [Node.js Foundation](https://github.com/nodejs/nodejs-pt)
 * **Cargo:** Member | Contributor
 * **Localização:** Remote | Online
