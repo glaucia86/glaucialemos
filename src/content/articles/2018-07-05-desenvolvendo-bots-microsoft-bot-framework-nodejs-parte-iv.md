@@ -2,8 +2,9 @@
 title: Desenvolvendo bots com Microsoft Bot Framework & Node.Js – Parte 04
 ---
 
-<p style='text-align: justify;'></p>
-Enquanto rolava o jogo Brasil x México, eu aproveitei o tempo disponível para falar sobre o LUIS. Então vamos dar continuidade à nossa série!
+<p style='text-align: justify;'>
+  Enquanto rolava o jogo Brasil x México, eu aproveitei o tempo disponível para falar sobre o LUIS. Então vamos dar continuidade à nossa série!
+</p>
 
 Vamos nessa?
 
@@ -13,8 +14,9 @@ Vamos nessa?
 
 ## Breve resumo
 
-<p style='text-align: justify;'></p>
-Nos últimos artigos, já falamos sobre o desenvolvimento de Bots com Microsoft Bot Framework e com isso, criamos bots simples.
+<p style='text-align: justify;'>
+  Nos últimos artigos, já falamos sobre o desenvolvimento de Bots com Microsoft Bot Framework e com isso, criamos bots simples.
+</p>
 
 <p style='text-align: justify;'>
   Mas, como mencionado no <b><a href="https://imasters.com.br/desenvolvimento/desenvolvendo-bots-com-microsoft-bot-framework-node-js-parte-03">artigo anterior</a></b>, agora vamos colocar um pouco mais inteligência em nosso Bot, usando justamente um dos <b><a href="https://azure.microsoft.com/pt-br/services/cognitive-services/">Serviços Cognitivos</a></b>.
@@ -35,7 +37,6 @@ Nos últimos artigos, já falamos sobre o desenvolvimento de Bots com Microsoft 
 <p style='text-align: justify;'>
   Resumindo, é uma coleção de API’s inteligentes que nos permite deixar as nossas aplicações mais interativas e que chega mais ‘próximo’ da linguagem humana.
 </p>
-
 
 E os principais serviços cognitivos disponíveis na plataforma da Microsoft, são:
 
@@ -59,14 +60,13 @@ E os principais serviços cognitivos disponíveis na plataforma da Microsoft, s�
   LUIS (Language Understanding Intelligent Service) é um serviço de nuvem, que tem como objetivo fazer com que a interação entre ser humano e computador seja mais simples. O LUIS pode interpretar texto, extrair intenções ou entidades ao mesmo tempo.
 </p>
 
-
 <p style='text-align: justify;'>
   O mais legal disso tudo é que você pode usar o LUIS em diferentes contextos de aplicações:
 </p>
 
-* Chatbots
-* IOT Devices
-* Commerce Chatbot
+* **Chatbots**
+* **IOT Devices**
+* **Commerce Chatbot**
 
 <p style='text-align: justify;'>
   Nessa imagem temos um modelo exemplo de uma arquitetura de um Chatbot que usa a API do LUIS:
@@ -429,14 +429,13 @@ Agora vamos verificar e ver se o nosso pedido irá chegar a tempo:
   Estes últimos quatro artigos eu fiz com o objetivo de vocês conhecerem mais o SDK do Bot Framework, que nos permite desenvolver incríveis ChatBots, tanto em Javascript, C#, PHP, Ruby e Python.
 </p>
 
-Lembrando que, a partir dessa semana, estarei de volta dando continuidade às vídeo aulas do Hands on de Bots com Node.Js. [Link Playlist](https://www.youtube.com/playlist?list=PLb2HQ45KP0Ws3dVMoxliVX5ici53RmiNV)
+Lembrando que, a partir dessa semana, estarei de volta dando continuidade às vídeo aulas do Hands on de Bots com Node.Js. <b><a href="https://www.youtube.com/playlist?list=PLb2HQ45KP0Ws3dVMoxliVX5ici53RmiNV">Link da Playlist</a></b>
 
 <p style='text-align: justify;'>
   Espero que tenham gostado dessa série de artigos e caso tenham alguma dúvida inerente a algum artigo não hesitem em deixar um Issue no repositório do Github dessa série que se encontra <b><a href="https://github.com/glaucia86/chatbot-nodejs-imasters">aqui</a></b>.
 </p>
 
-
-Até o próximo artigo, pessoal! Abraços a todos.
+Até o próximo artigo pessoal! Abraços a todos.
 
 <p align="center">
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03154935/image8.png"/>  
