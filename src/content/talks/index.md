@@ -39,6 +39,12 @@ image: /images/palestra.jpg
 * **Onde:** Rio de Janeiro - Brasil 
 * **Participantes:** ≈150
 
+## [GDG Rio]()
+* **Quando:** 23/02
+* **Onde:** Rio de Janeiro, RJ - Brasil 
+* **Participantes:** ≈100
+* **Tema:** O Presente e o Futuro do Typescript!
+
 ## [Webinar - Explorando T.I](https://www.youtube.com/watch?v=GminGcR4rOU&t=4s)
 * **Quando:** 24/01
 * **Onde:** Online
@@ -107,7 +113,7 @@ image: /images/palestra.jpg
 ## [SETC 2018 - Bambuí](http://www.computacaoifmg.com.br/)
 * **Quando:** 26/09
 * **Onde:** Bambuí, MG - Brasil
-* **Participantes:** 
+* **Participantes:** ≈200
 * **Tema:** Uso de Linguagem Natural com Azure e Microsoft Bot Framework
 
 ## [Meetup Ativa Investimentos](https://www.sympla.com.br/desmistificando-chatbots--ai---frameworks-e-futuro-dos-servicos__351811)
@@ -140,7 +146,7 @@ image: /images/palestra.jpg
 * **Tema:** Microsoft Bot Framework com Node.js - A Combinação Perfeita!
 
 ## [VS Summit 2018](http://devprime.one/)
-* **Quando:** 
+* **Quando:** 01-02/06
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈300
 * **Tema:** Presente & Futuro do TypeScript
