@@ -4,6 +4,20 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Testing media query */
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
 .iframe-wrap {
   border: 1px solid rgba(0, 0, 0, .1);
   height: 0;
@@ -171,13 +185,13 @@ code {
 
 .animated {
   -webkit-animation-duration: 0.3s;
-     -moz-animation-duration: 0.3s;
-       -o-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
-     -moz-animation-fill-mode: both;
-       -o-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes slideDown {
