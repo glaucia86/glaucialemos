@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/080d10e5-358e-4c6c-ac7d-ca7c62055f18/deploy-status)](https://app.netlify.com/sites/glaucialemos/deploys)
 [![Build Status](https://travis-ci.org/glaucia86/glaucialemos.svg?branch=master)](https://travis-ci.org/glaucia86/glaucialemos)
 ![GHTopLanguages](https://img.shields.io/github/languages/top/glaucia86/glaucialemos.svg?colorB=gree)
 ![RepoSize](https://img.shields.io/github/repo-size/glaucia86/glaucialemos.svg?colorB=gree)
