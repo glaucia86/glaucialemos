@@ -29,7 +29,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 - Node.js
 - JavaScript
 - Static Site generator: Metalsmith.io
-- Hospedado no Azure
+- Hospedado no Netlify;
 
 ## Executando a Aplicação Localmente: 🚀
 
@@ -61,6 +61,7 @@ Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o
 
 Aqui estarei listando prováveis mudanças futuras que estarei realizando para o v.2 do meu site.
 
+* [ ] Comprar domínio .com
 * [ ] Internacionalização do Site: Inglês & Espanhol
 * [ ] Criar botão Up (para páginas mais extensas)
 * [ ] Criar formulário na página 'Entre em Contato'
