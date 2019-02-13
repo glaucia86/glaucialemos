@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/github/license/glaucia86/glaucialemos.com.svg?colorB=gree)
 [![HitCount](http://hits.dwyl.io/glaucia86/glaucialemos.svg)](http://hits.dwyl.io/glaucia86/glaucialemos)
 
-# My Personal Website: [glaucialemos.com]()
+# My Personal Website: [glaucialemos.com]() v.1
 
 Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com]()**.
 Esse projeto foi baseado em dois outros projetos:
@@ -28,6 +28,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 - Node.js
 - JavaScript
 - Static Site generator: Metalsmith.io
+- Hospedado no Azure
 
 ## Executando a Aplicação Localmente: 🚀
 
@@ -54,4 +55,16 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 ## Dúvidas?! 🚩
 
 Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o ambiente bastam criar uma **[ISSUE](https://github.com/glaucia86/glaucialemos.com/issues)** no repositório que estarei respondendo a todos vocês!! ❤️❤️ ❤️😊
+
+## TODOS v.2 💡
+
+Aqui estarei listando prováveis mudanças futuras que estarei realizando para o v.2 do meu site.
+
+* [ ] Internacionalização do Site: Inglês & Espanhol
+* [ ] Criar botão Up (para páginas mais extensas)
+* [ ] Criar formulário na página 'Entre em Contato'
+* [ ] Inclusão de ícones de redes sociais na página 'Entre em Contato'
+* [ ] Desenvolver Testes no projeto.
+
+Se tiverem alguma sugestão a fazer... bastam incluir na Issue que criei **[AQUI](https://github.com/glaucia86/glaucialemos/issues/2)**
 
