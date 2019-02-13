@@ -8,9 +8,9 @@
 ![License](https://img.shields.io/github/license/glaucia86/glaucialemos.com.svg?colorB=gree)
 [![HitCount](http://hits.dwyl.io/glaucia86/glaucialemos.svg)](http://hits.dwyl.io/glaucia86/glaucialemos)
 
-# My Personal Website: [glaucialemos.com]() v.1
+# My Personal Website: [glaucialemos.com](https://glaucialemos.netlify.com/) v.1
 
-Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com]()**.
+Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com](https://glaucialemos.netlify.com/)**.
 Esse projeto foi baseado em dois outros projetos:
 
 - **[Zeno Rocha](https://github.com/zenorocha/zenorocha.com)**
