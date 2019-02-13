@@ -39,10 +39,10 @@ image: /images/palestra.jpg
 * **Onde:** Rio de Janeiro - Brasil 
 * **Participantes:** ≈150
 
-## [GDG Rio]()
+## [GDG Rio](https://www.meetup.com/pt-BR/GDGRioDeJaneiro/events/258718758/)
 * **Quando:** 23/02
 * **Onde:** Rio de Janeiro, RJ - Brasil 
-* **Participantes:** ≈100
+* **Participantes:** ≈70
 * **Tema:** O Presente e o Futuro do Typescript!
 
 ## [Webinar - Explorando T.I](https://www.youtube.com/watch?v=GminGcR4rOU&t=4s)
