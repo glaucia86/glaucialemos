@@ -5,19 +5,19 @@ tagline: Share Knowledge. Tech Talks. Networking. Open Source.
 image: /images/palestra.jpg
 ---
 
-<p style='text-align: justify;'> 
+<p> 
   Aqui vocês podem encontrar todas as palestras técnicas que já realizei em eventos técnicos, incluso também vídeos tutoriais, webinars e workshops. 
 </p>
 
-<p style='text-align: justify;'> 
+<p> 
   Gosto de contribuir em Comunidades Técnicas! Gosto e amo o que faço! Assim que, caso queiram alguma palestra minha ou workshop na sua região, estado ou cidade, vocês poderão ter a mais plena certeza 
   de que farei com: muito amor e dedicação - visando justamente entregar o melhor conteúdo: tanto para 
   a organização do evento e principalmente para o público-alvo. Então, não hesitem em entrar em contato
   comigo através do meu e-mail: <b><a href="glaucia_lemos86@hotmail.com">AQUI</a></b>. Estarei entrando em contato com vocês o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em palestrar no seu evento! ❤️❤️❤️
 </p>
 
-<p style='text-align: justify;'> 
-  Caso desejam saber mais detalhes dos temas que abordo, o que esperar das minhas palestras e as minhas expectativas em relação a participações em eventos técnicos, bastam acessar o link <b><a href="https://github.com/glaucia86/presenter-glaucia-lemos">AQUI</a></b>.
+<p> 
+  Caso desejam saber mais detalhes dos temas que abordo, o que esperar das minhas palestras e as minhas expectativas em relação a participações em eventos técnicos, bastam enviar um Direct Message no meu twitter <b><a href="https://twitter.com/glaucia_lemos86">AQUI</a></b>.
 </p>
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
@@ -27,6 +27,18 @@ image: /images/palestra.jpg
 - **[Palestras em 2017](#2017)**
 
 # 2019
+
+## [TDC Floripa 2019](http://www.thedevelopersconference.com.br/tdc/2019/index.html)
+* **Quando:** 27/04
+* **Onde:** Florianópolis, SC - Santa Catarina
+* **Participantes:** ≈1000
+* **Tema:** Onde Já se Vue?!
+
+## [TDC Floripa 2019](http://www.thedevelopersconference.com.br/tdc/2019/index.html)
+* **Quando:** 26/04
+* **Onde:** Florianópolis, SC - Santa Catarina
+* **Participantes:** ≈1000
+* **Tema:** O Presente e o Futuro do Typescript!
 
 ## [MVP Conf LATAM 2019](https://www.mvpconf.com.br)
 * **Quando:** 12-13/04
