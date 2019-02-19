@@ -48,7 +48,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 3. Depois, executar o seguinte comando:
 
 ```
-> npm run watch
+> npm run dev
 ```
 
 4. Após isso, abrir o browser em **localhost:8000**
