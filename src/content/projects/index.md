@@ -7,11 +7,11 @@ image: /images/monitores-03.jpeg
 
 ## Projetos Realizados | Projetos Open Source
 
-<p style='text-align: justify;'>
+<p>
   Nessa seção, vocês verão uma lista de projetos que já pude participar – desde projetos nacionais a internacionais, incluso projetos <b>Open Source</b>.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Resolvi listar também alguns projetos relacionados a Comunidade Técnica, uma ve que, gosto muito de participar de projetos Open Source. Ainda mais se envolve uma grande quantidade de desenvolvedores.
 </p>
 
@@ -21,7 +21,7 @@ image: /images/monitores-03.jpeg
 
 # Projetos Nacionais
 
-<p style='text-align: justify;'>
+<p>
   Projetos que atuei com a minha consultoria <b><a href="https://www.linkedin.com/company/28654103">HackDev</a></b> e
   como contrante direto dessas empresas.
 </p>
@@ -92,7 +92,7 @@ image: /images/monitores-03.jpeg
 
 # Projetos Open Source
 
-<p style='text-align: justify;'>
+<p>
   Aqui seguem alguns projetos pessoais, para fins de colaborar com <b>Projetos Open Source</b> para Comunidade Técnica. Preferi listar os principais. Porém, caso deseja saber de mais projetos pessoais, bastam acessar o meu
   profile do <b><a href="https://github.com/glaucia86">GitHub</a></b>
 </p>
@@ -119,6 +119,7 @@ image: /images/monitores-03.jpeg
 * **Localização:** Remote | Online - Rio de Janeiro, Brasil.
 * **Projeto:** [workshop-net-core-iniciantes](https://github.com/glaucia86/workshop-net-core-iniciantes)
 * **Tecnologias:** `.NET Core 2`, `Bootstrap`,`Visual Studio Code`,`Bootstrap`,`Azure Web App`,`GitHub`.
+
 
 
 
