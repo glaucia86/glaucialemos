@@ -20,6 +20,7 @@ image: /images/foto-eu-03.jpg
 * **Empresa:** [HackDev](https://www.linkedin.com/company/hackdev/)
 * **Profissão:** Software Developer | Microsoft MVP in Developer Technologies
 * **Twitter:** [@glaucia_lemos86](https://twitter.com/glaucia_lemos86)
+* **Medium:** [@glaucia86](https://medium.com/@glaucia86)
 * **Blog/Homepage:** https://code4coders.wordpress.com/
 * **Canal do Youtube:** https://www.youtube.com/user/l32759
 * **Linkedin:** https://www.linkedin.com/in/glaucialemos/
