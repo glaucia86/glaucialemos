@@ -6,7 +6,7 @@ Fala, pessoal! Tudo certo?
 
 Estou aqui pra falar um pouco do último release que tivemos da versão 3.0 do tão aclamado Typescript!
 
-<p style='text-align: justify;'>
+<p>
   Bom, não percamos tempo; vamos às novidades dessa nova versão – uma vez que tem uma pancada de coisas legais pra falar aqui!
 </p>
 
@@ -14,7 +14,7 @@ Estou aqui pra falar um pouco do último release que tivemos da versão 3.0 do t
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/08/23154700/B3.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Sim, a versão 3.0 foi anunciada no último dia 30 de Julho de 2018, pela equipe de engenheiros da Microsoft pelo <b><a href="https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/">site oficialste</a></b> e tem bastante coisa legal nessa nova versão!
 </p>
 
@@ -24,7 +24,7 @@ Vieram muitas coisas, mas só vou comentar as principais, sendo elas:
 * O novo type do Typescript: 'unknown'
 * E, sim, o suporte ao 'defaultProps' em JSX
 
-<p style='text-align: justify;'>
+<p>
   Outra menção válida aqui, é que o Typescript 3.0 introduziu um novo mode para tsc, o flag “–build”, que permite compilações mais rápidas de referências de projetos em Typescript. Não entrarei em detalhes dessa mudança, mas caso queiram saber mais à respeito, recomendo entrar na documentação <b><a href="https://www.typescriptlang.org/docs/handbook/project-references.html">através deste link</a></b>.
 </p>
 
@@ -32,15 +32,15 @@ Bom, vamos comentar as novidades que listei acima!
 
 ## Uso de Tuplas em parâmetros rest e expressões spread
 
-<p style='text-align: justify;'>
+<p>
   Antes de falarmos sobre Tuplas, é muito importante saber o que de fato são as Tuplas. O que seriam as Tuplas?
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Os tipos Tuplas (Tuple) são uma estrutura de dados que nos permitem expressar um determinado array, onde o tipo de número fixo de elementos é conhecido, mas que ao mesmo tempo não há necessidade de serem os mesmos.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Vamos a um pequeno exemplo à respeito: imagine o seguinte cenário: vamos supor que você queira representar um determinado valor com um par de string e um outro com number:
 </p>
 
@@ -63,11 +63,11 @@ x = [10, 'Oi Tudo bem?'];
 
 ```
 
-<p style='text-align: justify;'>
+<p>
   Esse é um exemplo simples de como usar uma Tupla. Notem que a última linha não vai permitir executar o exemplo, uma vez que está errado. Vocês podem se aprofundar mais sobre uso de Tuplas neste link.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Bom, mas vamos falar das mudanças feitas nesse tipo! Por exemplo, agora podemos usar tuplas em parâmetros rest. Mas como? Vejam o exemplo abaixo:
 </p>
 
@@ -108,11 +108,11 @@ foo(args[0], args[1], args[2]);
 foo(...args);
 
 ```
-<p style='text-align: justify;'>
+<p>
   Notem no exemplo acima que quando fazemos uma chamada de uma determinada função que tenha uma expressão spread com o tipo tupla, a expressão corresponderá a uma sequência de argumentos discretos dos tipos correspondentes dos elementos da tupla.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Vamos agora a uma outra mudança interessante: uso de genéricos em parâmetros Rest. Vamos a um outro exemplo abaixo e logo em seguida explicarei o que mudou:
 </p>
 
@@ -126,7 +126,7 @@ foo(...args);
 declare function bind<G, L extends any[], U>(f: (x: G, ...args: L) => U, x: U): (...args: L) => U;
 ```
 
-<p style='text-align: justify;'>
+<p>
   Notem o exemplo acima. Parece meio louco, né? Mas, vou explicar aqui o que está acontecendo: nós temos os parâmetros 'args' – parâmetros rest – que estão herdando de um array do tipo 'any'. O que o Typescript fará? Ele irá extrair essa lista de parâmetros para qualquer coisa que colocarmos ou passarmos para ‘f’ e transformará numa tupla!
 </p>
 
@@ -159,17 +159,17 @@ Notem a função ‘f2’. Ele faz inferência aos tipos:
 * L: [string, boolean]
 * U: void
 
-<p style='text-align: justify;'>
+<p>
   Já L, que é um tipo tupla, é inferido com a sequência de parâmetros e depois expandido para uma lista de parâmetros.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Isso é interessante, pois nos permite uma melhor ordenação e declaração de listas parciais de parâmetros. Vamos a uma outra mudança interessante:
 </p>
 
 * Elementos opcionais
 
-<p style='text-align: justify;'>
+<p>
   O que seria isso? Agora podemos usar ‘?’ para indicar para uma determinada tupla que é opcional. Vejam o exemplo abaixo:
 </p>
 
@@ -196,11 +196,11 @@ Vamos agora para a próxima mudança que veio na versão 3.0 do Typescript: tipo
 
 Sim, na versão 3.0 do Typescript teremos agora um novo tipo: ‘unknown’.
 
-<p style='text-align: justify;'>
+<p>
   O tipo unknown seria uma versão mais segura – por assim dizer – do tipo 'any'. Como o tipo 'any' pode ser qualquer coisa e qualquer valor, dificultava na hora de fazer a verificação desse tipo. Já com o tipo unknown, podemos atribuir qualquer valor ao tipo 'unknown' (assim como já acontece com o tipo 'any').
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Outro ponto a salientar aqui, é que com o tipo ‘unknown’ não podemos fazer operações antes de definir para um tipo específico. E ele também é atribuído para ele mesmo ou ao tipo ‘any’. Bom, para ficar claro essa mudança, vamos ver no código:
 </p>
 
@@ -263,21 +263,21 @@ function upperCase(x: string) {
 }
 ```
 
-<p style='text-align: justify;'>
+<p>
   Notem que estamos forçando eles para verificar os tipos ou usar um tipo mais assertivo que a aplicação/sistema acha melhor para ele!
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Vamos agora falar da última mudança dessa versão 3.0: suporte para 'defaultProps' em JSX!
 </p>
 
 ## defaultProps em JSX
 
-<p style='text-align: justify;'>
+<p>
   Essa mudança é super conveniente para desenvolvedores front-end que trabalham com React e Typescript! Antes, o Typescript não permitia fazer declarações em aplicações React com o defaultProps dentro de componentes JSX.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Tínhamos que declarar propriedades opcionais e usar afirmações não nulas dentro de render, conforme segue o exemplo abaixo:
 </p>
 
@@ -343,13 +343,13 @@ export class Saudar extends React.Component<Props> {
 let texto = <Saudar />
 ```
 
-<p style='text-align: justify;'>
+<p>
   Legal, né? Há algumas limitações ao fazer uso desse suporte. Peço que entrem no site oficial da documentação do Typescript para ver outros exemplos e explicações de forma mais completa sobre as mudanças da versão 3.0 através <b><a href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html">deste link</a></b>.
 </p>
 
 ## Conclusão
 
-<p style='text-align: justify;'>
+<p>
   Como já mencionado no início desse artigo, há outras mudanças que vieram para facilitar nossas vidas. Peço que entrem neste link para saberem mais sobre as outras mudanças não mencionadas aqui. Os códigos desenvolvidos se encontram no meu <b><a href="https://github.com/glaucia86/typescript-3-novidades-imasters">repositório do GitHub</a></b>.
 </p>
 

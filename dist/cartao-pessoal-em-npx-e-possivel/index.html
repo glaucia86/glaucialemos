@@ -104,21 +104,21 @@
   <img src="https://i.imgsafe.org/27/2779c5a323.png"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   A resposta para a pergunta do título deste artigo é: sim. E teremos um passo a passo ensinando a criar um em NPX.
 </p>
 
-<p style='text-align: justify;'>Como surgiu a ideia?</p>
+<p>Como surgiu a ideia?</p>
 
-<p style='text-align: justify;'>
+<p>
   Essa ideia surgiu de um artigo do meu amigo <b><a href="https://twitter.com/bitandbang">Tierney Cyren</a></b>, que é Senior Cloud Developer Advocate da Microsoft e membro do comité do Node.js Foundation. Recomendo seguir o Tierney no Twitter – de vez em quando ele posta coisas muito bacanas.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Todo crédito a ele, que criou esse  projeto! Graças ao seu trabalho, vários desenvolvedores que o seguem no Twitter começaram a criar os seus próprios NPX Personal Cards. E, claro, eu criei o meu também, como podem ver no começo do artigo.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Querem aprender a criar um parecido? Vamos lá!
 </p>
 
@@ -137,12 +137,12 @@
 <li>Standard</li>
 <li>Commander</li>
 </ul>
-<p style='text-align: justify;'>
+<p>
   É muito importante que você – antes de começar a criar seu cartão – crie uma conta pessoal no site do <b><a href="npmjs.com">npmjs.com</a></b>.
 </p>
 
 <h2 id="criando-um-cart-o-pessoal">Criando um Cartão Pessoal</h2>
-<p style='text-align: justify;'>
+<p>
   Vamos ao passo a passo. A primeira coisa que precisamos fazer é criar uma pasta do projeto de acordo com o seu nome do GitHub e digitar os seguintes comandos no prompt de comando (incluindo, claro, o seu nome):
 </p>
 
@@ -156,12 +156,12 @@
 
 <pre><code class="hljs">&gt; <span class="hljs-selector-tag">touch</span> <span class="hljs-selector-tag">card</span><span class="hljs-selector-class">.js</span></code></pre>
 
-<p style='text-align: justify;'>
+<p>
   Depois que criar a estrutura do projeto, abra o prompt de comando novamente e digite o comando abaixo (dentro da pasta do projeto) para criar o arquivo <b>package.json</b>:
 </p>
 
 <pre><code class="hljs">&gt; <span class="hljs-built_in">npm</span> init</code></pre>
-<p style='text-align: justify;'>
+<p>
   Em seguida, basta instalar os pacotes necessários para começarmos a desenvolver nosso Cartão Pessoal. Digitem os comandos abaixo:
 </p>
 
@@ -173,7 +173,7 @@
 
 <pre><code class="hljs">&gt; npm install commander <span class="hljs-comment">--save</span></code></pre>
 
-<p style='text-align: justify;'>
+<p>
   Ao fazer isso estaremos instalando como Dependencies, os pacotes: <b>chalk</b>, <b>boxen</b>, <b>commander</b>, e como DevDependencies: <b>Standard</b>:
 </p>
 
@@ -240,7 +240,7 @@
 <span class="hljs-keyword">const</span> output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
 
 <span class="hljs-built_in">console</span>.log(chalk.green(boxen(output, options)));</code></pre>
-<p style='text-align: justify;'>
+<p>
   Agora executaremos o comando abaixo para verificar a versão do npm (nesse momento é muito importante possuir uma conta no site npmjs.org):
 </p>
 
@@ -249,19 +249,19 @@
 <p>Após verificar a versão do npm, vamos executar um outro comando:</p>
 <pre><code class="hljs">&gt; <span class="hljs-built_in">npm</span> adduser</code></pre>
 
-<p style='text-align: justify;'>
+<p>
   E então publicaremos o nosso pacote para o site do npmjs. Para isso, basta executar o comando abaixo:
 </p>
 
 <pre><code class="hljs">&gt; <span class="hljs-built_in">npm</span> publish</code></pre>
 
-<p style='text-align: justify;'>
+<p>
   Depois de publicar, execute o comando a seguir para visualizar o cartão criado:
 </p>
 
 <pre><code class="hljs">&gt; npx glauci<span class="hljs-built_in">a_lemos86</span></code></pre>
 
-<p style='text-align: justify;'>
+<p>
   Se tudo der certo, na janela do prompt aparecerá o seu Cartão Pessoal em NPX, conforme na imagem abaixo (fiz alterações no meu card):
 </p>
 
@@ -270,20 +270,20 @@
 </p>
 
 <p>Simples, não é mesmo?</p>
-<p style='text-align: justify;'>
+<p>
   Se quiserem fazer de maneira colorida, assim como eu, basta acessar meu código no repositório.
 </p>
 
 <h2 id="conclus-o">Conclusão</h2>
-<p style='text-align: justify;'>Vocês podem criar da maneira que acharem melhor. E se quiserem dar uma olhada no código desenvolvido, acessem este <b><a href="https://github.com/glaucia86/glaucia86">link</a></b>.</p>
+<p>Vocês podem criar da maneira que acharem melhor. E se quiserem dar uma olhada no código desenvolvido, acessem este <b><a href="https://github.com/glaucia86/glaucia86">link</a></b>.</p>
 
-<p style='text-align: justify;'>
+<p>
   Caso queiram ver o meu cartão de maneira local em suas máquinas, já está liberado no <b><a href="https://www.npmjs.com/package/glaucia_lemos86">npmjs</a></b>. Basta digitar o seguinte comando:
 </p>
 
 <pre><code class="hljs">&gt; npm install glauci<span class="hljs-built_in">a_lemos86</span></code></pre>
 
-<p style='text-align: justify;'>
+<p>
   Quer contribuir ou ajudar a melhorar esse cartão? Não deixe de abrir issues no repositório, beleza?
 </p>
 

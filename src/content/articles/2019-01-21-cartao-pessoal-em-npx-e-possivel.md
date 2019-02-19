@@ -6,21 +6,21 @@ title: Cartão Pessoal em NPX - É Possível?!
   <img src="https://i.imgsafe.org/27/2779c5a323.png"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   A resposta para a pergunta do título deste artigo é: sim. E teremos um passo a passo ensinando a criar um em NPX.
 </p>
 
-<p style='text-align: justify;'>Como surgiu a ideia?</p>
+<p>Como surgiu a ideia?</p>
 
-<p style='text-align: justify;'>
+<p>
   Essa ideia surgiu de um artigo do meu amigo <b><a href="https://twitter.com/bitandbang">Tierney Cyren</a></b>, que é Senior Cloud Developer Advocate da Microsoft e membro do comité do Node.js Foundation. Recomendo seguir o Tierney no Twitter – de vez em quando ele posta coisas muito bacanas.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Todo crédito a ele, que criou esse  projeto! Graças ao seu trabalho, vários desenvolvedores que o seguem no Twitter começaram a criar os seus próprios NPX Personal Cards. E, claro, eu criei o meu também, como podem ver no começo do artigo.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Querem aprender a criar um parecido? Vamos lá!
 </p>
 
@@ -41,13 +41,13 @@ O que preciso para Desenvolver um Cartão Pessoal em NPX?
 * Standard
 * Commander
 
-<p style='text-align: justify;'>
+<p>
   É muito importante que você – antes de começar a criar seu cartão – crie uma conta pessoal no site do <b><a href="npmjs.com">npmjs.com</a></b>.
 </p>
 
 ## Criando um Cartão Pessoal
 
-<p style='text-align: justify;'>
+<p>
   Vamos ao passo a passo. A primeira coisa que precisamos fazer é criar uma pasta do projeto de acordo com o seu nome do GitHub e digitar os seguintes comandos no prompt de comando (incluindo, claro, o seu nome):
 </p>
 
@@ -71,14 +71,14 @@ O que preciso para Desenvolver um Cartão Pessoal em NPX?
 > touch card.js
 ```
 
-<p style='text-align: justify;'>
+<p>
   Depois que criar a estrutura do projeto, abra o prompt de comando novamente e digite o comando abaixo (dentro da pasta do projeto) para criar o arquivo <b>package.json</b>:
 </p>
 
 ```
 > npm init
 ```
-<p style='text-align: justify;'>
+<p>
   Em seguida, basta instalar os pacotes necessários para começarmos a desenvolver nosso Cartão Pessoal. Digitem os comandos abaixo:
 </p>
 
@@ -98,7 +98,7 @@ O que preciso para Desenvolver um Cartão Pessoal em NPX?
 > npm install commander --save
 ```
 
-<p style='text-align: justify;'>
+<p>
   Ao fazer isso estaremos instalando como Dependencies, os pacotes: <b>chalk</b>, <b>boxen</b>, <b>commander</b>, e como DevDependencies: <b>Standard</b>:
 </p>
 
@@ -172,7 +172,7 @@ const output = heading + newline + newline + working + newline + twittering + ne
 console.log(chalk.green(boxen(output, options)));
 
 ```
-<p style='text-align: justify;'>
+<p>
   Agora executaremos o comando abaixo para verificar a versão do npm (nesse momento é muito importante possuir uma conta no site npmjs.org):
 </p>
 
@@ -186,7 +186,7 @@ Após verificar a versão do npm, vamos executar um outro comando:
 > npm adduser
 ```
 
-<p style='text-align: justify;'>
+<p>
   E então publicaremos o nosso pacote para o site do npmjs. Para isso, basta executar o comando abaixo:
 </p>
 
@@ -194,7 +194,7 @@ Após verificar a versão do npm, vamos executar um outro comando:
 > npm publish
 ```
 
-<p style='text-align: justify;'>
+<p>
   Depois de publicar, execute o comando a seguir para visualizar o cartão criado:
 </p>
 
@@ -202,7 +202,7 @@ Após verificar a versão do npm, vamos executar um outro comando:
 > npx glaucia_lemos86
 ```
 
-<p style='text-align: justify;'>
+<p>
   Se tudo der certo, na janela do prompt aparecerá o seu Cartão Pessoal em NPX, conforme na imagem abaixo (fiz alterações no meu card):
 </p>
 
@@ -212,15 +212,15 @@ Após verificar a versão do npm, vamos executar um outro comando:
 
 Simples, não é mesmo?
 
-<p style='text-align: justify;'>
+<p>
   Se quiserem fazer de maneira colorida, assim como eu, basta acessar meu código no repositório.
 </p>
 
 ## Conclusão
 
-<p style='text-align: justify;'>Vocês podem criar da maneira que acharem melhor. E se quiserem dar uma olhada no código desenvolvido, acessem este <b><a href="https://github.com/glaucia86/glaucia86">link</a></b>.</p>
+<p>Vocês podem criar da maneira que acharem melhor. E se quiserem dar uma olhada no código desenvolvido, acessem este <b><a href="https://github.com/glaucia86/glaucia86">link</a></b>.</p>
 
-<p style='text-align: justify;'>
+<p>
   Caso queiram ver o meu cartão de maneira local em suas máquinas, já está liberado no <b><a href="https://www.npmjs.com/package/glaucia_lemos86">npmjs</a></b>. Basta digitar o seguinte comando:
 </p>
 
@@ -228,7 +228,7 @@ Simples, não é mesmo?
 > npm install glaucia_lemos86
 ```
 
-<p style='text-align: justify;'>
+<p>
   Quer contribuir ou ajudar a melhorar esse cartão? Não deixe de abrir issues no repositório, beleza?
 </p>
 

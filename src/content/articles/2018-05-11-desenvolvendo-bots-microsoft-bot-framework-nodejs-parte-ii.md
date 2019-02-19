@@ -4,11 +4,11 @@ title: Desenvolvendo Bots com Microsoft Bot Framework & Node.Js – Parte 02
 
 Fala, pessoal! Tudo bem?
 
-<p style='text-align: justify;'>
+<p>
   Conforme falado no último artigo, daremos continuidade a sequência de artigos que abordam o desenvolvimento de bots usando o Microsoft Bot Framework & Node.js.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Nesta segunda parte falaremos sobre o uso de ‘Dialogs’, um dos conceitos chave e mais importantes quando se desenvolve um determinado ChatBot.
 </p>
 
@@ -20,15 +20,15 @@ E aí? Vamos embarcar na segunda parte?
 
 ## O que são Dialogs?
 
-<p style='text-align: justify;'>
+<p>
   Assim como no mundo real precisamos ‘dialogar’ com as pessoas para obter uma determinada informação, o mesmo se passa com um Bot.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Porém, no conceito de Bots, ‘dialogs’ nos permitem gerenciar um determinado fluxo de conversação, que nesse caso será entre o Bot com o usuário. E essas conversas são organizadas por ‘dialogs’. Pois é justamente através de um dialog que o seu Bot irá interagir com o usuário.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   E uma das características mais importantes do dialogs são as cascatas de conversação (waterfalls), que seriam uma alternação de diálogos em resposta ao usuário com o Bot. Quando vocês forem analisar os blocos de código de exemplo,observarão que esses waterfalls de dialogs são pequenas funções que têm como objetivo retornar de maneira satisfatória alguma resposta ou informação determinada para o usuário. Por isso que, dentro do mundo dos Bots, saber e entender bem o fluxo de conversação é de suma importância para quem está desenvolvendo um ChatBot.
 </p>
 
@@ -57,13 +57,13 @@ Os principais métodos mais usados num fluxo de conversação de um Bot, são:
 * cancelDialog
 * endConversation
 
-<p style='text-align: justify;'>
+<p>
   Caso queiram obter mais informações a respeito desses métodos, não deixem de olhar a documentação do SDK do Bot Builder (Node.Js) <b><a href="https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-3.0">neste link(v.3)</a></b>. Recomendo darem uma olhada, uma vez que para todo programador a documentação de um SDK é como um dicionário da língua portuguesa. Caso queiramos entender e compreender o que estamos escrevendo, precisamos entender melhor o que cada coisa faz. #ficaadica
 </p>
 
 ## Okay! Bora codar?
 
-<p style='text-align: justify;'>
+<p>
   Sim, claro! Tudo fica mais fácil quando programamos. Abram o VS Code de vocês e escrevam as linhas de código logo abaixo. Em seguida explicarei o que é cada coisa.
 </p>
 
@@ -114,17 +114,17 @@ bot.dialog("/perguntarLugarPreferido", [session => {
 }]);
 ```
 
-<p style='text-align: justify;'>
+<p>
   Vamos entender alguns pontos antes de testarmos esse nosso bot. Notem que, das linhas 30 a 62 já estamos trabalhando com o conceito de waterfalls em nosso fluxo de conversação. Outros pontos muito interessantes a serem observados, são:
 </p>
 
-<p style='text-align: justify;'>
+<p>
   A cada novo fluxo criado, criamos um ‘bot.dialog(‘/)’
   Todas as vezes que o usuário precisa responder algo ao ChatBot, usamos os Prompts.
   Nas linhas 41, 54 e 65 estamos usando os métodos já explicados acima: beginDialog e endDialog. Por que estamos usando? Porque estamos trabalhando com fluxos de conversação. E toda conversa precisa ter início e fim!
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Vamos executar esse código? Para isso, abram o emulator e vejam o resultado – lembrando que antes precisamos executar o nodemon e o arquivo criado!
 </p>
 
@@ -138,17 +138,17 @@ Agora, sim, podemos executar o Emulator!
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/05/cre.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Lindo, não é mesmo? Notem como fica mais fluido o fluxo de conversação do nosso ChatBot! Há muitas outras coisas envolvidas nessa parte do Bot! Caso queiram se inteirar mais a respeito desse assunto, peço que deem uma olhada nos vídeos que ando fazendo sobre o assunto – especialmente as aulas 09 a 11 <b><a href="https://www.youtube.com/watch?v=-pB48tj_9_w">AQUI</a></b>:
 </p>
 
 ## Palavras finais
 
-<p style='text-align: justify;'>
+<p>
   Como falado acima, há muita coisa que podemos aproveitar no fluxo de diálogos dentro de um ChatBot, tornando ele mais fluído e especialmente mais interativo com o nosso usuário final. Peço que deem uma olhada na documentação da Microsoft neste link, e nas vídeo aulas que estou fazendo sobre o assunto.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   No próximo artigo falarei sobre o uso do LUIS. Um serviço cognitivo da Microsoft, que deixará o nosso ChatBot mais inteligente! Nos vemos, pessoal! Até a próxima! 😄😄
 </p>
 

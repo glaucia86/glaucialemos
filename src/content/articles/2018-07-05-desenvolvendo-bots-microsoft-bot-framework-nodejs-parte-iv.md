@@ -2,7 +2,7 @@
 title: Desenvolvendo bots com Microsoft Bot Framework & Node.Js – Parte 04
 ---
 
-<p style='text-align: justify;'>
+<p>
   Enquanto rolava o jogo Brasil x México, eu aproveitei o tempo disponível para falar sobre o LUIS. Então vamos dar continuidade à nossa série!
 </p>
 
@@ -14,11 +14,11 @@ Vamos nessa?
 
 ## Breve resumo
 
-<p style='text-align: justify;'>
+<p>
   Nos últimos artigos, já falamos sobre o desenvolvimento de Bots com Microsoft Bot Framework e com isso, criamos bots simples.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Mas, como mencionado no <b><a href="https://imasters.com.br/desenvolvimento/desenvolvendo-bots-com-microsoft-bot-framework-node-js-parte-03">artigo anterior</a></b>, agora vamos colocar um pouco mais inteligência em nosso Bot, usando justamente um dos <b><a href="https://azure.microsoft.com/pt-br/services/cognitive-services/">Serviços Cognitivos</a></b>.
 </p>
 
@@ -26,15 +26,15 @@ Vamos nessa?
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03141758/AZUURE.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Mas o que seriam os Serviços Cognitivos da Microsoft? O próprio site nos explica o que seria:
 </p>
 
-<p style='text-align: justify;'>
+<p>
   “Turbine aplicativos, sites e bots com algoritmos para que eles vejam, ouçam, falem, entendam e interpretem as necessidades do usuário por meio de métodos naturais de comunicação. Transforme os seus negócios com a inteligência artificial hoje mesmo.”
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Resumindo, é uma coleção de API’s inteligentes que nos permite deixar as nossas aplicações mais interativas e que chega mais ‘próximo’ da linguagem humana.
 </p>
 
@@ -46,7 +46,7 @@ E os principais serviços cognitivos disponíveis na plataforma da Microsoft, s�
 * [Fala](https://azure.microsoft.com/pt-br/services/cognitive-services/directory/speech/)
 * [Pesquisa](https://azure.microsoft.com/pt-br/services/cognitive-services/directory/search/)
 
-<p style='text-align: justify;'>
+<p>
   Nesse artigo, estaremos explorando um dos serviços cognitivos da Microsoft, que nos permite deixar a nossa aplicação compreender melhor a linguagem humana, que é o <b><a href="https://www.luis.ai/home">LUIS</a></b>!
 </p>
 
@@ -56,11 +56,11 @@ E os principais serviços cognitivos disponíveis na plataforma da Microsoft, s�
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03141823/languagge.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   LUIS (Language Understanding Intelligent Service) é um serviço de nuvem, que tem como objetivo fazer com que a interação entre ser humano e computador seja mais simples. O LUIS pode interpretar texto, extrair intenções ou entidades ao mesmo tempo.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   O mais legal disso tudo é que você pode usar o LUIS em diferentes contextos de aplicações:
 </p>
 
@@ -68,7 +68,7 @@ E os principais serviços cognitivos disponíveis na plataforma da Microsoft, s�
 * **IOT Devices**
 * **Commerce Chatbot**
 
-<p style='text-align: justify;'>
+<p>
   Nessa imagem temos um modelo exemplo de uma arquitetura de um Chatbot que usa a API do LUIS:
 </p>
 
@@ -88,7 +88,7 @@ Representa as ações que os usuários querem obter. Ex.: App de viagem: BookFli
 
 Representa as informações mais detalhadas que serão relevantes ao enunciado. Ex.: “Reserve um bilhete para Paris.”
 
-<p style='text-align: justify;'>
+<p>
   Caso queiram saber mais informações detalhadas sobre o LUIS, usem e abusem da documentação neste link.
 </p>
 
@@ -96,7 +96,7 @@ Feito esse pequeno resumo, vamos ao que interessa! Vamos começar a usar o LUIS!
 
 ## Usando o LUIS
 
-<p style='text-align: justify;'>
+<p>
   Para usarmos o LUIS, vamos acessar o site oficial desse <b><a href="https://www.luis.ai/home">Serviço Cognitivo LUIS.ai</a></b> e depois clique em Log in/Sign in (para acessar a página há necessidade de criar uma conta Microsoft de e-mail).
 </p>
 
@@ -104,7 +104,7 @@ Feito esse pequeno resumo, vamos ao que interessa! Vamos começar a usar o LUIS!
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03141911/sss.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Depois que fizer o login, vocês verão a seguinte página abaixo. Cliquem em “Create New App“:
 </p>
 
@@ -112,7 +112,7 @@ Feito esse pequeno resumo, vamos ao que interessa! Vamos começar a usar o LUIS!
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03141932/MY-APSSS.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Depois de clicar em “Create New App“, abrirá uma janela popup como segue a imagem abaixo e depois clique em “Done“:
 </p>
 
@@ -128,26 +128,26 @@ Seguindo esses passos, o site direcionará para a página da aplicação criada:
 
 ## Vamos criar as Intenções!
 
-<p style='text-align: justify;'>
+<p>
   Nas palestras que eu tenho feito sobre uso de Bots com LUIS, eu tenho comentado a importância de sabermos usar cada contexto de palavras de acordo com as intenções e ações para justamente facilitar o LUIS.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Nesta parte, vamos criar as Intents (Intenções) da nossa aplicação. Para isso, vamos adicionar várias intenções. Façam o seguinte:
 </p>
 
-<p style='text-align: justify;'></p>
+<p></p>
 Clique em Intents. Ao fazermos isso, aparecerá uma nova página para adicionarmos as nossas intenções, conforme segue a imagem abaixo:
 
 <p align="center">
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142121/FLIP.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Feito isso, clique agora em “Create new Intent“. É justamente aí que iremos criar as nossas intenções. Abrirá uma nova janela, conforme segue a imagem abaixo, e depois clique em “Done“.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Depois de clicarmos em “Done“, seremos direcionados para uma outra página do LUIS, conforme segue a imagem abaixo:
 </p>
 
@@ -161,17 +161,17 @@ Agora criaremos cada frase que poderá ser usadas dentro das nossas intenções:
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142233/CANCEL.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Notem que são possíveis frases que o usuário poderá usar durante uma determinada solicitação do ChatBot. Sintam-se a vontade para incluir mais intenções aqui. Fica esse exercício para vocês fazerem.
 </p>
 
 ## Definindo a Entities (Entidades)
 
-<p style='text-align: justify;'>
+<p>
   Nas palestras também eu sempre digo que as entities seriam o substantivo principal que estaremos lidando. Por ex.: numa aplicação que lida com pedido de pizza, qual seria a nossa entidade? a Pizza! É de suma importância saber identificar o que é cada um: o que seria a Entidade e o que seriam as Intenções.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Para a nossa aplicação, como estamos lidando com uma Lanchonete, nossa entidade será: ”Lanche’. Depois que definirmos a nossa Entidade, criaremos ela no dashboard na página do LUIS, conforme segue a imagem abaixo:
 </p>
 
@@ -179,11 +179,11 @@ Agora criaremos cada frase que poderá ser usadas dentro das nossas intenções:
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142316/clls.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Feito isso, vamos agora incluir uma Entidade pré-definida. No site do LUIS, podemos ver uma lista de Entidades pré-definidas que podemos usar em nossa aplicação. No nosso caso, usaremos a “DateTime“.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Clique em “Add or remove prebuilt entities” e coloque na label “datetime”. Selecione e clique em “Done“, conforme segue a imagem abaixo:
 </p>
 
@@ -191,13 +191,13 @@ Agora criaremos cada frase que poderá ser usadas dentro das nossas intenções:
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142337/FUTURE.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Agora estamos ‘listos’ e prontos para melhorar os nossos modelos criados no Intents. Vamos prosseguir!!!
 </p>
 
 ## Especificando melhor o nosso Modelo
 
-<p style='text-align: justify;'>
+<p>
   Voltem agora no Intents para melhorarmos nosso modelo da seguinte maneira (incluir mais intenções aqui. Fiz algumas alterações, conforme segue a imagem abaixo):
 </p>
 
@@ -205,7 +205,7 @@ Agora criaremos cada frase que poderá ser usadas dentro das nossas intenções:
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142357/nbg.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Feito isso, agora vamos ‘Treinar’ os nossos Intents. Para isso, cliquem no botão: ‘Train” (localizado no canto esquerdo).
 </p>
 
@@ -213,22 +213,22 @@ Agora criaremos cada frase que poderá ser usadas dentro das nossas intenções:
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142421/PEDIR.jpg"/>  
 </p>
 
-<p style='text-align: justify;'></p>
+<p></p>
 Depois de clicar em ‘Train“, clique em “Publish” e vai abrir a seguinte página, conforme a imagem abaixo:
 
 <p align="center">
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142443/Publisishh.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   É de suma importância que escolham a opção to TimeZone de São Paulo. Notem que, quando for gerar a key, aparecerá uma url e no final dela com o parâmetro -180.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Peguem essa mesma key e guardem, pois iremos precisar para usar na nossa aplicação. Após isso, cliquem em “Publish“.
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Feito! Agora estamos prontos para começar a codificar o nosso Bot com Node.js! Vamos nessa!
 </p>
 
@@ -238,7 +238,7 @@ Depois de clicar em ‘Train“, clique em “Publish” e vai abrir a seguinte 
 
 ## Criando um ChatBot com: Node.Js + LUIS!
 
-<p style='text-align: justify;'>
+<p>
   Agora vou pedir para vocês abrirem o VS Code e criarem a seguinte estrutura da aplicação, conforme a imagem abaixo:
 </p>
 
@@ -246,7 +246,7 @@ Depois de clicar em ‘Train“, clique em “Publish” e vai abrir a seguinte 
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142744/image3.png"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Notem que criei uma nova pasta chamada “parte-4” e dentro dela um arquivo chamado “lanchoneteApp.js“. É justo aí que vamos criar a nossa lógica que ligará com o LUIS. E também criei um outro arquivo “.env“. Esse arquivo é onde estará a url gerada lá na página do LUIS, pois como esse arquivo está listado no .gitignore, quando fizermos o commit da aplicação ele não será enviado ao repositório.
 </p>
 
@@ -363,7 +363,7 @@ server.listen(process.env.port || process.env.PORT || 3978, () => {
 });
 ```
 
-<p style='text-align: justify;'>
+<p>
   E agora incluam a url contida no site do LUIS dentro do arquivo .env. Feito isso, testaremos a nossa aplicação no Bot Emulator!
 </p>
 
@@ -371,7 +371,7 @@ server.listen(process.env.port || process.env.PORT || 3978, () => {
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142804/flipflop.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Beleza! Feito isso, abra o cmder ou prompt comando, vá até o local onde está o arquivo “lanchoneteApp.js” e digite: nodemon lanchoneteApp.js.
 </p>
 
@@ -385,7 +385,7 @@ Vejam como fica a nossa interação com o ChatBot com o pedido da Lanchonete Rio
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142856/hey.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   O pacote “moment” é responsável por fazer a lógica do tratamento de tempo dentro da aplicação.
 </p>
 
@@ -395,11 +395,11 @@ Agora vamos verificar e ver se o nosso pedido irá chegar a tempo:
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03142924/PURPLE-YELLU.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Note que o usuário perguntou que horas chegaria o pedido dele, e com isso o LUIS foi até o endpoint de “Verificar” e retornou a resposta para o usuário. Legal, né?
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Mas, vamos supor que esse pedido esteja demorando de mais e o usuário não queira mais; vamos ver se a intenção criada no LUIS funcionará para o cancelamento de pedido?
 </p>
 
@@ -407,11 +407,11 @@ Agora vamos verificar e ver se o nosso pedido irá chegar a tempo:
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03143316/HIGHTS.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Quando o usuário digitou “cancelar pedido” dentro de um contexto de uma frase, o LUIS automaticamente entendeu que o endpoint era justo de “Cancelar“, e retornou ao usuário a resposta de acordo com o que foi solicitado. Nosso chatbot da Lanchonete Rio Mais está completo e funcional!
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Se vocês notarem, dentro da página do LUIS há uma parte pra analisar todas as inclusões que o usuário está escrevendo. Ou seja, diariamente esse chatbot ficará mais inteligente conforme você for ‘treinando’ ele! E por mais que você não tenha definido nos Intents, o LUIS mostrará qual será a probabilidade que aquela determinada frase digitada pelo usuário pertencerá ao determinado Intent.
 </p>
 
@@ -419,19 +419,19 @@ Agora vamos verificar e ver se o nosso pedido irá chegar a tempo:
   <img src="https://static.imasters.com.br/wp-content/uploads/2018/07/03143344/heey.jpg"/>  
 </p>
 
-<p style='text-align: justify;'>
+<p>
   Muito legal, não é mesmo? Dá para fazer muita coisa legal com o LUIS. Fica a dica para vocês deram uma lida na documentação desse maravilhoso e incrível serviço cognitivo da Microsoft!
 </p>
 
 ## Palavras Finais
 
-<p style='text-align: justify;'>
+<p>
   Estes últimos quatro artigos eu fiz com o objetivo de vocês conhecerem mais o SDK do Bot Framework, que nos permite desenvolver incríveis ChatBots, tanto em Javascript, C#, PHP, Ruby e Python.
 </p>
 
 Lembrando que, a partir dessa semana, estarei de volta dando continuidade às vídeo aulas do Hands on de Bots com Node.Js. <b><a href="https://www.youtube.com/playlist?list=PLb2HQ45KP0Ws3dVMoxliVX5ici53RmiNV">Link da Playlist</a></b>
 
-<p style='text-align: justify;'>
+<p>
   Espero que tenham gostado dessa série de artigos e caso tenham alguma dúvida inerente a algum artigo não hesitem em deixar um Issue no repositório do Github dessa série que se encontra <b><a href="https://github.com/glaucia86/chatbot-nodejs-imasters">aqui</a></b>.
 </p>
 
