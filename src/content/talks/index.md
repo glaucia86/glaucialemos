@@ -52,7 +52,13 @@ image: /images/palestra.jpg
 * **Participantes:** ≈2000
 * **Tema:** Desenvolvendo Aplicações Node.js com Azure - A Nuvem que Escala!
 
-## [Volunteer | Organizer: WoMakersCode Summit Rio - 2019](https://www.sympla.com.br/womakerscode-summit-rio-de-janeiro__442262)
+## [WoMakersCode Summit Rio - 2019](http://bit.ly/womakerscodesummitrio2019)
+* **Quando:** 30/03
+* **Onde:** Rio de Janeiro, RJ - Brasil 
+* **Participantes:** ≈150
+* **Tema:** Onde Já se Vue?!
+
+## [Volunteer | Organizer: WoMakersCode Summit Rio - 2019](http://bit.ly/womakerscodesummitrio2019)
 * **Quando:** 30/03
 * **Onde:** Rio de Janeiro - Brasil 
 * **Participantes:** ≈150
