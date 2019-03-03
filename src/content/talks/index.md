@@ -46,13 +46,25 @@ image: /images/palestra.jpg
 * **Participantes:** ≈1000
 * **Tema:** O Presente e o Futuro do Typescript!
 
+## [Faculdade SATC](http://www.noticias.satc.edu.br/)
+* **Quando:** 24/04
+* **Onde:** Criciúma, SC - Santa Catarina
+* **Participantes:** ≈100
+* **Tema:** ChatBots mais Inteligentes com LUIS, Node.js & Microsoft Bot Framework
+
 ## [MVP Conf LATAM 2019](https://www.mvpconf.com.br)
 * **Quando:** 12-13/04
 * **Onde:** São Paulo, SP - Brasil 
 * **Participantes:** ≈2000
 * **Tema:** Desenvolvendo Aplicações Node.js com Azure - A Nuvem que Escala!
 
-## [Volunteer | Organizer: WoMakersCode Summit Rio - 2019](https://www.sympla.com.br/womakerscode-summit-rio-de-janeiro__442262)
+## [WoMakersCode Summit Rio - 2019](https://womakerscoderiodejaneiro.splashthat.com/)
+* **Quando:** 30/03
+* **Onde:** Rio de Janeiro - Brasil 
+* **Participantes:** ≈150
+* **Tema:** Onde Já se Vue?!
+
+## [Volunteer | Organizer: WoMakersCode Summit Rio - 2019](https://womakerscoderiodejaneiro.splashthat.com/)
 * **Quando:** 30/03
 * **Onde:** Rio de Janeiro - Brasil 
 * **Participantes:** ≈150
