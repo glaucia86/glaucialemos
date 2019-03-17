@@ -9,16 +9,10 @@ image: /images/monitores-02.jpeg
 # Mini Bio
 <blockquote><a href="http://bit.ly/2DN5xFa">My English Resume Here</a></blockquote>
 
-<p>
-  Glaucia Lemos é Software Developer com especialização em .NET & Node.js/Javascript com experiência nacional e
-  internacional em desenvolvimento de sistemas desde pequenas à grandes empresas.
-  Trabalhando com diferentes tecnologias, metodologias, frameworks e linguagens de programação,
-  como: C# .NET, Node.Js, JavaScript, Angular, Vue.Js, ChatBots, AI e entre outros.
-  Atualmente atua como <b><a href="https://bit.ly/2GSYLwI">Microsoft MVP em Developer Technologies</a></b>.
-  Assim sendo, atuando como Evangelista Técnica de novas linguagens de programação,
-  em especial em projetos Open Source. Atua como <b><a href="https://github.com/nodejs/nodejs-pt">Member & Contributor do Node.js
-  Foundation</a></b> realizando contribuições nas traduções do site <b><a href="https://nodejs.org/">Nodejs.org</a></b> para o português.
-  Também atua como: <b><a href="https://codersinrio.com.br/">Community Leader & Tech Speaker do Meetup Coders in Rio</a></b>,
+<p align="justify">
+  Glaucia Lemos é <b>Regional Cloud Advocate Brasil & LATAM 🥑 na Microsoft</b>. Ama realizar contribuições em projetos <b>Open Source</b>. Atua como <b><a href="https://github.com/nodejs/nodejs-pt">Member & Contributor no Node.js
+  Foundation</a></b> e no <b><a href="https://github.com/reactjs">React Community</a></b> realizando contribuições
+  nas traduções do site <b><a href="https://nodejs.org/">Nodejs.org</a></b> e <b><a href="https://reactjs.org/">Reactjs.org</a></b> para   o português.Também atua como: <b><a href="https://codersinrio.com.br/">Community Leader & Tech Speaker do Meetup Coders in Rio</a>       </b>,
   <b><a href="https://imasters.com.br/perfil/glaucialemos/">Technical Author no Portal iMasters</a></b> e
   <b><a href="http://womakerscode.org/">Volunteer & Tech Speaker do WoMakersCode</a></b>.
 </p>
@@ -61,8 +55,8 @@ image: /images/monitores-02.jpeg
 ## [Microsoft MVP](http://bit.ly/2TpZBHL)
 * **Cargo:** Category: Developer Technologies in Open Source Languages
 * **Localização:** Todo Brasil
-* **Período:** Abr 2017 - Atual
-* **Descrição:** <p>Atuando como Tech Evangelist realizando eventos, escrevendo artigos técnicos, live coding e vídeos tutoriais e treinamentos com o objetivo de disseminar o conhecimento no campo de desenvolvimento de programação, especialmente em linguagens open source como o Node.js.</p>
+* **Período:** Abr 2017 - Mar 2019
+* **Descrição:** <p>Atuei como Tech Evangelist realizando eventos, escrevendo artigos técnicos, live coding e vídeos tutoriais e treinamentos com o objetivo de disseminar o conhecimento no campo de desenvolvimento de programação, especialmente em linguagens open source como o Node.js.</p>
 
 ## [Portal iMasters](https://imasters.com.br/perfil/glaucialemos)
 * **Cargo:** Technical Author iMasters
@@ -78,10 +72,30 @@ image: /images/monitores-02.jpeg
 
 # Experiencia Profissional
 
+## [Microsoft](https://www.microsoft.com/pt-br)
+* **Cargo:** Regional Cloud Advocate Brazil & LATAM
+* **Localização:** Global
+* **Período:** Mar 2019 - Atual
+* **Descrição:**
+  
+### Mission:
+
+The mission of the Cloud Advocacy team is to win the hearts and minds of Developers through authenticity, community and technical engagement. The Cloud Advocacy team is first and foremost pivoted on enabling a healthy ecosystem for technical communities to create and build things in the cloud.
+
+### Responsabilities: 
+
++ Create content, videos, and samples from beginner to best practices that demonstrates how to develop, deploy, manage, and scale Azure applications.
++ Champion relevant Azure products and services in your local community at conferences, meetups, coding boot camps, online forums, Twitter, Stack Overflow, Hacker News, and more.
++ Network and build relationships with the top developer thought leaders in your local community and earn their trust and respect for Microsoft technologies.
++ Build relationships with key influencers, foster a healthy technical community, and collect and prioritize product feedback and technical blockers with engineering.
++ Scale your efforts by partnering with the Microsoft field and developers in community programs like Microsoft MVPs, Docker Captains, Oracle Java Champions, etc.
++ Win the hearts and minds of developers by building and/or contributing to key OSS projects and building cool, useful, or productive apps.
++ Use data, experiments, and customer feedback to drive growth in your community.
+
 ## [Zoox Smart Data](https://zooxsmart.com/pt-br/)
 * **Cargo:** Software Developer
 * **Localização:** Rio de Janeiro, RJ - Brasil
-* **Período:** Set 2018 - Atual
+* **Período:** Set 2018 - Dez 2018
 * **Descrição:**<p>Desenvolvimento de diferentes e especialmente inovadores produtos Hoteleiros com a equipe Zoox Labs. Incluindo um aplicativo inovador chamado: Zoox Smart Pass, que é um check-in de auto-atendimento que faz uso da api da AWS de reconhecimento facial. Tecnologias desenvolvidas no projeto: Node.js (Estrutura Koa.js), Angular 6, Typescript, Vue.js, APIs REST, Desenvolvimento Orientado a Testes (TDD), Plataformas Cloud (AWS), Inteligência Artificial usando Reconhecimento Facial, Arquitetura de Microserviços, Controle de Versão via Bitbucket e Metodologia Ágil/Scrum e Jira.</p>
 
 ## [HackDev](https://www.linkedin.com/company/hackdev)
