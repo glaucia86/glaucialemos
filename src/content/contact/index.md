@@ -17,8 +17,8 @@ image: /images/foto-eu-03.jpg
 # Informações Pessoais
 
 * **Nome:** Glaucia Lemos
-* **Empresa:** [HackDev](https://www.linkedin.com/company/hackdev/)
-* **Profissão:** Software Developer | Microsoft MVP in Developer Technologies
+* **Empresa:** [Microsoft](https://www.linkedin.com/company/microsoft/?originalSubdomain=br)
+* **Profissão:** Regional Cloud Advocate Brasil & LATAM
 * **Twitter:** [@glaucia_lemos86](https://twitter.com/glaucia_lemos86)
 * **Medium:** [@glaucia86](https://medium.com/@glaucia86)
 * **Blog/Homepage:** https://code4coders.wordpress.com/
