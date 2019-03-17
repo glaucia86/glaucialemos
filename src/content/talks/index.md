@@ -64,6 +64,12 @@ image: /images/palestra.jpg
 * **Participantes:** ≈150
 * **Tema:** Onde Já se Vue?!
 
+## [Data Day México - 2019](https://sg.com.mx/dataday/)
+* **Quando:** 21/03
+* **Onde:** Cidade do México, CDMX - México 
+* **Participantes:** ≈500
+* **Tema:** Criando chatbots inteligentes com Node.js e NPL
+
 ## [Volunteer | Organizer: WoMakersCode Summit Rio - 2019](http://bit.ly/womakerscodesummitrio2019)
 * **Quando:** 30/03
 * **Onde:** Rio de Janeiro - Brasil 
