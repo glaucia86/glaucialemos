@@ -73,8 +73,8 @@ image: /images/monitores-02.jpeg
 # Experiencia Profissional
 
 ## [Microsoft](https://www.microsoft.com/pt-br)
-* **Cargo:** Regional Cloud Advocate Brazil & LATAM
-* **Localização:** Global
+* **Cargo:** Regional Cloud Advocate LATAM
+* **Localização:** LATAM
 * **Período:** Mar 2019 - Atual
 * **Descrição:**
   
