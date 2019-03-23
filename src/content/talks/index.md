@@ -46,10 +46,10 @@ image: /images/palestra.jpg
 * **Participantes:** ≈1000
 * **Tema:** O Presente e o Futuro do Typescript!
 
-## [Faculdade SATC](http://www.noticias.satc.edu.br/)
+## [Faculdade SATC](https://www.sympla.com.br/chatbots-mais-inteligentes-com-luis-nodejs--microsoft-bot-framework-com-glaucia-lemos__484467)
 * **Quando:** 24/04
 * **Onde:** Criciúma, SC - Santa Catarina
-* **Participantes:** ≈100
+* **Participantes:** ≈150
 * **Tema:** ChatBots mais Inteligentes com LUIS, Node.js & Microsoft Bot Framework
 
 ## [MVP Conf LATAM 2019](https://www.mvpconf.com.br)
