@@ -67,7 +67,7 @@ image: /images/palestra.jpg
 ## [Data Day México - 2019](https://sg.com.mx/dataday/)
 * **Quando:** 21/03
 * **Onde:** Cidade do México, CDMX - México 
-* **Participantes:** ≈400
+* **Participantes:** ≈458
 * **Tema:** Criando Chatbots Inteligentes com NLP & Node.js
 
 ## [Volunteer | Organizer: WoMakersCode Summit Rio - 2019](http://bit.ly/womakerscodesummitrio2019)
