@@ -28,17 +28,6 @@ image: /images/palestra.jpg
 
 # 2019
 
-## [TDC Floripa 2019](http://www.thedevelopersconference.com.br/tdc/2019/florianopolis/trilha-nodejs)
-* **Quando:** 27/04
-* **Onde:** Florianópolis, SC - Santa Catarina
-* **Participantes:** ≈1000
-* **Tema:** Desenvolvendo Aplicações Node.js com Azure - A Nuvem que Escala!
-
-## [TDC Floripa 2019](http://www.thedevelopersconference.com.br/tdc/2019/florianopolis/trilha-tdc4women)
-* **Quando:** 27/04
-* **Onde:** Florianópolis, SC - Santa Catarina
-* **Participantes:** ≈1000
-* **Tema:** Onde Já se Vue?!
 
 ## [TDC Floripa 2019](http://www.thedevelopersconference.com.br/tdc/2019/florianopolis/trilha-javascript)
 * **Quando:** 26/04
