@@ -29,6 +29,12 @@ image: /images/palestra.jpg
 # 2019
 
 
+## [Global Azure Bootcamp 2019 @Venturus](https://www.sympla.com.br/global-azure-bootcamp-2019--venturus__458284)
+* **Quando:** 27/04
+* **Onde:** São Paulo, SP - Campinas
+* **Participantes:** ≈100
+* **Tema:** Criando API's Escaláveis com Node.js & Serverless
+
 ## [TDC Floripa 2019](http://www.thedevelopersconference.com.br/tdc/2019/florianopolis/trilha-javascript)
 * **Quando:** 26/04
 * **Onde:** Florianópolis, SC - Santa Catarina

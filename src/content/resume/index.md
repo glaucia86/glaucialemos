@@ -10,7 +10,7 @@ image: /images/monitores-02.jpeg
 <blockquote><a href="http://bit.ly/2DN5xFa">My English Resume Here</a></blockquote>
 
 <p align="justify">
-  Glaucia Lemos é <b>Regional Cloud Advocate Brasil & LATAM 🥑 na Microsoft</b>. Ama realizar contribuições em projetos <b>Open Source</b>. Atua como <b><a href="https://github.com/nodejs/nodejs-pt">Member & Contributor no Node.js
+  Glaucia Lemos é <b>Regional Cloud Advocate LATAM 🥑 na Microsoft</b>. Ama realizar contribuições em projetos <b>Open Source</b>. Atua como <b><a href="https://github.com/nodejs/nodejs-pt">Member & Contributor no Node.js
   Foundation</a></b> e no <b><a href="https://github.com/reactjs">React Community</a></b> realizando contribuições
   nas traduções do site <b><a href="https://nodejs.org/">Nodejs.org</a></b> e <b><a href="https://reactjs.org/">Reactjs.org</a></b> para   o português.Também atua como: <b><a href="https://codersinrio.com.br/">Community Leader & Tech Speaker do Meetup Coders in Rio</a>       </b>,
   <b><a href="https://imasters.com.br/perfil/glaucialemos/">Technical Author no Portal iMasters</a></b> e
