@@ -29,9 +29,8 @@ E no Brasil, segundo o site **[LoveMondays](https://www.lovemondays.com.br/)**: 
 
 Querem aprender mais sobre Scala? Abaixo, segue uma playlist muito legal em como dar os primeiros passos com Scala:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Zygw4UAxCdg
-" target="_blank"></a>
+<iframe width="300" height="315" src="https://www.youtube.com/watch?list=PLS1QulWo1RIagob5D6kMIAvu7DQC5VTh3&v=LQVDJtfpQU0" frameborder="0" allowfullscreen></iframe>
 
-![IMAGE ALT TEXT HERE](http://www.youtube.com/watch?v=Zygw4UAxCdg)
+![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?list=PLS1QulWo1RIagob5D6kMIAvu7DQC5VTh3&v=LQVDJtfpQU0)
 
 
