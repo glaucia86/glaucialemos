@@ -31,6 +31,6 @@ Querem aprender mais sobre Scala? Abaixo, segue uma playlist muito legal em como
 
 <iframe width="300" height="315" src="https://www.youtube.com/watch?list=PLS1QulWo1RIagob5D6kMIAvu7DQC5VTh3&v=LQVDJtfpQU0" frameborder="0" allowfullscreen></iframe>
 
-![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?list=PLS1QulWo1RIagob5D6kMIAvu7DQC5VTh3&v=LQVDJtfpQU0)
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 
