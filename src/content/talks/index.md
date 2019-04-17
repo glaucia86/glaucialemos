@@ -28,6 +28,59 @@ image: /images/palestra.jpg
 
 # 2019
 
+## [VS Summit 2019](http://vssummit.com.br/)
+* **Quando:** 22/06
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈400
+* **Tema:** Node.js & Kubernetes - Um Casamento Perfeito!
+
+## [VS Summit 2019](http://vssummit.com.br/)
+* **Quando:** 21/06
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈400
+* **Tema:** Criando API's Escaláveis com Node.js & Serverless
+
+## [Workshop - Semana Tecnológica SATC]()
+* **Quando:** 04/06 à 07/06
+* **Onde:** Criciúma, SC - Brasil
+* **Participantes:** ≈50
+* **Tema:** Desenvolvendo um SPA com Vue - Zero to Deploy
+
+## [Workshop - Azure Dev Camp @ Buenos Aires]()
+* **Quando:** 27/05
+* **Onde:** Buenos Aires, BsAs - Argentina
+* **Participantes:** ≈200
+* **Tema:** Fundamentals of Kubernetes on Microsoft Azure
+
+## [Visual Studio 2019 Launch #VS2019](https://www.meetup.com/pt-BR/WoMakersCode/events/259408079/)
+* **Quando:** 25/05
+* **Onde:** Rio de Janeiro, RJ - Brasil
+* **Participantes:** ≈70
+* **Tema:** Ganhando Produtividade com Python e Visual Studio Code
+
+## [Workshop - Universidade Unilasalle]()
+* **Quando:** 09/05
+* **Onde:** Niterói, Rio de Janeiro, RJ - Brasil
+* **Participantes:** ≈70
+* **Tema:** Desenvolvendo um SPA com Vue - Zero to Deploy
+
+## [Workshop - Criando chatbots com o Node.js](https://www.sympla.com.br/global-azure-bootcamp-2019--venturus__458284)
+* **Quando:** 09/05
+* **Onde:** Niterói, RJ - Brasil
+* **Participantes:** ≈70
+* **Tema:** Criando Chatbots com o Node.js & LUIS
+
+## [Workshop - Criando chatbots com o Node.js](https://www.sympla.com.br/global-azure-bootcamp-2019--venturus__458284)
+* **Quando:** 03/05
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈70
+* **Tema:** Criando chatbots com o Node.js & LUIS
+
+## [Azure Dev Camp @ Rio de Janeiro]()
+* **Quando:** 30/04
+* **Onde:** Rio de Janeiro, RJ - Brasil
+* **Participantes:** ≈100
+* **Tema:** Criando API's Escaláveis com Node.js & Serverless
 
 ## [Global Azure Bootcamp 2019 @Venturus](https://www.sympla.com.br/global-azure-bootcamp-2019--venturus__458284)
 * **Quando:** 27/04
@@ -37,13 +90,13 @@ image: /images/palestra.jpg
 
 ## [TDC Floripa 2019](http://www.thedevelopersconference.com.br/tdc/2019/florianopolis/trilha-javascript)
 * **Quando:** 26/04
-* **Onde:** Florianópolis, SC - Santa Catarina
+* **Onde:** Florianópolis, SC - Brasil
 * **Participantes:** ≈1000
 * **Tema:** O Presente e o Futuro do Typescript!
 
 ## [Faculdade SATC](https://www.sympla.com.br/chatbots-mais-inteligentes-com-luis-nodejs--microsoft-bot-framework-com-glaucia-lemos__484467)
 * **Quando:** 24/04
-* **Onde:** Criciúma, SC - Santa Catarina
+* **Onde:** Criciúma, SC - Brasil
 * **Participantes:** ≈150
 * **Tema:** ChatBots mais Inteligentes com LUIS, Node.js & Microsoft Bot Framework
 
@@ -67,7 +120,7 @@ image: /images/palestra.jpg
 
 ## [Volunteer | Organizer: WoMakersCode Summit Rio - 2019](http://bit.ly/womakerscodesummitrio2019)
 * **Quando:** 30/03
-* **Onde:** Rio de Janeiro - Brasil 
+* **Onde:** Rio de Janeiro, RJ - Brasil 
 * **Participantes:** ≈150
 
 ## [GDG Rio](https://www.meetup.com/pt-BR/GDGRioDeJaneiro/events/258718758/)
@@ -119,7 +172,7 @@ image: /images/palestra.jpg
 
 ## [Ativa Investimentos](https://www.sympla.com.br/dotnet-com-tdd-na-pratica__351805)
 * **Quando:** 01/10
-* **Onde:** Rio de Janeiro
+* **Onde:** Rio de Janeiro, RJ - Brasil
 * **Participantes:** ≈10
 * **Tema:** .NET com TDD na Prática
 
