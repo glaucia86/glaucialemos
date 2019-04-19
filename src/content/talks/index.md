@@ -46,7 +46,7 @@ image: /images/palestra.jpg
 * **Participantes:** ≈50
 * **Tema:** Desenvolvendo um SPA com Vue - Zero to Deploy
 
-## [Workshop - Azure Dev Camp @ Buenos Aires]()
+## [Workshop - Azure Dev Camp @ Buenos Aires](https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x6713670abcd)
 * **Quando:** 27/05
 * **Onde:** Buenos Aires, BsAs - Argentina
 * **Participantes:** ≈200
