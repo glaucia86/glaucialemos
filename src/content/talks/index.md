@@ -40,7 +40,7 @@ image: /images/palestra.jpg
 * **Participantes:** ≈400
 * **Tema:** Criando API's Escaláveis com Node.js & Serverless
 
-## [Workshop - Semana Tecnológica SATC]()
+## [Workshop - Semana Tecnológica SATC](https://www1.satc.edu.br/eventos/index.php/inscricoes/evento/sete--2019-5)
 * **Quando:** 04/06 à 07/06
 * **Onde:** Criciúma, SC - Brasil
 * **Participantes:** ≈50
@@ -58,19 +58,7 @@ image: /images/palestra.jpg
 * **Participantes:** ≈70
 * **Tema:** Ganhando Produtividade com Python e Visual Studio Code
 
-## [Workshop - Universidade Unilasalle]()
-* **Quando:** 09/05
-* **Onde:** Niterói, Rio de Janeiro, RJ - Brasil
-* **Participantes:** ≈70
-* **Tema:** Desenvolvendo um SPA com Vue - Zero to Deploy
-
-## [Workshop - Criando chatbots com o Node.js](https://www.sympla.com.br/global-azure-bootcamp-2019--venturus__458284)
-* **Quando:** 09/05
-* **Onde:** Niterói, RJ - Brasil
-* **Participantes:** ≈70
-* **Tema:** Criando Chatbots com o Node.js & LUIS
-
-## [Workshop - Criando chatbots com o Node.js](https://www.sympla.com.br/global-azure-bootcamp-2019--venturus__458284)
+## [Workshop - Criando chatbots com o Node.js @WoMakersCode](https://www.meetup.com/pt-BR/WoMakersCode/events/260439532/)
 * **Quando:** 03/05
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈70
