@@ -28,18 +28,6 @@ image: /images/palestra.jpg
 
 # 2019
 
-## [VS Summit 2019](http://vssummit.com.br/)
-* **Quando:** 22/06
-* **Onde:** São Paulo, SP - Brasil
-* **Participantes:** ≈400
-* **Tema:** Node.js & Kubernetes - Um Casamento Perfeito!
-
-## [VS Summit 2019](http://vssummit.com.br/)
-* **Quando:** 21/06
-* **Onde:** São Paulo, SP - Brasil
-* **Participantes:** ≈400
-* **Tema:** Criando API's Escaláveis com Node.js & Serverless
-
 ## [Workshop - Semana Tecnológica SATC](https://www1.satc.edu.br/eventos/index.php/inscricoes/evento/sete--2019-5)
 * **Quando:** 04/06 à 07/06
 * **Onde:** Criciúma, SC - Brasil
