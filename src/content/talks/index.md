@@ -28,6 +28,11 @@ image: /images/palestra.jpg
 
 # 2019
 
+## [MSP Tech Days](https://www.sympla.com.br/msp-tech-days__520748?fbclid=IwAR0ic9T2a8Wk1SbJ0iG5fQ1WTYvoGUXkJAgxBgA0iHh3P3736rVXq7ZsS14)
+* **Quando:** 01/06
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈300
+* **Tema:** Criando ChatBots Inteligentes com QnA Maker & LUIS
 
 ## [Workshop - Azure Dev Camp @ Buenos Aires](https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x6713670abcd)
 * **Quando:** 27/05
