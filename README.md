@@ -33,7 +33,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 
 ## Executando a Aplicação Localmente: 🚀
 
-1. Instalar os pacotes através do comando:
+1. Instalar os pacotes através do comando abaixo:
 
 ```
 > npm install
