@@ -28,11 +28,6 @@ image: /images/palestra.jpg
 
 # 2019
 
-## [Workshop - Semana Tecnológica SATC](https://www1.satc.edu.br/eventos/index.php/inscricoes/evento/sete--2019-5)
-* **Quando:** 04/06 à 07/06
-* **Onde:** Criciúma, SC - Brasil
-* **Participantes:** ≈50
-* **Tema:** Desenvolvendo um SPA com Vue - Zero to Deploy
 
 ## [Workshop - Azure Dev Camp @ Buenos Aires](https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x6713670abcd)
 * **Quando:** 27/05
