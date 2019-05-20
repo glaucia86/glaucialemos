@@ -29,6 +29,12 @@ image: /images/palestra.jpg
 # 2019
 
 ## [Meetup InovaBra: Workshop]()
+* **Quando:** 24/07
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈25
+* **Tema:** Workshop: Desenvolvimento de Todo-List com MEAN (Mongo, Express, Angular & Node)
+
+## [Meetup InovaBra: Workshop]()
 * **Quando:** 24/06
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈25
