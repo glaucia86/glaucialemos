@@ -28,6 +28,12 @@ image: /images/palestra.jpg
 
 # 2019
 
+## [The Conf](https://www.theconf.club/)
+* **Quando:** 16 e 17/08
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈200
+* **Tema:** Back to the Future - with TypeScript!
+
 ## [Meetup InovaBra: Workshop]()
 * **Quando:** 24/07
 * **Onde:** São Paulo, SP - Brasil
