@@ -28,6 +28,12 @@ image: /images/palestra.jpg
 
 # 2019
 
+## [BrazilJs - Workshop for the Community](https://braziljs.org/conf/)
+* **Quando:** 22
+* **Onde:** Porto Alegre, RS - Brasil
+* **Participantes:** ≈50
+* **Tema:** Desenvolvendo um SPA com Vue - Zero to Deploy
+
 ## [The Conf](https://www.theconf.club/)
 * **Quando:** 16 e 17/08
 * **Onde:** São Paulo, SP - Brasil
