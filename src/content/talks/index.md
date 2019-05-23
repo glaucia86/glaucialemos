@@ -28,6 +28,30 @@ image: /images/palestra.jpg
 
 # 2019
 
+## [Meetup InovaBra: Workshop]()
+* **Quando:** 16/10
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈25
+* **Tema:** Introdução a AKS (Azure Kubernetes Service)
+
+## [Caribbean Developers Conference](https://cdc.dev/)
+* **Quando:** 04/10 - 05/10
+* **Onde:** Punta Cana, Republica Dominicana - Caribe
+* **Participantes:** ≈500
+* **Tema:** Creating Smarter ChatBots with NLP & Node.js
+
+## [Meetup InovaBra: Workshop]()
+* **Quando:** 18/09
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈25
+* **Tema:** Integrando seus projetos com GitHub & Azure DevOps
+
+## [Woman Who Code/Woman Hackaton]()
+* **Quando:** à definir (Setembro)
+* **Onde:** Cidade do México, SP - Brasil
+* **Participantes:** ≈1000
+* **Tema:** 
+
 ## [BrazilJs - Workshop for the Community](https://braziljs.org/conf/)
 * **Quando:** 22/08 - 24/08
 * **Onde:** Porto Alegre, RS - Brasil
