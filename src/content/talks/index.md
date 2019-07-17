@@ -28,11 +28,11 @@ image: /images/palestra.jpg
 
 # 2019
 
-## [Meetup InovaBra: Workshop]()
-* **Quando:** 16/10
-* **Onde:** São Paulo, SP - Brasil
-* **Participantes:** ≈25
-* **Tema:** Introdução a AKS (Azure Kubernetes Service)
+## [MXHacks](https://mxhacks.io/)
+* **Quando:** 21/10 - 27/10
+* **Onde:** Cidade do México, MX - México
+* **Participantes:** ≈1000
+* **Tema:** 
 
 ## [Caribbean Developers Conference](https://cdc.dev/)
 * **Quando:** 04/10 - 05/10
@@ -40,41 +40,41 @@ image: /images/palestra.jpg
 * **Participantes:** ≈500
 * **Tema:** Creating Smarter ChatBots with NLP & Node.js
 
-## [Meetup InovaBra: Workshop]()
-* **Quando:** 18/09
+## [Conferência Bots Brasil 2019](http://conf.botsbrasil.com.br/)
+* **Quando:** 28/09
 * **Onde:** São Paulo, SP - Brasil
-* **Participantes:** ≈25
-* **Tema:** Integrando seus projetos com GitHub & Azure DevOps
-
-## [Woman Who Code/Woman Hackaton]()
-* **Quando:** à definir (Setembro)
-* **Onde:** Cidade do México, SP - Brasil
 * **Participantes:** ≈1000
-* **Tema:** 
+* **Tema:** Crie Chatbot Inteligente em poucos minutos com QnA Maker & LUIS!
 
-## [BrazilJs - Workshop for the Community](https://braziljs.org/conf/)
+## [BrazilJs - Workshop for the Community na UERGS](https://www.meetup.com/pt-BR/Microsoft-Student-Partners-Latam/?_locale=pt-BR)
 * **Quando:** 22/08 - 24/08
 * **Onde:** Porto Alegre, RS - Brasil
 * **Participantes:** ≈50
 * **Tema:** Desenvolvendo um SPA com Vue - Zero to Deploy
 
 ## [The Conf](https://www.theconf.club/)
-* **Quando:** 16 e 17/08
+* **Quando:** 16/08 e 17/08
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈200
 * **Tema:** Back to the Future - with TypeScript!
 
-## [Meetup InovaBra: Workshop]()
-* **Quando:** 24/07
-* **Onde:** São Paulo, SP - Brasil
-* **Participantes:** ≈25
-* **Tema:** Workshop: Desenvolvimento de Todo-List com MEAN (Mongo, Express, Angular & Node)
+## [ServerlessWeek](https://slsweek.netlify.com/)
+* **Quando:** 22/07 - 26/07
+* **Onde:** Remoto - Brasil
+* **Participantes:** ≈500
+* **Tema:** Criando API's Escaláveis com Node.js & Serverless
 
-## [Meetup InovaBra: Workshop]()
-* **Quando:** 24/06
-* **Onde:** São Paulo, SP - Brasil
-* **Participantes:** ≈25
-* **Tema:** Workshop: ChatBots Inteligentes com Node.js & A.I
+## [Hacking de Carreira - Participante](https://www.meetup.com/pt-BR/WoMakersCode/events/261786118/)
+* **Quando:** 13/07
+* **Onde:** Rio de Janeiro, RJ - Brasil
+* **Participantes:** ≈100
+* **Participante do Evento**
+
+## [Webinar: Digital Innovation One](https://www.youtube.com/watch?v=cs6YbAlBYO8&t=3s)
+* **Quando:** 11/07
+* **Onde:** Remoto - Brasil
+* **Participantes:** ≈300
+* **Tema:** Webinar: Onde já se Vue?!
 
 ## [MSP Tech Days](https://www.sympla.com.br/msp-tech-days__520748?fbclid=IwAR0ic9T2a8Wk1SbJ0iG5fQ1WTYvoGUXkJAgxBgA0iHh3P3736rVXq7ZsS14)
 * **Quando:** 01/06
