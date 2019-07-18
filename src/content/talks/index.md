@@ -46,6 +46,12 @@ image: /images/palestra.jpg
 * **Participantes:** ≈1000
 * **Tema:** Crie Chatbot Inteligente em poucos minutos com QnA Maker & LUIS!
 
+## [BrazilJs 2019](https://braziljs.org/conf)
+* **Quando:** 24/08 e 25/08
+* **Onde:** Porto Alegre, RS - Brazil
+* **Participantes:** ≈2000
+* **Tema:** Criando API's Escaláveis com Node.js & Serverless
+
 ## [BrazilJs - Workshop for the Community na UERGS](https://www.meetup.com/pt-BR/Microsoft-Student-Partners-Latam/?_locale=pt-BR)
 * **Quando:** 22/08 - 24/08
 * **Onde:** Porto Alegre, RS - Brasil
@@ -55,14 +61,14 @@ image: /images/palestra.jpg
 ## [The Conf](https://www.theconf.club/)
 * **Quando:** 16/08 e 17/08
 * **Onde:** São Paulo, SP - Brasil
-* **Participantes:** ≈200
+* **Participantes:** ≈500
 * **Tema:** Back to the Future - with TypeScript!
 
 ## [ServerlessWeek](https://slsweek.netlify.com/)
 * **Quando:** 22/07 - 26/07
 * **Onde:** Remoto - Brasil
 * **Participantes:** ≈500
-* **Tema:** Criando API's Escaláveis com Node.js & Serverless
+* **Tema:** Ganhe mais Produtividade Criando Projetos Serverless com Visual Studio Code & Node.js
 
 ## [Hacking de Carreira - Participante](https://www.meetup.com/pt-BR/WoMakersCode/events/261786118/)
 * **Quando:** 13/07
