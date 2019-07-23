@@ -25,7 +25,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 
 ## Recursos Utilizados no Desenvolvimento do Site: 🔥
 
-- Visual Studio Code
+- **[Visual Studio Code](https://code.visualstudio.com/)**
 - Node.js
 - JavaScript
 - Static Site generator: Metalsmith.io
