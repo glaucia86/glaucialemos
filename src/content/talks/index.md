@@ -52,11 +52,17 @@ image: /images/palestra.jpg
 * **Participantes:** ≈2000
 * **Tema:** Criando API's Escaláveis com Node.js & Serverless
 
-## [BrazilJs - Workshop for the Community na UERGS](https://www.meetup.com/pt-BR/Microsoft-Student-Partners-Latam/?_locale=pt-BR)
+## [Brazil Microsoft Tech on the Road @ SENAC](https://www.meetup.com/pt-BR/Microsoft-Student-Partners-Latam/events/263649450/)
 * **Quando:** 22/08 - 24/08
-* **Onde:** Porto Alegre, RS - Brasil
+* **Onde:** Guaíba, RS - Brasil
+* **Participantes:** ≈100
+* **Tema:** Ganhe mais Produtividade Criando Projetos Serverless com Visual Studio Code & Node.js!
+
+## [Brazil Microsoft Tech on the Road @ UERGS](https://www.meetup.com/pt-BR/Microsoft-Student-Partners-Latam/events/262880460/)
+* **Quando:** 22/08 - 24/08
+* **Onde:** Guaíba, RS - Brasil
 * **Participantes:** ≈50
-* **Tema:** Desenvolvendo um SPA com Vue - Zero to Deploy
+* **Tema:** Workshop: Desenvolvendo um SPA com Vue & Azure - Zero to Deploy
 
 ## [The Conf](https://www.theconf.club/)
 * **Quando:** 16/08 e 17/08
@@ -64,11 +70,17 @@ image: /images/palestra.jpg
 * **Participantes:** ≈500
 * **Tema:** Back to the Future - with TypeScript!
 
+## [Semana de Sistemas de Informação - USP ](http://dasiusp.com/)
+* **Quando:** 15/08
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈200
+* **Tema:** Ganhe mais Produtividade Criando Projetos Serverless com Visual Studio Code & Node.js!
+
 ## [ServerlessWeek](https://slsweek.netlify.com/)
 * **Quando:** 22/07 - 26/07
 * **Onde:** Remoto - Brasil
 * **Participantes:** ≈500
-* **Tema:** Ganhe mais Produtividade Criando Projetos Serverless com Visual Studio Code & Node.js
+* **Tema:** Ganhe mais Produtividade Criando Projetos Serverless com Visual Studio Code & Node.js!
 
 ## [Hacking de Carreira - Participante](https://www.meetup.com/pt-BR/WoMakersCode/events/261786118/)
 * **Quando:** 13/07
