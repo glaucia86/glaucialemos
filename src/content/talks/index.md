@@ -46,6 +46,12 @@ image: /images/palestra.jpg
 * **Participantes:** ≈1000
 * **Tema:** Crie Chatbot Inteligente em poucos minutos com QnA Maker & LUIS!
 
+## [SheHacks @USP](https://shehacks.xyz/)
+* **Quando:** 21/09
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈200
+* **Tema:** 
+
 ## [BrazilJs 2019](https://braziljs.org/conf)
 * **Quando:** 24/08 e 25/08
 * **Onde:** Porto Alegre, RS - Brazil
