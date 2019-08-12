@@ -52,6 +52,12 @@ image: /images/palestra.jpg
 * **Participantes:** ≈200
 * **Tema:** 
 
+## [Front-End Day @ Movile]()
+* **Quando:** 26/08
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈100
+* **Tema:** Desenvolvendo Aplicações Node.js com Azure - A Nuvem que Escala!
+
 ## [BrazilJs 2019](https://braziljs.org/conf)
 * **Quando:** 24/08 e 25/08
 * **Onde:** Porto Alegre, RS - Brazil
@@ -68,7 +74,7 @@ image: /images/palestra.jpg
 * **Quando:** 22/08 - 24/08
 * **Onde:** Guaíba, RS - Brasil
 * **Participantes:** ≈50
-* **Tema:** Workshop: Desenvolvendo um SPA com Vue & Azure - Zero to Deploy
+* **Tema:** Workshop: Desenvolvendo um SPA com Vue & Azure - Zero to Deploy!
 
 ## [The Conf](https://www.theconf.club/)
 * **Quando:** 16/08 e 17/08
