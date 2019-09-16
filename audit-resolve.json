@@ -1,0 +1,144 @@
+{
+  "decisions": {
+    "46|metalsmith-watch>tiny-lr>debug>ms": {
+      "decision": "none",
+      "madeAt": 1569018759596,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "118|load-metalsmith-plugins>findup-sync>glob>minimatch": {
+      "decision": "none",
+      "madeAt": 1569019861028,
+      "reason": "package was removed",
+      "expiresAt": 1570229445538
+    },
+    "118|load-metalsmith-plugins>multimatch>minimatch": {
+      "decision": "none",
+      "madeAt": 1569019861028,
+      "reason": "package was removed",
+      "expiresAt": 1570229445538
+    },
+    "118|metalsmith-assets>recursive-readdir>minimatch": {
+      "decision": "none",
+      "madeAt": 1569019277206,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "118|metalsmith-slug>minimatch": {
+      "decision": "none",
+      "madeAt": 1569019277206,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "534|metalsmith-assets>debug": {
+      "decision": "none",
+      "madeAt": 1569019286540,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "534|metalsmith-watch>tiny-lr>debug": {
+      "decision": "none",
+      "madeAt": 1569019286540,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "566|metalsmith-less>joi>hoek": {
+      "decision": "none",
+      "madeAt": 1569019302053,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "566|metalsmith-less>joi>topo>hoek": {
+      "decision": "none",
+      "madeAt": 1569019302053,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "566|metalsmith-less>less>request>hawk>boom>hoek": {
+      "decision": "none",
+      "madeAt": 1569019302053,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "566|metalsmith-less>less>request>hawk>cryptiles>boom>hoek": {
+      "decision": "none",
+      "madeAt": 1569019302053,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "566|metalsmith-less>less>request>hawk>hoek": {
+      "decision": "none",
+      "madeAt": 1569019302053,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "566|metalsmith-less>less>request>hawk>sntp>hoek": {
+      "decision": "none",
+      "madeAt": 1569019302053,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "577|load-metalsmith-plugins>findup-sync>lodash": {
+      "decision": "none",
+      "madeAt": 1569019873181,
+      "reason": "package was removed",
+      "expiresAt": 1570229445538
+    },
+    "577|metalsmith-date-in-filename>lodash": {
+      "decision": "none",
+      "madeAt": 1569019310906,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "577|metalsmith-less>lodash": {
+      "decision": "none",
+      "madeAt": 1569019310906,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "782|load-metalsmith-plugins>findup-sync>lodash": {
+      "decision": "none",
+      "madeAt": 1569019873181,
+      "reason": "package was removed",
+      "expiresAt": 1570229445538
+    },
+    "782|metalsmith-date-in-filename>lodash": {
+      "decision": "none",
+      "madeAt": 1569019310906,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "782|metalsmith-less>lodash": {
+      "decision": "none",
+      "madeAt": 1569019310906,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "1065|load-metalsmith-plugins>findup-sync>lodash": {
+      "decision": "none",
+      "madeAt": 1569019873181,
+      "reason": "package was removed",
+      "expiresAt": 1570229445538
+    },
+    "1065|metalsmith-date-in-filename>lodash": {
+      "decision": "none",
+      "madeAt": 1569019310906,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "1065|metalsmith-less>lodash": {
+      "decision": "none",
+      "madeAt": 1569019310906,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    },
+    "1076|metalsmith-markdown>marked": {
+      "decision": "none",
+      "madeAt": 1569019321710,
+      "reason": "package was removed",
+      "expiresAt": 1570228308624
+    }
+  },
+  "rules": {},
+  "version": 1
+}
