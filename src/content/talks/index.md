@@ -50,7 +50,7 @@ image: /images/palestra.jpg
 * **Quando:** 21/09
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈200
-* **Tema:** 
+* **Tema:** Workshop - Vue.js com Azure
 
 ## [Front-End Day @ Movile]()
 * **Quando:** 26/08
