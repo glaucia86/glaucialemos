@@ -62,7 +62,7 @@ image: /images/palestra.jpg
 * **Quando:** 24/08 e 25/08
 * **Onde:** Porto Alegre, RS - Brazil
 * **Participantes:** ≈2000
-* **Tema:** Criando API's Escaláveis com Node.js & Serverless
+* **Tema:** Criando API's Escaláveis com Node.js & Arquitetura Serverless
 
 ## [Brazil Microsoft Tech on the Road @ SENAC](https://www.meetup.com/pt-BR/Microsoft-Student-Partners-Latam/events/263649450/)
 * **Quando:** 22/08 - 24/08
