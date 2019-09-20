@@ -28,11 +28,23 @@ image: /images/palestra.jpg
 
 # 2019
 
+## [Ignite The Tour - Orlando](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 04/11 - 08/11
+* **Onde:** Orlando, FL - USA
+* **Participantes:** ≈5000
+* **Tema:** Live Coding + Talk: Migrating MEAN App to Azure Functions in few Minutes
+
 ## [MXHacks](https://mxhacks.io/)
 * **Quando:** 21/10 - 27/10
 * **Onde:** Cidade do México, MX - México
 * **Participantes:** ≈1000
-* **Tema:** 
+* **Tema:** Workshop - MEAN com Azure Functions
+
+## [Reactor Meetup in San Francisco](https://developer.microsoft.com/en-us/reactor/)
+* **Quando:** TBD
+* **Onde:** San Francisco, CA - USA
+* **Participantes:** ≈200
+* **Tema:** Back to the Future - with TypeScript!
 
 ## [Caribbean Developers Conference](https://cdc.dev/)
 * **Quando:** 04/10 - 05/10
