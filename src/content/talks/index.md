@@ -22,11 +22,69 @@ image: /images/palestra.jpg
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
 
+- **[Palestras em 2019](#2020)**
 - **[Palestras em 2019](#2019)**
 - **[Palestras em 2018](#2018)**
 - **[Palestras em 2017](#2017)**
 
+# 2020
+
+## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 30/03
+* **Onde:** Toronto, CDMX - México
+* **Participantes:** ≈5000
+* **Tema:** Options for Data in the Cloud
+
+## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 30/03
+* **Onde:** Toronto, CDMX - México
+* **Participantes:** ≈5000
+* **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
+
+## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 30/03
+* **Onde:** Toronto, CDMX - México
+* **Participantes:** ≈5000
+* **Tema:** Options for Building and Running Your App in the Cloud
+
+
+## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 08/01 - 10/10
+* **Onde:** Toronto, TO - Canadá
+* **Participantes:** ≈5000
+* **Tema:** Options for Data in the Cloud
+
+## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 08/01 - 10/10
+* **Onde:** Toronto, TO - Canadá
+* **Participantes:** ≈5000
+* **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
+
+## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 08/01 - 10/10
+* **Onde:** Toronto, TO - Canadá
+* **Participantes:** ≈5000
+* **Tema:** Options for Building and Running Your App in the Cloud
+
 # 2019
+
+## [Ignite The Tour - Sao Paulo](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 12/12 - 14/12
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈5000
+* **Tema:** Options for Data in the Cloud
+
+## [Ignite The Tour - Sao Paulo](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 12/12 - 14/12
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈5000
+* **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
+
+## [Ignite The Tour - Sao Paulo](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 12/12 - 14/12
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈5000
+* **Tema:** Options for Building and Running Your App in the Cloud
 
 ## [Ignite The Tour - Orlando](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 04/11 - 08/11
