@@ -22,7 +22,7 @@ image: /images/palestra.jpg
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
 
-- **[Palestras em 2019](#2020)**
+- **[Palestras em 2020](#2020)**
 - **[Palestras em 2019](#2019)**
 - **[Palestras em 2018](#2018)**
 - **[Palestras em 2017](#2017)**
@@ -46,7 +46,6 @@ image: /images/palestra.jpg
 * **Onde:** Toronto, CDMX - México
 * **Participantes:** ≈5000
 * **Tema:** Options for Building and Running Your App in the Cloud
-
 
 ## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 08/01 - 10/10
