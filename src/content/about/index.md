@@ -9,7 +9,7 @@ image: /images/foto-eu-01.jpg
 
 ## Um Pouco Sobre Mim...
 
-<u><b>Vocês podem ler esse texto e ir escutando as músicas! #ficaadica 😏</b></u>
+<u><b>Vocês podem ler esse texto e ao mesmo tempo escutar as músicas! #ficaadica 😏</b></u>
 
 <audio controls>
 	<source src="/media/fix-you-coldplay.mp3" type="audio/mp3">
