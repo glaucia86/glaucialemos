@@ -47,6 +47,12 @@ image: /images/palestra.jpg
 * **Participantes:** ≈3000
 * **Tema:** Options for Building and Running Your App in the Cloud
 
+## [Codificando Night Weekght Week](https://www.codificandonightweek.com.br/)
+* **Quando:** 30/03
+* **Onde:** Online
+* **Participantes:** ≈500
+* **Tema:** Criando API's Escaláveis com Node.js & Serverless
+
 ## [IEEExMicrosoft: A Tech Evening with Microsoft @ University of Toronto](https://aka.ms/AA6zgk9)
 * **Quando:** 10/01
 * **Onde:** Toronto, TO - Canadá
