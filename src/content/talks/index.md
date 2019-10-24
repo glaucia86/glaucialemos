@@ -94,8 +94,8 @@ image: /images/palestra.jpg
 ## [MXHacks](https://mxhacks.io/)
 * **Quando:** 21/10 - 27/10
 * **Onde:** Cidade do México, MX - México
-* **Participantes:** ≈1000
-* **Tema:** Workshop - MEAN com Azure Functions
+* **Participantes:** ≈50
+* **Tema:** Workshop - Vue.js with Azure!
 
 ## [Reactor Meetup in San Francisco](https://developer.microsoft.com/en-us/reactor/)
 * **Quando:** TBD
