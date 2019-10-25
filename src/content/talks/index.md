@@ -97,12 +97,6 @@ image: /images/palestra.jpg
 * **Participantes:** ≈50
 * **Tema:** Workshop - Vue.js with Azure!
 
-## [Reactor Meetup in San Francisco](https://developer.microsoft.com/en-us/reactor/)
-* **Quando:** TBD
-* **Onde:** San Francisco, CA - USA
-* **Participantes:** ≈200
-* **Tema:** Back to the Future - with TypeScript!
-
 ## [Caribbean Developers Conference](https://cdc.dev/)
 * **Quando:** 04/10 - 05/10
 * **Onde:** Punta Cana, Republica Dominicana - Caribe
