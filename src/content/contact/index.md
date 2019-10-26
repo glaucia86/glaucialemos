@@ -26,6 +26,7 @@ image: /images/foto-eu-03.jpg
 * **Linkedin:** https://www.linkedin.com/in/glaucialemos/
 * **GitHub:** https://github.com/glaucia86/
 * **Twitch.tv:** https://www.twitch.tv/glaucia_lemos86
+* **Dev.to:** https://dev.to/glaucia86 
 * **Localização:** Rio de Janeiro, Brasil
 
 
