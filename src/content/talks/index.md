@@ -32,37 +32,37 @@ image: /images/palestra.jpg
 ## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 30/03
 * **Onde:** Toronto, CDMX - México
-* **Participantes:** ≈5000
+* **Participantes:** ≈3000
 * **Tema:** Options for Data in the Cloud
 
 ## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 30/03
 * **Onde:** Toronto, CDMX - México
-* **Participantes:** ≈5000
+* **Participantes:** ≈3000
 * **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
 
 ## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 30/03
 * **Onde:** Toronto, CDMX - México
-* **Participantes:** ≈5000
+* **Participantes:** ≈3000
 * **Tema:** Options for Building and Running Your App in the Cloud
 
 ## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
-* **Participantes:** ≈5000
+* **Participantes:** ≈3000
 * **Tema:** Options for Data in the Cloud
 
 ## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
-* **Participantes:** ≈5000
+* **Participantes:** ≈3000
 * **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
 
 ## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
-* **Participantes:** ≈5000
+* **Participantes:** ≈3000
 * **Tema:** Options for Building and Running Your App in the Cloud
 
 # 2019
@@ -86,10 +86,16 @@ image: /images/palestra.jpg
 * **Tema:** Options for Building and Running Your App in the Cloud
 
 ## [Ignite The Tour - Orlando](https://www.microsoft.com/en-us/ignite)
-* **Quando:** 04/11 - 08/11
+* **Quando:** 05/11
 * **Onde:** Orlando, FL - USA
 * **Participantes:** ≈5000
-* **Tema:** Live Coding + Talk: Migrating MEAN App to Azure Functions in few Minutes
+* **Tema:** Live Coding + Talk: Migrating MEAN App to Azure Functions in few Minutes!
+
+## [Ignite The Tour - Orlando](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 04/11
+* **Onde:** Orlando, FL - USA
+* **Participantes:** ≈5000
+* **Tema:** Back to the Future - with TypeScript!
 
 ## [MXHacks](https://mxhacks.io/)
 * **Quando:** 21/10 - 27/10
