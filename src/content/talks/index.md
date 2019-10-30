@@ -31,19 +31,19 @@ image: /images/palestra.jpg
 
 ## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 30/03
-* **Onde:** Toronto, CDMX - México
+* **Onde:** Mexico City, CDMX - México
 * **Participantes:** ≈3000
 * **Tema:** Options for Data in the Cloud
 
 ## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 30/03
-* **Onde:** Toronto, CDMX - México
+* **Onde:** Mexico City, CDMX - México
 * **Participantes:** ≈3000
 * **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
 
 ## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 30/03
-* **Onde:** Toronto, CDMX - México
+* **Onde:** Mexico City, CDMX - México
 * **Participantes:** ≈3000
 * **Tema:** Options for Building and Running Your App in the Cloud
 
