@@ -110,7 +110,7 @@ image: /images/monitores-03.jpeg
 ## [Todo List MEAN](https://mean-todo-list-explorandoti.azurewebsites.net/)
 * **Período:** Fev 2019 
 * **Localização:** Remote | Online - Rio de Janeiro, Brasil.
-* **Projeto:** [pt-BR.reactjs.org](https://github.com/reactjs/pt-BR.reactjs.org)
+* **Projeto:** [todo list MEAN - AngularJs](https://github.com/glaucia86/demo-explorando-ti-webinar)
 * **Tecnologias:** `Node.js`, `AngularJs`,`MongoDb`,`Express`, `Bootstrap`,`Azure Web App`,
 `Visual Studio Code`,`CosmosDb`,`GitHub`.
 
