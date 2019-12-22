@@ -47,6 +47,12 @@ image: /images/palestra.jpg
 * **Participantes:** ≈3000
 * **Tema:** Options for Building and Running Your App in the Cloud
 
+## [Metro Toronto .NET User Group](https://aka.ms/AA6wgl4)
+* **Quando:** 09/01
+* **Onde:** Toronto, TO - Canadá
+* **Participantes:** ≈3000
+* **Tema:** Power up with Azure Functions & .NET Core
+
 ## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
@@ -67,23 +73,35 @@ image: /images/palestra.jpg
 
 # 2019
 
-## [Ignite The Tour - Sao Paulo](https://www.microsoft.com/en-us/ignite)
+## [2º Meetup Coders In Rio Girls @ Infnet](https://www.meetup.com/pt-BR/Coders-in-Rio-Girls/events/266497993/)
+* **Quando:** 18/12
+* **Onde:** Rio de Janeiro, RJ - Brasil
+* **Participantes:** ≈40
+* **Tema:** Criando Aplicações Escalaveis com MEAN + Arquitetura Serverless
+
+## [Ignite The Tour - São Paulo](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 12/12 - 14/12
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈5000
 * **Tema:** Options for Data in the Cloud
 
-## [Ignite The Tour - Sao Paulo](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - São Paulo](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 12/12 - 14/12
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈5000
 * **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
 
-## [Ignite The Tour - Sao Paulo](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - São Paulo](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 12/12 - 14/12
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈5000
 * **Tema:** Options for Building and Running Your App in the Cloud
+
+## [Who run the cloud? @ WoMakersCode](https://www.sympla.com.br/javascript--go-na-nuvem__728682)
+* **Quando:** 11/12
+* **Onde:** São Paulo, SP - Brasil
+* **Participantes:** ≈40
+* **Tema:** Criando APIs escaláveis com Node.js & Serverless
 
 ## [Ignite The Tour - Orlando](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 05/11
