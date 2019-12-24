@@ -11,13 +11,13 @@ image: /images/palestra.jpg
 
 <p> 
   Gosto de contribuir em Comunidades Técnicas! Gosto e amo o que faço! Assim que, caso queiram alguma palestra minha ou workshop na sua região, estado ou cidade, vocês poderão ter a mais plena certeza 
-  de que farei com: muito amor e dedicação - visando justamente entregar o melhor conteúdo: tanto para 
+  de que farei com: muito amor e dedicação, visando justamente entregar o melhor conteúdo tanto para 
   a organização do evento e principalmente para o público-alvo. Então, não hesitem em entrar em contato
-  comigo através do meu e-mail: <b><a href="gllemos@microsoft.com">AQUI</a></b>. Estarei entrando em contato com vocês o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em palestrar no seu evento! ❤️❤️❤️
+  comigo através do meu e-mail: <b><a href="gllemos@microsoft.com">AQUI</a></b>. Assim que possível, estarei entrando em contato com vocês o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em palestrar no seu evento! ❤️❤️❤️
 </p>
 
 <p> 
-  Caso desejam saber mais detalhes dos temas que abordo, o que esperar das minhas palestras e as minhas expectativas em relação a participações em eventos técnicos, bastam enviar um Direct Message no meu twitter <b><a href="https://twitter.com/glaucia_lemos86">AQUI</a></b>.
+  Caso desejam saber mais detalhes dos temas que abordo, o que esperar das minhas palestras e as minhas expectativas em relação a participações em eventos técnicos, bastam enviar um Direct Message no meu twitter <b><a href="https://twitter.com/glaucia_lemos86">AQUI</a></b>. Uma ressalva muito importante: **só participo de eventos (como palestrante ou não) que tenham e respeito do Código de Conduta.**
 </p>
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
@@ -112,7 +112,7 @@ image: /images/palestra.jpg
 ## [Ignite The Tour - Orlando](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 04/11
 * **Onde:** Orlando, FL - USA
-* **Participantes:** ≈5000
+* **Participantes:** ≈20.000
 * **Tema:** Back to the Future - with TypeScript!
 
 ## [MXHacks](https://mxhacks.io/)
@@ -148,7 +148,7 @@ image: /images/palestra.jpg
 ## [BrazilJs 2019](https://braziljs.org/conf)
 * **Quando:** 24/08 e 25/08
 * **Onde:** Porto Alegre, RS - Brazil
-* **Participantes:** ≈2000
+* **Participantes:** ≈3000
 * **Tema:** Criando API's Escaláveis com Node.js & Arquitetura Serverless
 
 ## [Brazil Microsoft Tech on the Road @ SENAC](https://www.meetup.com/pt-BR/Microsoft-Student-Partners-Latam/events/263649450/)
