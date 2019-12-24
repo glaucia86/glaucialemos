@@ -18,7 +18,7 @@ image: /images/foto-eu-03.jpg
 
 * **Nome:** Glaucia Lemos
 * **Empresa:** [Microsoft](https://www.linkedin.com/company/microsoft/?originalSubdomain=br)
-* **Profissão:** Regional Cloud Advocate Brasil & Latin America
+* **Profissão:** Cloud Advocate
 * **Twitter:** [@glaucia_lemos86](https://twitter.com/glaucia_lemos86)
 * **Medium:** [@glaucia86](https://medium.com/@glaucia86)
 * **Blog/Homepage:** https://code4coders.wordpress.com/
