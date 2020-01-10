@@ -47,28 +47,34 @@ image: /images/palestra.jpg
 * **Participantes:** ≈3000
 * **Tema:** Options for Building and Running Your App in the Cloud
 
+## [IEEExMicrosoft: A Tech Evening with Microsoft @ University of Toronto](https://aka.ms/AA6zgk9)
+* **Quando:** 10/01
+* **Onde:** Toronto, TO - Canadá
+* **Participantes:** ≈200
+* **Tema:** Career Panel
+
 ## [Metro Toronto .NET User Group](https://aka.ms/AA6wgl4)
 * **Quando:** 09/01
 * **Onde:** Toronto, TO - Canadá
-* **Participantes:** ≈3000
+* **Participantes:** ≈60
 * **Tema:** Power up with Azure Functions & .NET Core
 
 ## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
-* **Participantes:** ≈3000
+* **Participantes:** ≈800
 * **Tema:** Options for Data in the Cloud
 
 ## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
-* **Participantes:** ≈3000
+* **Participantes:** ≈800
 * **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
 
 ## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
-* **Participantes:** ≈3000
+* **Participantes:** ≈800
 * **Tema:** Options for Building and Running Your App in the Cloud
 
 # 2019
