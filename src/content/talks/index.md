@@ -47,8 +47,20 @@ image: /images/palestra.jpg
 * **Participantes:** ≈3000
 * **Tema:** Options for Building and Running Your App in the Cloud
 
-## [Codificando Night Weekght Week](https://www.codificandonightweek.com.br/)
-* **Quando:** 30/03
+## [Stefanini Talk RJ - Mês das Mulheres](https://www.meetup.com/pt-BR/Stefanini-Talks-RJ/events/268779294/)
+* **Quando:** 20/03
+* **Onde:** Online
+* **Participantes:** ≈130
+* **Tema:** Migrando sua App MEAN para Arquitetura Serverless em Minutos
+
+## [Stefanini Talk RJ - Mês das Mulheres](https://www.meetup.com/pt-BR/Stefanini-Talks-RJ/events/268779294/)
+* **Quando:** 28/02
+* **Onde:** Online
+* **Participantes:** ≈400
+* **Tema:** Criando API's Escaláveis com Node.js & Serverless
+
+## [Webinar/Live Unicorntech](https://www.youtube.com/watch?v=3Cc5tKF75C4)
+* **Quando:** 28/02
 * **Onde:** Online
 * **Participantes:** ≈500
 * **Tema:** Criando API's Escaláveis com Node.js & Serverless
