@@ -29,42 +29,6 @@ image: /images/palestra.jpg
 
 # 2020
 
-## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
-* **Quando:** 30/03
-* **Onde:** Mexico City, CDMX - México
-* **Participantes:** ≈3000
-* **Tema:** Options for Data in the Cloud
-
-## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
-* **Quando:** 30/03
-* **Onde:** Mexico City, CDMX - México
-* **Participantes:** ≈3000
-* **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
-
-## [Ignite The Tour - México](https://www.microsoft.com/en-us/ignite)
-* **Quando:** 30/03
-* **Onde:** Mexico City, CDMX - México
-* **Participantes:** ≈3000
-* **Tema:** Options for Building and Running Your App in the Cloud
-
-## [Stefanini Talk RJ - Mês das Mulheres](https://www.meetup.com/pt-BR/Stefanini-Talks-RJ/events/268779294/)
-* **Quando:** 20/03
-* **Onde:** Online
-* **Participantes:** ≈130
-* **Tema:** Migrando sua App MEAN para Arquitetura Serverless em Minutos
-
-## [Stefanini Talk RJ - Mês das Mulheres](https://www.meetup.com/pt-BR/Stefanini-Talks-RJ/events/268779294/)
-* **Quando:** 28/02
-* **Onde:** Online
-* **Participantes:** ≈400
-* **Tema:** Criando API's Escaláveis com Node.js & Serverless
-
-## [Webinar/Live Unicorntech](https://www.youtube.com/watch?v=3Cc5tKF75C4)
-* **Quando:** 28/02
-* **Onde:** Online
-* **Participantes:** ≈500
-* **Tema:** Criando API's Escaláveis com Node.js & Serverless
-
 ## [IEEExMicrosoft: A Tech Evening with Microsoft @ University of Toronto](https://aka.ms/AA6zgk9)
 * **Quando:** 10/01
 * **Onde:** Toronto, TO - Canadá
