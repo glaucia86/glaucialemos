@@ -46,8 +46,8 @@ image: /images/palestra.jpg
 ## [Canal do Youtube - AzureTar](https://www.youtube.com/channel/UC3FS96NUdoR3DwkaDwiLdRw)
 * **Quando:** 22/05
 * **Onde:** Online - Brasil
-* **Participantes:** ≈200
-* **Link Transmissão:** [AQUI]()
+* **Participantes:** ≈30
+* **Link Transmissão:** [AQUI](https://youtu.be/L7CihkZYG3M)
 * **Tema:** Tudo sobre JavaScript na Nuvem da Azure!
 
 ## [SemComp USP São Carlos](https://semcomp.icmc.usp.br/)
