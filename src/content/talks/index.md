@@ -29,6 +29,48 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [International Woman Day Mexico - GDG Cancún]()
+* **Quando:** 29/05
+* **Onde:** Online - México
+* **Participantes:** ≈400
+* **Link Transmissão:** [AQUI](https://www.youtube.com/user/josedlujan1)
+* **Tema:** Obtenga más productividad creando proyectos Serverless con Visual Studio Code & Node.js
+
+## [Canal do Youtube - Impulso](https://www.youtube.com/channel/UChfPxID6Mi1GL3-o4ede6Ew)
+* **Quando:** 27/05
+* **Onde:** Online - Brasil
+* **Participantes:** ≈400
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Criação de Conteúdo de Tecnologia
+
+## [Canal do Youtube - AzureTar](https://www.youtube.com/channel/UC3FS96NUdoR3DwkaDwiLdRw)
+* **Quando:** 22/05
+* **Onde:** Online - Brasil
+* **Participantes:** ≈200
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Tudo sobre JavaScript na Nuvem da Azure!
+
+## [SemComp USP São Carlos](https://semcomp.icmc.usp.br/)
+* **Quando:** 17/05
+* **Onde:** Online - Brasil
+* **Participantes:** ≈200
+* **Link Transmissão:** [AQUI](https://youtu.be/1-1LqpLw6q0)
+* **Tema:** Experiências e vida de uma Pessoa Desenvolvedora na Microsoft
+
+## [CapiConf Online 2020](https://capiconf.com/online)
+* **Quando:** 11/05
+* **Onde:** Online - Brasil
+* **Participantes:** ≈3000
+* **Link Transmissão:** [AQUI](https://www.youtube.com/watch?v=FjdEjAqcBuc&t=3280s)
+* **Tema:** APIs Escaláveis com Node.js & Arquitetura Serverless
+
+## [Global AI On Tour in CDMX](http://globalaicdmx.net/)
+* **Quando:** 08/05
+* **Onde:** Online - México
+* **Participantes:** ≈200
+* **Link Transmissão:** [AQUI](https://youtu.be/cx2nMO0cL3k)
+* **Tema:** Introducción Inteligencia Artificial y Aplicaciones Web en Azure
+
 ## [IEEExMicrosoft: A Tech Evening with Microsoft @ University of Toronto](https://aka.ms/AA6zgk9)
 * **Quando:** 10/01
 * **Onde:** Toronto, TO - Canadá
@@ -41,19 +83,19 @@ image: /images/palestra.jpg
 * **Participantes:** ≈60
 * **Tema:** Power up with Azure Functions & .NET Core
 
-## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - Toronto](https://www.microsoft.com/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
 * **Participantes:** ≈800
 * **Tema:** Options for Data in the Cloud
 
-## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - Toronto](https://www.microsoft.com/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
 * **Participantes:** ≈800
 * **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
 
-## [Ignite The Tour - Toronto](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - Toronto](https://www.microsoft.com/ignite)
 * **Quando:** 08/01 - 10/10
 * **Onde:** Toronto, TO - Canadá
 * **Participantes:** ≈800
@@ -67,19 +109,19 @@ image: /images/palestra.jpg
 * **Participantes:** ≈40
 * **Tema:** Criando Aplicações Escalaveis com MEAN + Arquitetura Serverless
 
-## [Ignite The Tour - São Paulo](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - São Paulo](https://www.microsoft.com/ignite)
 * **Quando:** 12/12 - 14/12
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈5000
 * **Tema:** Options for Data in the Cloud
 
-## [Ignite The Tour - São Paulo](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - São Paulo](https://www.microsoft.com/ignite)
 * **Quando:** 12/12 - 14/12
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈5000
 * **Tema:** 15 Minutes: Azure and the command line – options, tips and tricks
 
-## [Ignite The Tour - São Paulo](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - São Paulo](https://www.microsoft.com/ignite)
 * **Quando:** 12/12 - 14/12
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈5000
@@ -91,13 +133,13 @@ image: /images/palestra.jpg
 * **Participantes:** ≈40
 * **Tema:** Criando APIs escaláveis com Node.js & Serverless
 
-## [Ignite The Tour - Orlando](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - Orlando](https://www.microsoft.com/ignite)
 * **Quando:** 05/11
 * **Onde:** Orlando, FL - USA
 * **Participantes:** ≈5000
 * **Tema:** Live Coding + Talk: Migrating MEAN App to Azure Functions in few Minutes!
 
-## [Ignite The Tour - Orlando](https://www.microsoft.com/en-us/ignite)
+## [Ignite The Tour - Orlando](https://www.microsoft.com/ignite)
 * **Quando:** 04/11
 * **Onde:** Orlando, FL - USA
 * **Participantes:** ≈20.000
@@ -272,7 +314,7 @@ image: /images/palestra.jpg
 * **Participantes:** ≈10
 * **Tema:** 
 
-## [Participante - Microsoft Ignite The Tour 2018 - São Paulo](https://www.microsoft.com/pt-br/ignite-the-tour/)
+## [Participante - Microsoft Ignite The Tour 2018 - São Paulo](https://www.microsoft.com/ignite-the-tour/)
 * **Quando:** 11-12/12
 * **Onde:** São Paulo, SP - Brasil
 * **Participantes:** ≈1000
