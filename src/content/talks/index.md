@@ -36,12 +36,12 @@ image: /images/palestra.jpg
 * **Link Transmissão:** [AQUI](https://www.youtube.com/user/josedlujan1)
 * **Tema:** Obtenga más productividad creando proyectos Serverless con Visual Studio Code & Node.js
 
-## [Canal do Youtube - Impulso](https://www.youtube.com/channel/UChfPxID6Mi1GL3-o4ede6Ew)
+## [Canal do Youtube - Impulso Talks](https://www.youtube.com/channel/UChfPxID6Mi1GL3-o4ede6Ew)
 * **Quando:** 27/05
 * **Onde:** Online - Brasil
-* **Participantes:** ≈400
-* **Link Transmissão:** [AQUI]()
-* **Tema:** Criação de Conteúdo de Tecnologia
+* **Participantes:** ≈800
+* **Link Transmissão:** [AQUI](https://youtu.be/w2Qijqzi02E)
+* **Tema:** Impulso Talks: Como criar conteúdo pode fazer sua carreira decolar?
 
 ## [Canal do Youtube - AzureTar](https://www.youtube.com/channel/UC3FS96NUdoR3DwkaDwiLdRw)
 * **Quando:** 22/05
