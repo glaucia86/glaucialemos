@@ -29,11 +29,11 @@ image: /images/palestra.jpg
 
 # 2020
 
-## [International Woman Day Mexico - GDG Cancún]()
+## [International Woman Day Mexico - GDG Cancún](https://youtu.be/XY6gH6GUujA)
 * **Quando:** 29/05
-* **Onde:** Online - México
-* **Participantes:** ≈400
-* **Link Transmissão:** [AQUI](https://www.youtube.com/user/josedlujan1)
+* **Onde:** Online - Cancún, México
+* **Participantes:** ≈1000
+* **Link Transmissão:** [AQUI](https://youtu.be/XY6gH6GUujA)
 * **Tema:** Obtenga más productividad creando proyectos Serverless con Visual Studio Code & Node.js
 
 ## [Canal do Youtube - Impulso Talks](https://www.youtube.com/channel/UChfPxID6Mi1GL3-o4ede6Ew)
