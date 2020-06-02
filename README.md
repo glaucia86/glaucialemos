@@ -60,7 +60,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 
 Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o ambiente bastam criar uma **[ISSUE](https://github.com/glaucia86/glaucialemos.com/issues)** no repositório que estarei respondendo a todos vocês!! ❤️❤️ ❤️😊
 
-## TODOS v.2 💡
+## 💡 TODOS v.2 
 
 Aqui estarei listando prováveis mudanças futuras que estarei realizando para o v.2 do meu site.
 

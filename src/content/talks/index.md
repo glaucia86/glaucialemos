@@ -29,6 +29,20 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [CloudOuest Virtual Conference](https://cloudouest2020.virtualconference.com/)
+* **Quando:** 18/06
+* **Onde:** Online - Paris, France
+* **Participantes:** ≈500
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Nitro Workshop
+
+## [Live Streaming on Microsoft Developer Twitch.tv]()
+* **Quando:** 17/06
+* **Onde:** Online - USA
+* **Participantes:** ≈500
+* **Link Transmissão:** [AQUI]()
+* **Tema:** 
+
 ## [International Woman Day Mexico - GDG Cancún](https://youtu.be/XY6gH6GUujA)
 * **Quando:** 29/05
 * **Onde:** Online - Cancún, México
