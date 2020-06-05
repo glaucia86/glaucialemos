@@ -27,14 +27,14 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 * Padronização de Código com EsLint
 * Entre outros fatores...
 
-## Recursos Utilizados no Desenvolvimento do Site 🔥
+## 🔥 Recursos Utilizados no Desenvolvimento do Site 
 
 - **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=glaucialemospersonalwebsite-github-gllemos)**
 - **[Node.js](https://nodejs.org/en/)**
 - **[Static Site generator: Metalsmith.io](https://metalsmith.io/)**
 - Hospedado no Netlify;
 
-## Executando a Aplicação Localmente 🚀
+## 🚀 Executando a Aplicação Localmente 
 
 1. Instalar os pacotes através do comando abaixo:
 
@@ -56,7 +56,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 
 4. Após isso, abrir o browser em **localhost:8000**
 
-## Dúvidas?! 🚩
+## 🚩 Dúvidas?! 
 
 Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o ambiente bastam criar uma **[ISSUE](https://github.com/glaucia86/glaucialemos.com/issues)** no repositório que estarei respondendo a todos vocês!! ❤️❤️ ❤️😊
 
