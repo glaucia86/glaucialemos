@@ -11,8 +11,8 @@
 # My Personal Website: [glaucialemos.com](https://glaucialemos.netlify.com/) v.1
 
 <p align="center">
-  <img src="https://s7.gifyu.com/images/site-glaucia.gif" alt="site-glaucia.gif" border="0" />
-<p>
+  <img src="./media/site-glaucia.gif" alt="Personal Website Glaucia Lemos" width="100%">
+</p>
 
 Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com](https://glaucialemos.netlify.com/)**.
 Esse projeto foi baseado em dois outros projetos:
