@@ -10,7 +10,7 @@
 
 # My Personal Website: [glaucialemos.com](https://glaucialemos.netlify.com/) v.1
 
-![site-glaucia.gif](https://s7.gifyu.com/images/site-glaucia.gif)
+[![site-glaucia.md.gif](https://s7.gifyu.com/images/site-glaucia.md.gif)](https://gifyu.com/image/u7Qz)
 
 Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com](https://glaucialemos.netlify.com/)**.
 Esse projeto foi baseado em dois outros projetos:
