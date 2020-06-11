@@ -10,6 +10,8 @@
 
 # My Personal Website: [glaucialemos.com](https://glaucialemos.netlify.com/) v.1
 
+[![site-glaucia.gif](https://s7.gifyu.com/images/site-glaucia.gif)](https://gifyu.com/image/u7Qz)
+
 Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com](https://glaucialemos.netlify.com/)**.
 Esse projeto foi baseado em dois outros projetos:
 
@@ -23,15 +25,14 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 * Padronização de Código com EsLint
 * Entre outros fatores...
 
-## Recursos Utilizados no Desenvolvimento do Site: 🔥
+## Recursos Utilizados no Desenvolvimento do Site 🔥
 
-- **[Visual Studio Code](https://code.visualstudio.com/)**
-- Node.js
-- JavaScript
-- Static Site generator: Metalsmith.io
+- **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=glaucialemospersonalwebsite-github-gllemos)**
+- **[Node.js](https://nodejs.org/en/)**
+- **[Static Site generator: Metalsmith.io](https://metalsmith.io/)**
 - Hospedado no Netlify;
 
-## Executando a Aplicação Localmente: 🚀
+## Executando a Aplicação Localmente 🚀
 
 1. Instalar os pacotes através do comando abaixo:
 
@@ -67,6 +68,7 @@ Aqui estarei listando prováveis mudanças futuras que estarei realizando para o
 * [ ] Criar formulário na página 'Entre em Contato'
 * [ ] Inclusão de ícones de redes sociais na página 'Entre em Contato'
 * [ ] Desenvolver Testes no projeto.
+* [ ] Realizar migração para o Static Web Apps
 
 Se tiverem alguma sugestão a fazer... bastam incluir na Issue que criei **[AQUI](https://github.com/glaucia86/glaucialemos/issues/2)**
 
