@@ -66,11 +66,7 @@ Aqui estarei listando prováveis mudanças futuras que estarei realizando para o
 
 * [ ] Comprar domínio .com
 * [ ] Internacionalização do Site: Inglês & Espanhol
-* [ ] Criar botão Up (para páginas mais extensas)
-* [ ] Criar formulário na página 'Entre em Contato'
-* [ ] Inclusão de ícones de redes sociais na página 'Entre em Contato'
-* [ ] Desenvolver Testes no projeto.
-* [ ] Realizar migração para o Static Web Apps
+* [ ] Realizar migração para o Azure Static Web Apps + GitHub Actions
 
-Se tiverem alguma sugestão a fazer... bastam incluir na Issue que criei **[AQUI](https://github.com/glaucia86/glaucialemos/issues/2)**
+Se tiverem amis alguma sugestão a fazer... bastam incluir na Issue que criei **[AQUI](https://github.com/glaucia86/glaucialemos/issues/2)** que estarei lendo assim que possível!
 
