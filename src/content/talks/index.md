@@ -17,7 +17,7 @@ image: /images/palestra.jpg
 </p>
 
 <p> 
-  Caso desejam saber mais detalhes dos temas que abordo, o que esperar das minhas palestras e as minhas expectativas em relação a participações em eventos técnicos, bastam enviar um Direct Message no meu twitter <b><a href="https://twitter.com/glaucia_lemos86">AQUI</a></b>. Uma ressalva muito importante: **só participo de eventos (como palestrante ou não) que tenham e respeito do Código de Conduta.**
+  Caso desejam saber mais detalhes dos temas que abordo, o que esperar das minhas palestras e as minhas expectativas em relação a participações em eventos técnicos, bastam enviar um Direct Message no meu twitter <b><a href="https://twitter.com/glaucia_lemos86">AQUI</a></b>. Uma ressalva muito importante: <b>só participo de eventos (como palestrante ou não) que tenham e respeitam o Código de Conduta.</b>
 </p>
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
