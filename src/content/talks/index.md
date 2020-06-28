@@ -29,6 +29,13 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [Hacking de Carreira 2020 - WoMakersCode](https://womakerscode.org/carreira)
+* **Quando:** 24/06
+* **Onde:** Online - Rio de Janeiro, Brazil
+* **Participantes:** ≈800
+* **Link Transmissão:** [AQUI](https://youtu.be/1BZxSzxzSTw)
+* **Tema:** Workshop MEAN & Serverless
+
 ## [CloudOuest Virtual Conference](https://cloudouest2020.virtualconference.com/)
 * **Quando:** 18/06
 * **Onde:** Online - Paris, France
