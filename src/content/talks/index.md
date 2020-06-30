@@ -36,12 +36,12 @@ image: /images/palestra.jpg
 * **Link Transmissão:** [AQUI]()
 * **Tema:** Nitro Workshop
 
-## [Live Streaming on Microsoft Developer Twitch.tv]()
+## [Live Streaming on Microsoft Developer Twitch.tv](https://youtu.be/itsXSyqO0qM)
 * **Quando:** 17/06
-* **Onde:** Online - USA
-* **Participantes:** ≈500
-* **Link Transmissão:** [AQUI]()
-* **Tema:** 
+* **Onde:** Online - LATAM/USA
+* **Participantes:** ≈50
+* **Link Transmissão:** [AQUI](https://youtu.be/itsXSyqO0qM)
+* **Tema:** Don’t Get Lost in Translation: Improve Translation Using Text Analytics API (Spanish)
 
 ## [International Woman Day Mexico - GDG Cancún](https://youtu.be/XY6gH6GUujA)
 * **Quando:** 29/05
