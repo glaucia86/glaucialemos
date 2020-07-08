@@ -1,16 +1,16 @@
 ---
 layout: main.html
 title: Talks
-tagline: Share Knowledge. Tech Talks. Networking. Open Source.
+tagline: Share Knowledge. Tech Talks. Networking. Live Demos.
 image: /images/palestra.jpg
 ---
 
 <p> 
-  Aqui vocês podem encontrar todas as palestras técnicas que já realizei em eventos técnicos, incluso também vídeos tutoriais, webinars e workshops. 
+  Aqui vocês encontrarão todas as palestras que já realizei em eventos técnicos. Incluso também, vídeos tutoriais, webinars e workshops. 
 </p>
 
 <p> 
-  Gosto de contribuir em Comunidades Técnicas! Gosto e amo o que faço! Assim que, caso queiram alguma palestra minha ou workshop na sua região, estado ou cidade, vocês poderão ter a mais plena certeza 
+  Gosto muito de contribuir em Comunidades Técnicas! Gosto e amo o que faço! Assim que, caso queiram alguma palestra minha ou workshop na sua região, estado ou cidade, vocês poderão ter a mais plena certeza 
   de que farei com: muito amor e dedicação, visando justamente entregar o melhor conteúdo tanto para 
   a organização do evento e principalmente para o público-alvo. Então, não hesitem em entrar em contato
   comigo através do meu e-mail: <b><a href="gllemos@microsoft.com">AQUI</a></b>. Assim que possível, estarei entrando em contato com vocês o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em palestrar no seu evento! ❤️❤️❤️
