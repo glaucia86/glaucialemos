@@ -74,11 +74,11 @@ image: /images/monitores-02.jpeg
 * **Cargo:** Cloud Advocate in JavaScript/Node.js/TypeScript
 * **Localização:** Rio de Janeiro, Brasil
 * **Período:** Dez 2019 - Atual
-* **Descrição:**<p>Part of the JavaScript/Node.js in Azure Cloud Advocacy Team with focus primarily on the overall experience of JavaScript developers in Azure.</p>
+* **Descrição:**<p>Part of the JavaScript/Node.js in Azure Cloud Advocacy Team focused primarily in the overall experience of JavaScript/Node.js Developers in Azure.</p>
 
 ### Vision:
 
-Make Microsoft’s Cloud portfolio the default choice for JavaScript developers
+Make Microsoft’s Cloud portfolio the default choice for JavaScript Developers!
 
 ### Mission:
 
@@ -87,8 +87,8 @@ To improve the quality of our JavaScript service offerings in Microsoft’s Clou
 ### Responsabilities:
 
 + Bring a successful Static Web Apps GA​
-+ Launch of world-class comprehensive learning content for JavaScript and Node​
-+ Grow VS Code users & attached GitHub users​
++ Launch of world-class comprehensive learning content for JavaScript and Node​.js
++ Grow Visual Studio Code users & attached GitHub users​
 + Make Docs a welcoming destination for JavaScript developers
 
 ## [Microsoft](https://www.microsoft.com)
