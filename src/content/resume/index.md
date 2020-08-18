@@ -70,8 +70,29 @@ image: /images/monitores-02.jpeg
 
 # Experiencia Profissional
 
-## [Microsoft](https://www.microsoft.com/pt-br)
-* **Cargo:**  Cloud Advocate Latin America
+## [Microsoft](https://www.microsoft.com)
+* **Cargo:** Cloud Advocate in JavaScript/Node.js/TypeScript
+* **Localização:** Rio de Janeiro, Brasil
+* **Período:** Dez 2019 - Atual
+* **Descrição:**<p>Part of the JavaScript/Node.js in Azure Cloud Advocacy Team with focus primarily on the overall experience of JavaScript developers in Azure.</p>
+
+### Vision:
+
+Make Microsoft’s Cloud portfolio the default choice for JavaScript developers
+
+### Mission:
+
+To improve the quality of our JavaScript service offerings in Microsoft’s Cloud offerings through direct product feedback, Community engagement and content that is intentionally aligned with our cloud growth strategy.
+
+### Responsabilities:
+
++ Bring a successful Static Web Apps GA​
++ Launch of world-class comprehensive learning content for JavaScript and Node​
++ Grow VS Code users & attached GitHub users​
++ Make Docs a welcoming destination for JavaScript developers
+
+## [Microsoft](https://www.microsoft.com)
+* **Cargo:**  Regional Cloud Advocate in Latin America
 * **Localização:** Rio de Janeiro, Brasil
 * **Período:** Mar 2019 - Dez 2019
 * **Descrição:**
