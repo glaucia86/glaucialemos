@@ -12,13 +12,11 @@ image: /images/monitores-02.jpeg
 <p align="justify">
   Glaucia Lemos é <b>Cloud Advocate 🥑 na Microsoft</b>. Ama realizar contribuições em projetos <b>Open Source</b>. Atua como <b><a href="https://github.com/nodejs/nodejs-pt">Member & Contributor no Node.js
   Foundation</a></b> e no <b><a href="https://github.com/reactjs">React Community</a></b> realizando contribuições
-  nas traduções do site <b><a href="https://nodejs.org/">Nodejs.org</a></b> e <b><a href="https://reactjs.org/">Reactjs.org</a></b> para   o português.Também atua como: <b><a href="https://codersinrio.com.br/">Community Leader & Tech Speaker do Meetup Coders in Rio</a>       </b>,
-  <b><a href="https://imasters.com.br/perfil/glaucialemos/">Technical Author no Portal iMasters</a></b> e
-  <b><a href="http://womakerscode.org/">Volunteer & Tech Speaker do WoMakersCode</a></b>.
+  nas traduções do site <b><a href="https://nodejs.org/">Nodejs.org</a></b> e <b><a href="https://reactjs.org/">Reactjs.org</a></b> para   o português.Também atua como: <b><a href="http://womakerscode.org/">Volunteer & Tech Speaker do WoMakersCode</a></b>.
 </p>
 
 <p>
-  Aqui seguem as principais informações em contribuições minhas tanto em <b>Comunidades Técnicas</b> e <b>Experiência Profissional</b>. Porém, sintam-se à vontade em ver com mais detalhes todas as minhas experiências por meio do meu perfil no <b><a href="https://www.linkedin.com/in/glaucialemos/">Linkedin</a></b>:
+  Aqui seguem as principais informações em contribuições minhas tanto em <b>Comunidades Técnicas</b> e <b>Experiências Profissionais</b>. Porém, sintam-se à vontade em ver com mais detalhes todas as minhas experiências por meio do meu perfil no <b><a href="https://www.linkedin.com/in/glaucialemos/">Linkedin</a></b>:
 </p>
 
 - **[Iniciativas em Comunidades Técnicas](#iniciativas-em-comunidades-tecnicas)**
@@ -49,7 +47,7 @@ image: /images/monitores-02.jpeg
 ## [Coders in Rio Meetup](https://www.meetup.com/pt-BR/Coders-in-Rio/)
 * **Cargo:** Co-Founder | Community Leader
 * **Localização:** Rio de Janeiro, RJ - Brasil | Online
-* **Período:** Mai 2017 - Atual
+* **Período:** Mai 2017 - Mar 2019
 * **Descrição:** <p>Co-fundadora do grupo Meetup Coders in Rio. Também atuando como Líder da Comunidade Técnica e Palestrante do Meetup Coders in Rio. O principal objetivo é: movimentar ainda mais a Comunidade Técnica aqui no Rio de Janeiro e tornar-se referência para outros grupos de Meetups em Desenvolvimento de T.I. Hoje temos mais de 3000 membros pertencentes a nossa Meetup. Também sou responsável por moderar o grupo, organizar novas meetups e realizar algumas palestras sobre desenvolvimento web.</p>
 
 ## [Microsoft MVP](http://bit.ly/2TpZBHL)
@@ -73,9 +71,9 @@ image: /images/monitores-02.jpeg
 # Experiencia Profissional
 
 ## [Microsoft](https://www.microsoft.com/pt-br)
-* **Cargo:** Regional Cloud Advocate Latin America
+* **Cargo:**  Cloud Advocate Latin America
 * **Localização:** Rio de Janeiro, Brasil
-* **Período:** Mar 2019 - Atual
+* **Período:** Mar 2019 - Dez 2019
 * **Descrição:**
   
 ### Mission:
