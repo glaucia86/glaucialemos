@@ -29,6 +29,13 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [Reactor Brasil - Webinar](https://developer.microsoft.com/pt-br/reactor/Location/S%C3%A3oPaulo)
+* **Quando:** 13/08
+* **Onde:** Online - Rio de Janeiro, Brazil
+* **Participantes:** ≈50
+* **Link Transmissão:** [AQUI](https://youtu.be/9nGwXyyLjQw)
+* **Tema:** Developing Applications with SWA + GitHub Actions
+
 ## [Code Con 2020](https://codecon.dev/)
 * **Quando:** 12/09
 * **Onde:** Online - Rio de Janeiro, Brazil
