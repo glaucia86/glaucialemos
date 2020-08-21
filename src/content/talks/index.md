@@ -36,6 +36,13 @@ image: /images/palestra.jpg
 * **Link Transmissão:** [AQUI]()
 * **Tema:** De Volta para o Futuro - com TypeScript!
 
+## [Front in Sampa 2020](https://www.frontinsampa.com.br/)
+* **Quando:** 18/07
+* **Onde:** Online - Rio de Janeiro, Brazil
+* **Participantes:** ≈4500
+* **Link Transmissão:** [AQUI](https://youtu.be/0qtRQYS4V5A)
+* **Tema:** De Volta para o Futuro - com TypeScript!
+
 ## [Hacking de Carreira 2020 - WoMakersCode](https://womakerscode.org/carreira)
 * **Quando:** 24/06
 * **Onde:** Online - Rio de Janeiro, Brazil
