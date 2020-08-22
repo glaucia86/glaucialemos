@@ -41,7 +41,7 @@ image: /images/palestra.jpg
 * **Onde:** Online - Rio de Janeiro, Brazil
 * **Participantes:** ≈4500
 * **Link Transmissão:** [AQUI](https://youtu.be/0qtRQYS4V5A)
-* **Tema:** De Volta para o Futuro - com TypeScript!
+* **Tema:** Pumping up with the SWA & GitHub Actions!
 
 ## [Hacking de Carreira 2020 - WoMakersCode](https://womakerscode.org/carreira)
 * **Quando:** 24/06
