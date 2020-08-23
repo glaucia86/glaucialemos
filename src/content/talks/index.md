@@ -29,6 +29,13 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [Code Con 2020](https://codecon.dev/)
+* **Quando:** 12/09
+* **Onde:** Online - Rio de Janeiro, Brazil
+* **Participantes:** ≈1000
+* **Link Transmissão:** [AQUI]()
+* **Tema:** De Volta para o Futuro - com TypeScript!
+
 ## [Hacking de Carreira 2020 - WoMakersCode](https://womakerscode.org/carreira)
 * **Quando:** 24/06
 * **Onde:** Online - Rio de Janeiro, Brazil
