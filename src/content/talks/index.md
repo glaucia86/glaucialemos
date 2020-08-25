@@ -36,6 +36,13 @@ image: /images/palestra.jpg
 * **Link Transmissão:** [AQUI](https://www.microsoft.com/en-us/ignite)
 * **Tema:** Learn Sessions for Students
 
+## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
+* **Quando:** 17/09
+* **Onde:** Online - Mexico, Ciudad de Mexico
+* **Participantes:** ≈500
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Pumping up with the SWA & GitHub Actions!
+
 ## [Code Con 2020](https://codecon.dev/)
 * **Quando:** 12/09
 * **Onde:** Online - Rio de Janeiro, Brazil
