@@ -29,6 +29,20 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [Microsoft Ignite](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 22-24/09
+* **Onde:** Online - Worldwide
+* **Participantes:** ≈5000
+* **Link Transmissão:** [AQUI](https://www.microsoft.com/en-us/ignite)
+* **Tema:** Learn Sessions for Students
+
+## [Code Con 2020](https://codecon.dev/)
+* **Quando:** 12/09
+* **Onde:** Online - Rio de Janeiro, Brazil
+* **Participantes:** ≈1000
+* **Link Transmissão:** [AQUI]()
+* **Tema:** De Volta para o Futuro - com TypeScript!
+
 ## [Saga SENAI Nacional Inovação 2020](http://plataforma.sagainovacao.senai.br/)
 * **Quando:** 25/08
 * **Onde:** Online - Rio de Janeiro, Brazil
@@ -42,13 +56,6 @@ image: /images/palestra.jpg
 * **Participantes:** ≈50
 * **Link Transmissão:** [AQUI](https://youtu.be/9nGwXyyLjQw)
 * **Tema:** Developing Applications with SWA + GitHub Actions
-
-## [Code Con 2020](https://codecon.dev/)
-* **Quando:** 12/09
-* **Onde:** Online - Rio de Janeiro, Brazil
-* **Participantes:** ≈1000
-* **Link Transmissão:** [AQUI]()
-* **Tema:** De Volta para o Futuro - com TypeScript!
 
 ## [Front in Sampa 2020](https://www.frontinsampa.com.br/)
 * **Quando:** 18/07
