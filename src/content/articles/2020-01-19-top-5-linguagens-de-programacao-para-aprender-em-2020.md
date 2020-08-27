@@ -1,6 +1,6 @@
 ---
-title: 10 Dicas para se Tornar Ninja em JavaScript!
-tags: webdev, showdev, python, javascript
+title: Top 5 Linguagens de Programação para Aprender em 2020!
+tags: webdev, nodejs, python, javascript
 ---
 
 [![image-1.jpg](https://i.postimg.cc/288F5VHD/image-1.jpg)](https://postimg.cc/fkp02Tn2)
