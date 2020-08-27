@@ -29,6 +29,13 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [Saga SENAI Nacional Inovação 2020](http://plataforma.sagainovacao.senai.br/)
+* **Quando:** 25/08
+* **Onde:** Online - Rio de Janeiro, Brazil
+* **Participantes:** ≈250
+* **Link Transmissão:** [AQUI](https://www.youtube.com/watch?v=HSCyyT6WB-k)
+* **Tema:** Criando ChatBots Inteligentes com NLP + Node.js
+
 ## [Reactor Brasil - Webinar](https://developer.microsoft.com/pt-br/reactor/Location/S%C3%A3oPaulo)
 * **Quando:** 13/08
 * **Onde:** Online - Rio de Janeiro, Brazil
