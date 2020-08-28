@@ -6,7 +6,7 @@ title: 10 Dicas para se Tornar Ninja em JavaScript!
 
 No **[último artigo](https://medium.com/womakerscode/top-5-linguagens-para-2019-28df8aee7d10)**, vimos que JavaScript tem ganhado o coração de muitos desenvolvedores(as) e está em 1° lugar das linguagens de programação que devemos ficar de olho durante o ano de 2019.
 
-E, de fato não é à toa. Pois encontramos JavaScript em diferentes esferas da tecnologia e desenvolvimento: **[Back-End](https://code.visualstudio.com/tutorials/static-website/getting-started?wt.mc_id=devto-blog-gllemos)**, **[Front-End](https://code.visualstudio.com/tutorials/static-website/getting-started?wt.mc_id=devto-blog-gllemos)**, **[Mobile](https://docs.microsoft.com/pt-br/azure/app-service-mobile/app-service-mobile-html-how-to-use-client-library?wt.mc_id=devto-blog-gllemos)**, **[I.A](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/tutorials/javascript-tutorial?wt.mc_id=devto-blog-gllemos)**, **[Machine Learning](https://docs.microsoft.com/learn/browse/?term=machine%20learning&WT.mc_id=devto-blog-gllemos)**, **[Big Data](https://docs.microsoft.com/learn/browse/?term=big%20data&WT.mc_id=devto-blog-gllemos)** e a lista não pára por aqui! Por isso que encontramos tantas vagas de emprego, sejam elas aqui no Brasil ou no exterior caçando sempre algum Dev que saiba programar em JavaScript.
+E, de fato não é à toa. Pois encontramos JavaScript em diferentes esferas da tecnologia e desenvolvimento: **[Back-End](https://code.visualstudio.com/tutorials/static-website/getting-started?wt.mc_id=personal-blog-gllemos)**, **[Front-End](https://code.visualstudio.com/tutorials/static-website/getting-started?wt.mc_id=personal-blog-gllemos)**, **[Mobile](https://docs.microsoft.com/pt-br/azure/app-service-mobile/app-service-mobile-html-how-to-use-client-library?wt.mc_id=personal-blog-gllemos)**, **[I.A](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/tutorials/javascript-tutorial?wt.mc_id=personal-blog-gllemos)**, **[Machine Learning](https://docs.microsoft.com/learn/browse/?term=machine%20learning&WT.mc_id=personal-blog-gllemos)**, **[Big Data](https://docs.microsoft.com/learn/browse/?term=big%20data&WT.mc_id=personal-blog-gllemos)** e a lista não pára por aqui! Por isso que encontramos tantas vagas de emprego, sejam elas aqui no Brasil ou no exterior caçando sempre algum Dev que saiba programar em JavaScript.
 
 Porém, logo vem inúmeras perguntas: 'Como eu posso me tornar ninja em JavaScript? É difícil de aprender? Conseguirei entender JavaScript em pouco tempo? Onde encontrar bons materiais para conseguir ser um(a) excelente desenvolvedor(a) em JavaScript?'
 
@@ -119,7 +119,7 @@ E o melhor lugar para você hospedar os seus projetos pessoais é justamente no 
 
 👉 **[Curso: Git & GitHub para Iniciantes ~ William Justen](https://www.udemy.com/git-e-github-para-iniciantes/)**
 
-👉 **[Criar um site simples usando HTML, CSS e JavaScript](https://docs.microsoft.com/learn/modules/build-simple-website/?WT.mc_id=devto-blog-gllemos)**
+👉 **[Criar um site simples usando HTML, CSS e JavaScript](https://docs.microsoft.com/learn/modules/build-simple-website/?WT.mc_id=personal-blog-gllemos)**
 
 Desenvolver projetos é a melhor maneira de você mostrar ao mundo o que você aprendeu e vai te ajudar também a melhorar cada vez mais as suas habilidades com JavaScript. Sem contar que é a melhor maneira de praticar.
 
@@ -190,7 +190,7 @@ Abaixo estarei listando os principais cursos de: Angular, React & Vue
 
 👉 **[Documentação do Angular](https://angular.io/?source=post_page-----31a963ad17a1----------------------)**
 
-👉**[Aprenda a Depurar uma Aplicação Angular no Vs Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial?WT.mc_id=devto-blog-gllemos)**
+👉**[Aprenda a Depurar uma Aplicação Angular no Vs Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial?WT.mc_id=personal-blog-gllemos)**
 
 
 ### Cursos de React
@@ -199,7 +199,7 @@ Abaixo estarei listando os principais cursos de: Angular, React & Vue
 
 👉 **[Documentação do React](https://reactjs.org/docs/getting-started.html?source=post_page-----31a963ad17a1----------------------)**
 
-👉 **[Aprenda a Depurar uma Aplicação React no Vs Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial?WT.mc_id=devto-blog-gllemos)**
+👉 **[Aprenda a Depurar uma Aplicação React no Vs Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial?WT.mc_id=personal-blog-gllemos)**
 
 ### Cursos de Vue.js 
 
@@ -209,7 +209,7 @@ Abaixo estarei listando os principais cursos de: Angular, React & Vue
 
 👉 **[Documentação do Vue.js](https://br.vuejs.org/v2/guide/?source=post_page-----31a963ad17a1----------------------)**
 
-👉 **[Aprenda a Depurar uma Aplicação Vue no Vs Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial?WT.mc_id=devto-blog-gllemos)**
+👉 **[Aprenda a Depurar uma Aplicação Vue no Vs Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial?WT.mc_id=personal-blog-gllemos)**
 
 ## Dica #10: Apoie Projetos Open Source
 
