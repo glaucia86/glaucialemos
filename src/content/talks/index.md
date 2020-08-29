@@ -29,12 +29,12 @@ image: /images/palestra.jpg
 
 # 2020
 
-## [Microsoft Ignite](https://www.microsoft.com/en-us/ignite)
+## [Microsoft Ignite 2020](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 22-24/09
 * **Onde:** Online - Worldwide
 * **Participantes:** ≈5000
 * **Link Transmissão:** [AQUI](https://www.microsoft.com/en-us/ignite)
-* **Tema:** Learn Sessions for Students
+* **Tema:** The Cloud is More than Just that Thing in the Sky - Learning Zone Session
 
 ## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
 * **Quando:** 17/09
