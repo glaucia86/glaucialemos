@@ -5,7 +5,7 @@ tagline: Some Thoughts & Much More Thoughts!
 image: /images/eu-mar.jpeg
 ---
 
-<blockquote style='text-align: center;' class="manifesto">"Learning to Code is Like Learning to Speak a new Language." ~ Paul Cardune</blockquote>
+<blockquote style='text-align: center;' class="manifesto">"Learning to Code is Like Learning to Speak a new Language." ~ Glaucia  Lemos</blockquote>
 
 <blockquote class="manifesto">
   Particulamente eu amo demais essa frase acima! Pois ela resume o que muito o que as pessoas desenvolvedoras tem que fazer para aprender uma nova linguagem de programação!
