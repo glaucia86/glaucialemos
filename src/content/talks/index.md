@@ -29,6 +29,13 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [Moderating online event - Create:Serverless](http://aka.ms/createserverless)
+* **Quando:** 30/09
+* **Onde:** Online - WorldWide
+* **Participantes:** ≈10000
+* **Link Transmissão:** [AQUI](https://www.youtube.com/channel/UCsMica-v34Irf9KVTh6xx-g)
+* **Tema:** [Moderating chat in different topics about serverless]
+
 ## [DWC - DevBr Women Conference](https://www.sympla.com.br/dwc---devbr-women-conference__963066)
 * **Quando:** 26/09
 * **Onde:** Online - Brazil
