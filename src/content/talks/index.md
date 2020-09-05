@@ -29,6 +29,13 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [DWC - DevBr Women Conference](https://www.sympla.com.br/dwc---devbr-women-conference__963066)
+* **Quando:** 25-26/09
+* **Onde:** Online - Brazil
+* **Participantes:** ≈1000
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Hospedagem de Sites Estáticos Automatizados com SWA & GitHub Actions!
+
 ## [Microsoft Ignite 2020](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 22-24/09
 * **Onde:** Online - Worldwide
