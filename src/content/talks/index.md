@@ -61,7 +61,7 @@ image: /images/palestra.jpg
 * **Quando:** 12/09
 * **Onde:** Online - Rio de Janeiro, Brazil
 * **Participantes:** ≈1000
-* **Link Transmissão:** [AQUI]()
+* **Link Transmissão:** [AQUI](https://www.youtube.com/watch?v=xjQq6u_X1pE)
 * **Tema:** De Volta para o Futuro - com TypeScript!
 
 ## [Saga SENAI Nacional Inovação 2020](http://plataforma.sagainovacao.senai.br/)
