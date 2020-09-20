@@ -29,6 +29,13 @@ image: /images/palestra.jpg
 
 # 2020
 
+## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
+* **Quando:** 11/2020
+* **Onde:** Online - Mexico, Ciudad de Mexico
+* **Participantes:** ≈500
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Pumping up with the SWA & GitHub Actions!
+
 ## [Moderating online event - Create:Serverless](http://aka.ms/createserverless)
 * **Quando:** 30/09
 * **Onde:** Online - WorldWide
@@ -49,13 +56,6 @@ image: /images/palestra.jpg
 * **Participantes:** ≈5000
 * **Link Transmissão:** [AQUI](https://myignite.microsoft.com/sessions/c195ef6a-defa-4b77-abe5-a425d505f736)
 * **Tema:** The Cloud is More than Just that Thing in the Sky - Learning Zone Session
-
-## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
-* **Quando:** 17/09
-* **Onde:** Online - Mexico, Ciudad de Mexico
-* **Participantes:** ≈500
-* **Link Transmissão:** [AQUI]()
-* **Tema:** Pumping up with the SWA & GitHub Actions!
 
 ## [Code Con 2020](https://codecon.dev/)
 * **Quando:** 12/09
