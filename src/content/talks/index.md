@@ -47,7 +47,7 @@ image: /images/palestra.jpg
 * **Quando:** 22-24/09
 * **Onde:** Online - Worldwide
 * **Participantes:** ≈5000
-* **Link Transmissão:** [AQUI](https://www.microsoft.com/en-us/ignite)
+* **Link Transmissão:** [AQUI](https://myignite.microsoft.com/sessions/c195ef6a-defa-4b77-abe5-a425d505f736)
 * **Tema:** The Cloud is More than Just that Thing in the Sky - Learning Zone Session
 
 ## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
