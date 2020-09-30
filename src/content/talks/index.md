@@ -43,6 +43,13 @@ image: /images/palestra.jpg
 * **Link Transmissão:** [AQUI]()
 * **Tema:** Pumping up with the SWA & GitHub Actions!
 
+## [WoMakersCode - Elas no .NET](https://www.meetup.com/pt-BR/WoMakersCode/events/273480485/)
+* **Quando:** 09/10
+* **Onde:** Online - Brazil
+* **Participantes:** ≈500
+* **Link Transmissão:** [AQUI](https://youtu.be/vHIxh37B1aw)
+* **Tema:** Deploy Automático com Aplicações Blazor & Static Web Apps!
+
 ## [Moderating online event - Create:Serverless](http://aka.ms/createserverless)
 * **Quando:** 30/09
 * **Onde:** Online - WorldWide
