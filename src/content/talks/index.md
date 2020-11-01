@@ -37,11 +37,18 @@ image: /images/palestra.jpg
 * **Tema:** Pumping up with the SWA & GitHub Actions!
 
 ## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
-* **Quando:** 11/2020
+* **Quando:** 19/11/2020
 * **Onde:** Online - Mexico, Ciudad de Mexico
 * **Participantes:** ≈500
 * **Link Transmissão:** [AQUI]()
 * **Tema:** Pumping up with the SWA & GitHub Actions!
+
+## [Global Microsoft 365 Developer Bootcamp](https://salmon-water-01c16270f.azurestaticapps.net/)
+* **Quando:** 31/10/2020
+* **Onde:** Online - Brazil
+* **Participantes:** ≈500
+* **Link Transmissão:** [AQUI](https://youtu.be/O65NWuvc3Wc)
+* **Tema:** Workshop Creating Smart Bots using Node + LUIS + Teams
 
 ## [WoMakersCode - Elas no .NET](https://www.meetup.com/pt-BR/WoMakersCode/events/273480485/)
 * **Quando:** 09/10
