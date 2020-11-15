@@ -22,19 +22,15 @@ image: /images/palestra.jpg
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
 
+- **[Palestras em 2021](#2021)**
 - **[Palestras em 2020](#2020)**
 - **[Palestras em 2019](#2019)**
 - **[Palestras em 2018](#2018)**
 - **[Palestras em 2017](#2017)**
 
-# 2020
+# 2021 <TBI>
 
-## [JSConf México 2020](https://jsconf.mx/)
-* **Quando:** 02-04/11/2020
-* **Onde:** Online - Mexico, Ciudad de Mexico
-* **Participantes:** ≈2500
-* **Link Transmissão:** [AQUI]()
-* **Tema:** Pumping up with the SWA & GitHub Actions!
+# 2020
 
 ## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
 * **Quando:** 19/11/2020
