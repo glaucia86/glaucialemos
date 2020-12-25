@@ -29,7 +29,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 
 ## 🔥 Recursos Utilizados no Desenvolvimento do Site 
 
-- **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=glaucialemospersonalwebsite-github-gllemos)**
+- **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-gllemos)**
 - **[Node.js](https://nodejs.org/en/)**
 - **[Static Site generator: Metalsmith.io](https://metalsmith.io/)**
 - Hospedado no Netlify;
