@@ -28,7 +28,21 @@ image: /images/palestra.jpg
 - **[Palestras em 2018](#2018)**
 - **[Palestras em 2017](#2017)**
 
-# 2021 <TBI>
+# 2021
+
+## [The Live Coders presents - International Women's Day Challenge](livecoders.dev/conference)
+* **Quando:** 08/02/2021
+* **Onde:** Online - Globally
+* **Participantes:** ≈5000
+* **Link Transmissão:** [AQUI](https://www.twitch.tv/livecoders)
+* **Tema:** Aprimore suas aplicações com Typescript & Azure Functions.
+
+## [Impulso NetWork](https://www.sympla.com.br/impulso-talks-typescript__1075510)
+* **Quando:** 10/02/2021
+* **Onde:** Online - Brazil
+* **Participantes:** ≈200
+* **Link Transmissão:** [AQUI](https://youtu.be/J9OoXt1dvm8)
+* **Tema:** Aprimore suas aplicações com Typescript & Azure Functions.
 
 # 2020
 
