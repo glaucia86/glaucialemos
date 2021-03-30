@@ -53,7 +53,7 @@ image: /images/foto-eu-01.jpg
   Fica aqui a dica para todos vocês: Nunca. Jamais pensem em desistir daquilo que vocês amam fazer! Se você encontrou aquilo que realmente ama, procure meios de estudar, estudar e estudar para alcançar com seu objetivo. Pois se você ama o que faz, os resultados do seu trabalho virão como consequência.
 </p>
 <p>
-  Hoje, atuo como Software Developer muito feliz e contente no que eu faço. E pretendo continuar essa jornada por muitos e muitos anos! 
+  Hoje, atuo como Software Engineer/Cloud Advocate na Microsoft e estou muito feliz e contente no que eu faço. E pretendo continuar essa jornada por muitos e muitos anos! 
 </p>
 <p>
   Espero que tenham gostado um pouco da história que contei aqui sobre mim. E você? Gostou do que leu aqui? Gostaria de compartilhar? Escreva a sua história <b><a href="https://twitter.com/glaucia_lemos86">AQUI</a></b> que terei o maior prazer em publicar aqui no meu site e fazermos uma corrente motivacional com todos vocês! 😍
