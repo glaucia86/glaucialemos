@@ -30,6 +30,13 @@ image: /images/palestra.jpg
 
 # 2021
 
+## [IWD's WoMakersCode - Interviewer](https://www.meetup.com/pt-BR/WoMakersCode/events/276709445/)
+* **Quando:** 17/03/2021
+* **Onde:** Online
+* **Participantes:** ≈450
+* **Link Transmissão:** [AQUI](https://youtu.be/xMzIOb-Pr7I)
+* **Tema:** Mulher: aprenda, compartilhe e segure minha mão! Entrevista com Gabriela Mayer
+
 ## [IWD's Microsoft Reactor 2021 - Organizer](https://developer.microsoft.com/en-us/reactor/eventregistration/register/13116)
 * **Quando:** 10/03/2021
 * **Onde:** Online - Globally
