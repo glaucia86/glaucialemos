@@ -30,7 +30,7 @@ image: /images/palestra.jpg
 
 # 2021
 
-## [IWD's Microsoft Reactor 2021 [As Organizer]](https://developer.microsoft.com/en-us/reactor/eventregistration/register/13116)
+## [IWD's Microsoft Reactor 2021 - Organizer](https://developer.microsoft.com/en-us/reactor/eventregistration/register/13116)
 * **Quando:** 10/03/2021
 * **Onde:** Online - Globally
 * **Participantes:** ≈150
