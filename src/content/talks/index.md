@@ -30,12 +30,12 @@ image: /images/palestra.jpg
 
 # 2021
 
-## [The Live Coders presents - International Women's Day Challenge](livecoders.dev/conference)
-* **Quando:** 08/02/2021
+## [IWD's Microsoft Reactor 2021 [As Organizer]](https://developer.microsoft.com/en-us/reactor/eventregistration/register/13116)
+* **Quando:** 10/03/2021
 * **Onde:** Online - Globally
-* **Participantes:** ≈5000
-* **Link Transmissão:** [AQUI](https://www.twitch.tv/livecoders)
-* **Tema:** Aprimore suas aplicações com Typescript & Azure Functions.
+* **Participantes:** ≈150
+* **Link Transmissão:** [AQUI](https://youtu.be/RjU8C7-GW_o)
+* **Tema:** Listen, learn, share, and hold my hand! Interview with Gabriela Mayer
 
 ## [Impulso NetWork](https://www.sympla.com.br/impulso-talks-typescript__1075510)
 * **Quando:** 10/02/2021
