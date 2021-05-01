@@ -71,9 +71,9 @@ image: /images/monitores-02.jpeg
 # Experiencia Profissional
 
 ## [Microsoft](https://www.microsoft.com)
-* **Cargo:** Cloud Advocate in JavaScript/Node.js/TypeScript
-* **Localização:** Rio de Janeiro, Brasil
-* **Período:** Dez 2019 - Atual
+* **Cargo:** Cloud Advocate II in JavaScript/Node.js/TypeScript
+* **Localização:** Global Remote - Rio de Janeiro, Brazil
+* **Período:** Dez 2019 - Actual
 * **Descrição:**<p>Part of the JavaScript/Node.js in Azure Cloud Advocacy Team focused primarily in the overall experience of JavaScript/Node.js Developers in Azure.</p>
 
 ### Vision:
@@ -120,12 +120,12 @@ The mission of the Cloud Advocacy team is to win the hearts and minds of Develop
 ## [HackDev](https://www.linkedin.com/company/hackdev)
 * **Cargo:** Software Developer | Founder
 * **Localização:** Rio de Janeiro, RJ - Brasil | Remote
-* **Período:** Abr 2014 - Atual
+* **Período:** Abr 2014 - Mar 2019
 * **Descrição:**<p>Consultoria, Treinamento e Desenvolvimento de Projetos em diferentes linguagens de programação, tais como: MEAN (MongoDb, Express.Js, Angular.Js e Node.js), ASP.NET e ASP.NET CORE, C#, entre outras linguagens de programação. Fornecendo, portanto, consultoria, desenvolvimento web e propondo novas soluções com o uso de boas práticas em desenvolvimento. Projetos que já atuei:</p> 
 
 + Raro Interatividade: 04/2016 - 11/2017;
 + Software 2PC: 11/2017 - 12/2017 (Axa);
-+ Udemy: 11/2017 - Atual;
++ Udemy: 11/2017 - Mar 2019;
 + Livima: 01/2017 - 03/2017;
 + Sete: 10/2017 - 04/2018 (Viceri)
 + ESX: 05/2018 - 08/2018
