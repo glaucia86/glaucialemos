@@ -30,6 +30,20 @@ image: /images/palestra.jpg
 
 # 2021
 
+## [TDC Connections 2021](https://www.meetup.com/pt-BR/WoMakersCode/events/276709445/)
+* **Quando:** 08/06/2021 à 10/06/2021
+* **Onde:** Online
+* **Participantes:** ≈20.000 à 50.000 (On-line)
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Testes Inteligentes, Automatizados e Rápidos em Cross-Browser com Playwright!
+
+## [Microsoft Build 2021](https://mybuild.microsoft.com/home)
+* **Quando:** 25/05/2021 à 27/05/2021
+* **Onde:** Online
+* **Participantes:** ≈100.000 à 300.000 (Digital Event)
+* **Link Transmissão:** [AQUI](https://mybuild.microsoft.com/home)
+* **Tema:** **Dissiminate about the news and updtes about the online event!**
+
 ## [IWD's WoMakersCode - Interviewer](https://www.meetup.com/pt-BR/WoMakersCode/events/276709445/)
 * **Quando:** 17/03/2021
 * **Onde:** Online
