@@ -30,14 +30,6 @@ image: /images/palestra.jpg
 
 # 2021
 
-<<<<<<< HEAD
-## [Microsoft Ignite](https://www.microsoft.com/en-us/ignite)
-* **Quando:** 23/09
-* **Onde:** Online - Worldwide
-* **Participantes:** ≈5000
-* **Link Transmissão:** [AQUI](https://www.microsoft.com/en-us/ignite)
-* **Tema:** The Cloud is More than Just that Thing in the Sky (Spanish)
-=======
 ## [IWD's WoMakersCode - Interviewer](https://www.meetup.com/pt-BR/WoMakersCode/events/276709445/)
 * **Quando:** 17/03/2021
 * **Onde:** Online
@@ -58,9 +50,6 @@ image: /images/palestra.jpg
 * **Participantes:** ≈200
 * **Link Transmissão:** [AQUI](https://youtu.be/J9OoXt1dvm8)
 * **Tema:** Aprimore suas aplicações com Typescript & Azure Functions.
-
-# 2020
->>>>>>> 372c82bbbe9089829bd1d7fef55bbd578a91f097
 
 ## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
 * **Quando:** 19/11/2020
