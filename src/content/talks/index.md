@@ -22,32 +22,93 @@ image: /images/palestra.jpg
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
 
+- **[Palestras em 2021](#2021)**
 - **[Palestras em 2020](#2020)**
 - **[Palestras em 2019](#2019)**
 - **[Palestras em 2018](#2018)**
 - **[Palestras em 2017](#2017)**
 
-# 2020
+# 2021
 
+<<<<<<< HEAD
 ## [Microsoft Ignite](https://www.microsoft.com/en-us/ignite)
 * **Quando:** 23/09
 * **Onde:** Online - Worldwide
 * **Participantes:** ≈5000
 * **Link Transmissão:** [AQUI](https://www.microsoft.com/en-us/ignite)
 * **Tema:** The Cloud is More than Just that Thing in the Sky (Spanish)
+=======
+## [IWD's WoMakersCode - Interviewer](https://www.meetup.com/pt-BR/WoMakersCode/events/276709445/)
+* **Quando:** 17/03/2021
+* **Onde:** Online
+* **Participantes:** ≈450
+* **Link Transmissão:** [AQUI](https://youtu.be/xMzIOb-Pr7I)
+* **Tema:** Mulher: aprenda, compartilhe e segure minha mão! Entrevista com Gabriela Mayer
+
+## [IWD's Microsoft Reactor 2021 - Organizer](https://developer.microsoft.com/en-us/reactor/eventregistration/register/13116)
+* **Quando:** 10/03/2021
+* **Onde:** Online - Globally
+* **Participantes:** ≈150
+* **Link Transmissão:** [AQUI](https://youtu.be/RjU8C7-GW_o)
+* **Tema:** Listen, learn, share, and hold my hand! Interview with Gabriela Mayer
+
+## [Impulso NetWork](https://www.sympla.com.br/impulso-talks-typescript__1075510)
+* **Quando:** 10/02/2021
+* **Onde:** Online - Brazil
+* **Participantes:** ≈200
+* **Link Transmissão:** [AQUI](https://youtu.be/J9OoXt1dvm8)
+* **Tema:** Aprimore suas aplicações com Typescript & Azure Functions.
+
+# 2020
+>>>>>>> 372c82bbbe9089829bd1d7fef55bbd578a91f097
 
 ## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
-* **Quando:** 17/09
+* **Quando:** 19/11/2020
 * **Onde:** Online - Mexico, Ciudad de Mexico
 * **Participantes:** ≈500
 * **Link Transmissão:** [AQUI]()
 * **Tema:** Pumping up with the SWA & GitHub Actions!
 
+## [Global Microsoft 365 Developer Bootcamp](https://salmon-water-01c16270f.azurestaticapps.net/)
+* **Quando:** 31/10/2020
+* **Onde:** Online - Brazil
+* **Participantes:** ≈500
+* **Link Transmissão:** [AQUI](https://youtu.be/O65NWuvc3Wc)
+* **Tema:** Workshop Creating Smart Bots using Node + LUIS + Teams
+
+## [WoMakersCode - Elas no .NET](https://www.meetup.com/pt-BR/WoMakersCode/events/273480485/)
+* **Quando:** 09/10
+* **Onde:** Online - Brazil
+* **Participantes:** ≈500
+* **Link Transmissão:** [AQUI](https://youtu.be/vHIxh37B1aw)
+* **Tema:** Deploy Automático com Aplicações Blazor & Static Web Apps!
+
+## [Moderating online event - Create:Serverless](http://aka.ms/createserverless)
+* **Quando:** 30/09
+* **Onde:** Online - WorldWide
+* **Participantes:** ≈10000
+* **Link Transmissão:** [AQUI](https://www.youtube.com/channel/UCsMica-v34Irf9KVTh6xx-g)
+* **Tema:** [Moderating chat in different topics about serverless]
+
+## [DWC - DevBr Women Conference](https://www.sympla.com.br/dwc---devbr-women-conference__963066)
+* **Quando:** 26/09
+* **Onde:** Online - Brazil
+* **Participantes:** ≈1000
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Hospedagem de Sites Estáticos Automatizados com SWA & GitHub Actions!
+
+## [Microsoft Ignite 2020](https://www.microsoft.com/en-us/ignite)
+* **Quando:** 22-24/09
+* **Onde:** Online - Worldwide
+* **Participantes:** ≈5000
+* **Link Transmissão:** [AQUI](https://myignite.microsoft.com/sessions/c195ef6a-defa-4b77-abe5-a425d505f736)
+* **Tema:** The Cloud is More than Just that Thing in the Sky - Learning Zone Session
+
 ## [Code Con 2020](https://codecon.dev/)
 * **Quando:** 12/09
 * **Onde:** Online - Rio de Janeiro, Brazil
 * **Participantes:** ≈1000
-* **Link Transmissão:** [AQUI]()
+* **Link Transmissão:** [AQUI](https://www.youtube.com/watch?v=xjQq6u_X1pE)
 * **Tema:** De Volta para o Futuro - com TypeScript!
 
 ## [Saga SENAI Nacional Inovação 2020](http://plataforma.sagainovacao.senai.br/)

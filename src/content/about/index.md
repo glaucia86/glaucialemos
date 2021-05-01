@@ -40,10 +40,6 @@ image: /images/foto-eu-01.jpg
   Passaram-se os anos e enfim, em Dezembro de 2013, resolvi mudar a Graduação do curso de Sistemas de Informação para o Tecnólogo em Análise e Desenvolvimento de Sistemas, pois durante o curso, vi que o meu foco estava totalmente direcionado para a Web e até hoje é um dos meus focos! E diante de tanta gente, estava eu na minha formatura e mais 2 alunos (lembram que a turma começou com 46 alunos?! Sim... no final só se formaram 3!) e eu ali... a única mulher graduando e realizando o discurso de formatura e citando ao final a linda frase do Steve Jobs aos formandos de 2013 – FIJ:
 </p>
 <blockquote style='text-align: center;'>”Stay hungry. Stay foolish.” ~ Steve Jobs</blockquote>
-
-<audio controls>
-	<source src="/media/frank-sinatra-my-way.mp3" type="audio/mp3">
-</audio>
 <p>
   Quando se gradua, para nós é apenas um começo e de fato foi. Primeira experiência profissional na área de Desenvolvimento. Primeira experiência profissional e internacional, em Buenos Aires – Argentina. Retorno ao Brasil. Novas experiências profissionais. Primeira palestra técnica dada. Reconhecimento de Contribuições em Comunidades Técnicas. E enfim... chegamos nos dias atuais, em que eu, Glaucia Lemos, posso dizer a todos vocês aqui que, amo e tenho plena paixão pelo faço.
 </p>
@@ -57,8 +53,8 @@ image: /images/foto-eu-01.jpg
   Fica aqui a dica para todos vocês: Nunca. Jamais pensem em desistir daquilo que vocês amam fazer! Se você encontrou aquilo que realmente ama, procure meios de estudar, estudar e estudar para alcançar com seu objetivo. Pois se você ama o que faz, os resultados do seu trabalho virão como consequência.
 </p>
 <p>
-  Hoje, atuo como Software Developer muito feliz e contente no que eu faço. E pretendo continuar essa jornada por muitos e muitos anos! 
+  Hoje, atuo como Software Engineer/Cloud Advocate na Microsoft e estou muito feliz e contente no que eu faço. E pretendo continuar essa jornada por muitos e muitos anos! 
 </p>
 <p>
-  Espero que tenham gostado um pouco da história que contei aqui sobre mim. E você? Gostou do que leu aqui? Gostaria de compartilhar? Escreva a sua história <b><a href="https://www.facebook.com/glaucia.lemos.1029">AQUI</a></b> que terei o maior prazer em publicar aqui no meu site e fazermos uma corrente motivacional com todos vocês! 😍
+  Espero que tenham gostado um pouco da história que contei aqui sobre mim. E você? Gostou do que leu aqui? Gostaria de compartilhar? Escreva a sua história <b><a href="https://twitter.com/glaucia_lemos86">AQUI</a></b> que terei o maior prazer em publicar aqui no meu site e fazermos uma corrente motivacional com todos vocês! 😍
 </p>
