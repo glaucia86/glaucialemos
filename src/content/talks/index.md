@@ -22,11 +22,14 @@ image: /images/palestra.jpg
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
 
+- **[Palestras em 2021](#2022)**
 - **[Palestras em 2021](#2021)**
 - **[Palestras em 2020](#2020)**
 - **[Palestras em 2019](#2019)**
 - **[Palestras em 2018](#2018)**
 - **[Palestras em 2017](#2017)**
+
+# 2022
 
 # 2021
 
