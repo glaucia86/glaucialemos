@@ -34,7 +34,7 @@ image: /images/palestra.jpg
 * **Quando:** 09/11/2021
 * **Onde:** Online
 * **Participantes:** ≈500 (On-line)
-* **Link Transmissão:** [AQUI]()
+* **Link Transmissão:** [AQUI](https://www.sympla.com.br/conferencia-agile-testers---2021__1351151)
 * **Tema:** Testes Inteligentes, Automatizados e Rápidos em Cross-Browser com Playwright!
 
 ## [Microsoft Ignite 2021](https://myignite.microsoft.com/)
