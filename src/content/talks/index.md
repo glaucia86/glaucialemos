@@ -30,6 +30,13 @@ image: /images/palestra.jpg
 
 # 2021
 
+## [Agile Testers Conferência](https://www.atc.agiletesters.com.br/)
+* **Quando:** 09/11/2021
+* **Onde:** Online
+* **Participantes:** ≈500 (On-line)
+* **Link Transmissão:** [AQUI]()
+* **Tema:** Testes Inteligentes, Automatizados e Rápidos em Cross-Browser com Playwright!
+
 ## [Microsoft Ignite 2021](https://myignite.microsoft.com/)
 * **Quando:** 03/11/2021
 * **Onde:** Online
