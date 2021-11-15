@@ -45,6 +45,7 @@ image: /images/palestra.jpg
 * **Onde:** Online
 * **Participantes:** ≈50.000 à 100.000 (On-line)
 * **Link Transmissão:** [AQUI](https://myignite.microsoft.com/sessions/272f839f-ce11-4cb9-9a7c-4ca9d39eac30?source=sessions)
+* **Link Gravação (Youtube):** [AQUI](https://www.youtube.com/watch?v=a342XdBJUR0)
 * **Tema:** Build a basic cloud-native service using PostgreSQL and Node.js
 
 ## [TDC Connections 2021](https://www.meetup.com/pt-BR/WoMakersCode/events/276709445/)
