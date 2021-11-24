@@ -106,6 +106,8 @@ image: /images/palestra.jpg
 - **Link Transmissão:** [AQUI](https://youtu.be/J9OoXt1dvm8)
 - **Tema:** Aprimore suas aplicações com Typescript & Azure Functions.
 
+# 2020
+
 ## [Meetup Platzi #1](https://www.meetup.com/pt-BR/platzi-mexico-city/)
 
 - **Quando:** 19/11/2020
