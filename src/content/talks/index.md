@@ -31,6 +31,57 @@ image: /images/palestra.jpg
 
 # 2022
 
+## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/)
+
+- **Quando:** 05/24/2022 - 05/26/2022
+- **Onde:** Online
+- **Participantes:** ≈50.000 à 100.000 (On-line)
+- **Link Transmissão:** [AQUI]()
+- **Tema:** (ESCTS03) O novo Guia do Desenvolvedor para a Nuvem 
+
+## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/)
+
+- **Quando:** 05/24/2022 - 05/26/2022
+- **Onde:** Online
+- **Participantes:** ≈50.000 à 100.000 (On-line)
+- **Link Transmissão:** [AQUI]()
+- **Tema:** (ESCTS02) Impulsar la Inclusión y la Accesibilidad con Herramientas de Desarrollo y Servicios de IA 
+
+## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/)
+
+- **Quando:** 05/24/2022 - 05/26/2022
+- **Onde:** Online
+- **Participantes:** ≈50.000 à 100.000 (On-line)
+- **Link Transmissão:** [AQUI]()
+- **Tema:** (ESCTS01) La Nueva Guía para Desarrolladores de la Nube 
+
+
+## [Microsoft Build - Learning Zone](https://mybuild.microsoft.com/en-US/)
+
+- **Quando:** 05/24/2022 - 05/26/2022
+- **Onde:** Online
+- **Participantes:** ≈50.000 à 100.000 (On-line)
+- **Link Transmissão:** [AQUI]()
+- **Tema:** Introducción a Kubernetes habilitado para Azure Arc (Introduction to Azure Arc enabled Kubernetes)
+
+
+## [CityJs Conference - Athens, Greece](https://greece.cityjsconf.org/)
+
+- **Quando:** 05/25/2022 - 05/26/2022
+- **Onde:** Presencial/Online
+- **Participantes:** ≈500 (On-line)
+- **Link Transmissão:** [AQUI]()
+- **Tema:** Power up Your Back-End Applications with Serverless Architecture & Azure SQL Server!
+
+## [CityJs Conference - São Paulo, Brazil](https://brazil.cityjsconf.org/)
+
+- **Quando:** 04/28/2022 - 04/29/2022
+- **Onde:** Presencial/Online
+- **Participantes:** ≈500 (On-line)
+- **Link Transmissão:** [AQUI](https://www.youtube.com/watch?v=Laz81M8e_rs&t=15030s)
+- **Tema:** Modernize and Robust Applications with Prisma & Azure SQL Server
+  
+
 # 2021
 
 ## [TDC Future 2021](https://promo.thedevconf.com/future-mspart)
