@@ -31,39 +31,38 @@ image: /images/palestra.jpg
 
 # 2022
 
-## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/)
+## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/sessions/f50edcfc-ef38-4f2a-aa23-0007dab4f825?source=sessions)
 
 - **Quando:** 05/24/2022 - 05/26/2022
 - **Onde:** Online
-- **Participantes:** ≈50.000 à 100.000 (On-line)
-- **Link Transmissão:** [AQUI]()
+- **Participantes:** ≈50.000 (On-line)
+- **Link Transmissão:** [AQUI](https://mybuild.microsoft.com/en-US/sessions/f50edcfc-ef38-4f2a-aa23-0007dab4f825?source=sessions)
 - **Tema:** (ESCTS03) O novo Guia do Desenvolvedor para a Nuvem 
 
-## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/)
+## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/sessions/d0472115-016c-4ec5-a6f7-127f3a5fd59c?source=sessions)
 
 - **Quando:** 05/24/2022 - 05/26/2022
 - **Onde:** Online
-- **Participantes:** ≈50.000 à 100.000 (On-line)
-- **Link Transmissão:** [AQUI]()
+- **Participantes:** ≈50.000 (On-line)
+- **Link Transmissão:** [AQUI](https://mybuild.microsoft.com/en-US/sessions/d0472115-016c-4ec5-a6f7-127f3a5fd59c?source=sessions)
 - **Tema:** (ESCTS02) Impulsar la Inclusión y la Accesibilidad con Herramientas de Desarrollo y Servicios de IA 
 
-## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/)
+## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/sessions/7607bbe2-a70f-414a-b87e-d64a6ffc7227?source=sessions)
 
 - **Quando:** 05/24/2022 - 05/26/2022
 - **Onde:** Online
-- **Participantes:** ≈50.000 à 100.000 (On-line)
-- **Link Transmissão:** [AQUI]()
+- **Participantes:** ≈50.000 (On-line)
+- **Link Transmissão:** [AQUI](https://mybuild.microsoft.com/en-US/sessions/7607bbe2-a70f-414a-b87e-d64a6ffc7227?source=sessions)
 - **Tema:** (ESCTS01) La Nueva Guía para Desarrolladores de la Nube 
 
 
-## [Microsoft Build - Learning Zone](https://mybuild.microsoft.com/en-US/)
+## [Microsoft Build - Learning Zone](https://mybuild.microsoft.com/en-US/sessions/3474e6c6-94b8-4a00-898e-0a041f5374cc?source=sessions)
 
 - **Quando:** 05/24/2022 - 05/26/2022
 - **Onde:** Online
-- **Participantes:** ≈50.000 à 100.000 (On-line)
-- **Link Transmissão:** [AQUI]()
+- **Participantes:** ≈50.000 (On-line)
+- **Link Transmissão:** [AQUI](https://mybuild.microsoft.com/en-US/sessions/3474e6c6-94b8-4a00-898e-0a041f5374cc?source=sessions)
 - **Tema:** Introducción a Kubernetes habilitado para Azure Arc (Introduction to Azure Arc enabled Kubernetes)
-
 
 ## [CityJs Conference - Athens, Greece](https://greece.cityjsconf.org/)
 
