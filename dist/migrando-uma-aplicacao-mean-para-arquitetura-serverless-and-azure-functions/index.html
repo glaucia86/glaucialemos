@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Migrando uma Aplicação MEAN para Arquitetura Serverless &amp; Azure Functions // Glaucia Lemos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <link rel="shortcut icon" href="/code.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/highlight.css" />
+    <link rel="stylesheet" href="/css/senna.css" />
+
+    <script src="/js/senna.min.js"></script>
+    <script src="/js/headroom.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- Inspectlet -->
+    <script>
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 772378335]);
+      (function () {
+        function __ldinsp() {
+          const insp = document.createElement('script');
+          insp.type = 'text/javascript';
+          insp.async = true;
+          insp.id = 'inspsync';
+          insp.src = `${document.location.protocol == 'https:' ? 'https' : 'http'
+    }://cdn.inspectlet.com/inspectlet.js`;
+          const x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(insp, x);
+        }
+        if (window.attachEvent) {
+          window.attachEvent('onload', __ldinsp);
+        } else {
+          window.addEventListener('load', __ldinsp, false);
+        }
+      }());
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i.GoogleAnalyticsObject = r;
+        (i[r] = i[r]
+    || function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+        (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      }(
+  window,
+  document,
+  'script',
+  '//www.google-analytics.com/analytics.js',
+  'ga',
+));
+      ga('create', 'UA-4114546-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body data-senna data-senna-surface>
+    <div class="senna-loading-bar"></div>
+
+    <header class="site-header site-header-white">
+      <a href="/" class="logo">Glaucia Lemos</a>
+    
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/articles/">Artigos</a></li>
+          <li><a href="/resume/">Currículo</a></li>
+          <li><a href="/talks/">Palestras</a></li>
+          <li><a href="/projects/">Projetos Pessoais</a></li>
+          <li><a href="/about/">Sobre Mim</a></li>
+          <li><a href="/thoughts/">Pensamentos</a></li>
+          <li><a href="/contact/">Entre em Contato</a></li>
+        </ul>
+      </nav>
+    
+      <div class="nav-social">
+        <a href="https://github.com/glaucia86" title="GitHub">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+  </body>
+</html>
+
+<main class="post">
+  <div class="post-content post-article">
+    <div class="post-container">
+      <h1 class="post-title">Migrando uma Aplicação MEAN para Arquitetura Serverless &amp; Azure Functions</h1>
+      <h2 class="post-subtitle">Mar 03, 2020</h2>
+       <p>Este artigo faz parte da coleção de conteúdos do <a href="https://dev.to/azure/serverless-september-content-collection-2fhb">#ServerlessSeptember</a>. Aqui você encontrará todos os artigos publicados durante o mês de Setembro de 2019.</p>
+<p>Durante esse artigo você aprenderá a realizar a migração de uma maneira simples, rápida e dinâmica de uma aplicação MEAN para uma arquitetura Serverless, fazendo uso do Azure Functions!</p>
+<p>O projeto MEAN já está pronto e vocês podem fazer um git clone ou download <strong><a href="https://github.com/glaucia86/workshop-mean-serverless">AQUI</a></strong></p>
+<p>E, caso desejam ver a palestra sobre o assunto mencionado bastam ver o vídeo abaixo da palestra dada na BrazilJs de 2019, onde eu falo justamente sobre Azure Functions + Node.js + Arquitetura Serverless (agradeço imensamente a BrazilJs pelo convite e a disponibilização do vídeo):</p>
+<p>YouTube: {% youtube S14Y-kXxvEs %}</p>
+<p>Vamos nessa?!</p>
+<h2 id="entendendo-a-estrutura-do-projeto-mean">Entendendo a estrutura do Projeto MEAN</h2>
+<p>Nesse projeto vamos focar nas duas pastas: <strong>api</strong> e <strong>front</strong>. Conforme a imagem abaixo:</p>
+<p><a href="https://postimg.cc/RJKKF34d"><img src="https://i.postimg.cc/mk6wmMnv/Screen-Shot-09-11-19-at-12-04-PM.png" alt="Screen-Shot-09-11-19-at-12-04-PM.png"></a></p>
+<p>Se vocês executarem essa aplicação observarão que estamos persistindo essa aplicação no MongoDb e usando o Back-End, que nesse caso estamos usando o Node.js</p>
+<p>Os dados persistidos consiste em:</p>
+<p><strong>Classe: Funcionario</strong></p>
+<ul>
+<li><strong>idFuncionario:</strong> (number - guid gerado pelo MongoDb)</li>
+<li><strong>nomeFuncionario:</strong> string</li>
+<li><strong>cargo:</strong> string</li>
+<li><strong>numeroIdentificador:</strong> number</li>
+</ul>
+<p>Caso desejam executar localmente esse projeto, bastam seguir os passos no README.md do repositório do projeto.</p>
+<p>Bom, agora que vocês estão com o projeto MEAN em mãos, vamos começar a fazer a migração para o Azure Functions?!</p>
+<p>Mas antes, vamos entender o que seria o Azure Functions!</p>
+<h2 id="o-que-é-azure-functions-⚡️">O que é Azure Functions?! ⚡️</h2>
+<p><strong><a href="https://azure.microsoft.com/services/functions/?WT.mc_id=servsept_personal-blog-gllemos">Azure Functions</a></strong> é um serviço de computação serverless que permite executar o facilmente pequenos trechos de código ou funções na nuvem sobre demanda sem precisar provisionar ou gerenciar a infraestrutura. </p>
+<p>E o Azure Functions possui suporte a inúmeras linguagens, entre elas:</p>
+<ul>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-csharp?WT.mc_id=servsept_personal-blog-gllemos">C#</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-node?WT.mc_id=servsept_personal-blog-gllemos">JavaScript</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-fsharp?WT.mc_id=servsept_personal-blog-gllemos">F#</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-java?WT.mc_id=servsept_personal-blog-gllemos">Java</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-powershell?WT.mc_id=servsept_personal-blog-gllemos">PowerShell</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-python?WT.mc_id=servsept_personal-blog-gllemos">Python</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-reference-node?WT.mc_id=servsept_personal-blog-gllemos#typescript">TypeScript</a></strong></li>
+</ul>
+<p>Já as linguagens abaixo, já possui suporte, porém estão na sua versão preview:</p>
+<ul>
+<li><strong>Bash</strong></li>
+<li><strong>PHP</strong></li>
+</ul>
+<p>Se desejarem saber mais detalhes das linguagens que possuem suporte ao Azure Functions, bastam acessar o link <strong><a href="https://docs.microsoft.com/azure/azure-functions/supported-languages?WT.mc_id=servsept_personal-blog-gllemos">AQUI</a></strong>.</p>
+<p>Porém, para esse artigo focaremos no JavaScript! 😉</p>
+<h2 id="templates-importantes-no-azure-functions">Templates Importantes no Azure Functions</h2>
+<p>Antes de começar a realizar a migração é importante mencionar que o <strong><a href="https://azure.microsoft.com/services/functions/?WT.mc_id=servsept_personal-blog-gllemos">Azure Functions</a></strong> dispõe de inúmeros templates já prontos e preparados só para começar a serem usados. Entre eles:</p>
+<ul>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=servsept_personal-blog-gllemos">HTTPTrigger</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function?WT.mc_id=servsept_personal-blog-gllemos">TimerTrigger</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2?WT.mc_id=servsept_personal-blog-gllemos">CosmosDBTrigger</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-bindings-storage-blob?WT.mc_id=servsept_personal-blog-gllemos">BlobTrigger</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-bindings-storage-queue?WT.mc_id=servsept_personal-blog-gllemos">QueueTrigger</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/event-grid/resize-images-on-storage-blob-upload-event?tabs=dotnet&amp;WT.mc_id=servsept_personal-blog-gllemos">EventGridTrigger</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-bindings-event-hubs?WT.mc_id=servsept_personal-blog-gllemos">EventHubTrigger</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-bindings-service-bus?WT.mc_id=servsept_personal-blog-gllemos">ServiceBusQueueTrigger</a></strong></li>
+<li><strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-bindings-service-bus?WT.mc_id=servsept_personal-blog-gllemos">ServiceBusTopicTrigger</a></strong></li>
+</ul>
+<p>Não entrarei em detalhes de cada um, pois senão esse artigo ficará muito grande. Mas, caso desejam entender mais sobre cada template e qual o seu melhor uso numa determinada aplicação, recomendo a leitura na documentação <strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=servsept_personal-blog-gllemos">AQUI</a></strong>. </p>
+<p>Para esse post, estaremos fazendo uso do template: <strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=servsept_personal-blog-gllemos">HTTPTrigger</a></strong> uma vez que esse template dispara a execução do seu código usando uma solicitação HTTP. E é justamente o que precisaremos para realizar a migração!</p>
+<p>Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade ou Universidade, poderá criar sua conta no <strong><a href="https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=servsept_personal-blog-gllemos">Azure for Students</a></strong>. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: <strong><a href="https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=servsept_personal-blog-gllemos">AQUI</a></strong>. Com essa conta, você poderá fazer uso de <strong>1.000.000 solicitações gratuitas por mês para processar eventos no Azure Functions!</strong></p>
+<p><a href="https://postimg.cc/5HCTSV5r"><img src="https://i.postimg.cc/Jh68m7sR/Screen-Shot-09-11-19-at-12-42-PM.png" alt="Screen-Shot-09-11-19-at-12-42-PM.png"></a></p>
+<p>Bom, depois desse overview sobre Azure Functions, podemos enfim começar a nossa migração! Vamos que vamos!</p>
+<h2 id="instalando-o-pacote-azure-functions-core-tools">Instalando o pacote Azure Functions Core Tools</h2>
+<p>O <strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=servsept_personal-blog-gllemos">Azure Functions Core Tools</a></strong> nos permitirá desenvolver e testar as funções de maneira local na nossa máquina a partir de um terminal ou prompt de comando.</p>
+<p>Abaixo seguem os programas e o pacote que precisaremos para continuar no nosso tutorial:</p>
+<ul>
+<li><strong><a href="https://code.visualstudio.com/?WT.mc_id=servsept_personal-blog-gllemos">Visual Studio Code</a></strong></li>
+<li><strong><a href="https://nodejs.org/en/">Node.js - LTS</a></strong></li>
+<li><strong><a href="https://www.npmjs.com/package/azure-functions-core-tools">Azure Functions Core Tools</a></strong></li>
+<li><strong><a href="https://www.mongodb.com/products/compass">Mongo Compass</a></strong></li>
+</ul>
+<p>Depois que você tiver o Node.js instalado na sua máquina, basta digitar o seguinte comando:</p>
+<ul>
+<li><strong>Windows</strong></li>
+</ul>
+<pre><code class="hljs bash">npm install -g azure-functions-core-tools</code></pre>
+
+<ul>
+<li><strong>MacOs</strong></li>
+</ul>
+<pre><code class="hljs bash">brew tap azure/<span class="hljs-built_in">functions</span>
+brew install azure-functions-core-tools</code></pre>
+
+<ul>
+<li><strong>Linux (Ubuntu/Debian) com APT</strong></li>
+</ul>
+<pre><code class="hljs bash">curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg</code></pre>
+
+<p>Para maiores informações para instalar de maneira correta o Azure Functions Core Tools, bastam acessar o link <strong><a href="https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=servsept_personal-blog-gllemos">AQUI</a></strong></p>
+<p>E como vou saber se de fato o meu Azure Functions Core Tools está instalado de maneira correta na minha máquina?! Bastam digitar o seguinte comando no terminal:</p>
+<pre><code class="hljs bash">&gt; func</code></pre>
+
+<p>Se acontecer conforme o gif abaixo é porque o pacote foi instalado com sucesso!</p>
+<p><a href="https://gifyu.com/image/hYvM"><img src="https://s3.gifyu.com/images/gif-serverless-07.gif" alt="gif-serverless-07.gif"></a></p>
+<p>Ótimo. Agora, podemos criar as nossas funções. Para isso, crie um pasta local na sua máquina e vamos começar!</p>
+<h2 id="criando-uma-nova-aplicação-no-azure-functions">Criando uma Nova Aplicação no Azure Functions</h2>
+<p>Agora que já temos instalado o pacote, vamos criar uma nova aplicação. Para isso, bastam seguir o passos conforme o gif abaixo:</p>
+<p><a href="https://gifyu.com/image/hYqP"><img src="https://s3.gifyu.com/images/gif-serverless-08.gif" alt="gif-serverless-08.gif"></a></p>
+<p>Observam que, quando abrimos o Visual Studio Code, precisamos clicar no botão <code>YES</code> que aparece no canto inferior direito para habilitar alguns arquivos importantes no projeto.</p>
+<h2 id="criando-a-conexão-com-o-mongodb">Criando a Conexão com o MongoDb</h2>
+<p>Bom, vamos fazer agora algumas alterações necessárias no nosso projeto recém criado. Para isso, vamos instalar localmente o <strong><a href="https://www.npmjs.com/package/mongodb">mongodb</a></strong> no nosso projeto. Digitem o seguinte comando:</p>
+<pre><code class="hljs bash">&gt; npm install mongodb</code></pre>
+
+<p>Ao instalar o mongoDb no projeto, observem que houve alterações no arquivo <code>package.json</code>. No final o arquivo deverá ficar da seguinte maneira:</p>
+<ul>
+<li><strong>arquivo: package.json</strong></li>
+</ul>
+<pre><code class="hljs json">{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"crud-serverless-mongodb"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Projeto azure functions com persistencia com o mongoDb"</span>,
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"test"</span>: <span class="hljs-string">"echo \"No tests yet...\""</span>
+  },
+  <span class="hljs-attr">"author"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-attr">"dependencies"</span>: {
+    <span class="hljs-attr">"mongodb"</span>: <span class="hljs-string">"^3.3.2"</span>
+  }
+}</code></pre>
+
+<p>Agora, vamos criar uma pasta chamada: <code>shared</code> e dentro dela vamos criar o arquivo: <code>mongo.js</code>. A estrutura do projeto agora ficará da seguinte maneira:</p>
+<p><a href="https://postimg.cc/CRVryLtH"><img src="https://i.postimg.cc/SxnBMnf5/Screen-Shot-09-11-19-at-02-05-PM.png" alt="Screen-Shot-09-11-19-at-02-05-PM.png"></a></p>
+<p>Vamos agora alterar o arquivo <code>mongo.js</code>. Para isso, inclua o bloco de código abaixo:</p>
+<ul>
+<li><strong>arquivo: shared/mongo.js</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">/**
+ * Arquivo: mongo.js
+ * Data: 10/11/2019
+ * Descrição: arquivo responsável por tratar a conexão da Base de Dados localmente
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> { MongoClient } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"mongodb"</span>);
+
+<span class="hljs-keyword">const</span> config = {
+  <span class="hljs-attr">url</span>: <span class="hljs-string">"mongodb://localhost:27017/crud-serverless-mongodb"</span>,
+  <span class="hljs-attr">dbName</span>: <span class="hljs-string">"crud-serverless-mongodb"</span>
+};
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createConnection</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> connection = <span class="hljs-keyword">await</span> MongoClient.connect(config.url, {
+    <span class="hljs-attr">useNewUrlParser</span>: <span class="hljs-literal">true</span>
+  });
+  <span class="hljs-keyword">const</span> db = connection.db(config.dbName);
+  <span class="hljs-keyword">return</span> {
+    connection,
+    db
+  };
+}
+
+<span class="hljs-built_in">module</span>.exports = createConnection;</code></pre>
+
+<p>Aqui estamos criando a nossa conexão local com o MongoDb! Muito parecido com o que já fazemos no Back-End com o Node.js, não é mesmo?!</p>
+<p>E vamos também alterar o arquivo <code>local.settings.json</code>. Esse arquivo é responsável por &#39;guardar&#39; todas as keys que não queremos que estejam expostas na hora de realizar o commit. Notem que esse arquivo está na lista de arquivos no <code>.gitignore</code>. </p>
+<p>Abram o arquivo <code>local.settings.json</code> e façam as seguintes alterações:</p>
+<ul>
+<li><strong>arquivo: local.settings.json</strong></li>
+</ul>
+<pre><code class="hljs json">{
+  <span class="hljs-attr">"IsEncrypted"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">"Values"</span>: {
+    <span class="hljs-attr">"FUNCTIONS_WORKER_RUNTIME"</span>: <span class="hljs-string">"node"</span>,
+    <span class="hljs-attr">"AzureWebJobsStorage"</span>: <span class="hljs-string">"{AzureWebJobsStorage}"</span>
+  },
+  <span class="hljs-attr">"Host"</span>: {
+    <span class="hljs-attr">"LocalHttpPort"</span>: <span class="hljs-number">7071</span>,
+    <span class="hljs-attr">"CORS"</span>: <span class="hljs-string">"*"</span>
+  }
+}</code></pre>
+
+<p>Notem no bloco de código acima que já estamos habilitando o <code>CORS</code>. Pois sem ele, não conseguimos realizar as operações de CRUD no front! Se desejarem entender um pouco mais sobre o CORS recomendo a leitura <strong><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Controle_Acesso_CORS">AQUI</a></strong>.</p>
+<p>Bom, a primeira parte já está pronta! Agora vamos criar o nosso CRUD no Azure Functions!</p>
+<h2 id="criando-a-função-createfuncionario">Criando a função &#39;CreateFuncionario&#39;</h2>
+<p>Para criar uma nova função bastam digitar o seguinte comando:</p>
+<pre><code class="hljs bash">func new</code></pre>
+
+<p>Ao digitar esse comando ele dará várias opções de templates que o Azure Functions nos disponibiliza. No nosso caso, conforme já mencionado acima, vamos escolher o template: <code>HttpTrigger</code>. Sigam os passos do gif abaixo:</p>
+<p> <a href="https://gifyu.com/image/hYI8"><img src="https://s3.gifyu.com/images/gif-serverless-09.gif" alt="gif-serverless-09.gif"></a></p>
+<p>Observem que, foi criado uma pasta <code>CreateFuncionario</code> e dois arquivos:</p>
+<ul>
+<li><p><strong>function.json</strong>: aqui iremos definir as rotas e os métodos do nosso endpoint.</p>
+</li>
+<li><p><strong>index.json</strong>: aqui iremos desenvolver a lógica inerente ao endpoint.</p>
+</li>
+</ul>
+<p>Vamos começar a alterar esses arquivos. Começando pelo <code>function.json</code></p>
+<ul>
+<li><strong>arquivo: CreateFuncionario/function.json</strong></li>
+</ul>
+<pre><code class="hljs json">{
+  <span class="hljs-attr">"bindings"</span>: [{
+          <span class="hljs-attr">"authLevel"</span>: <span class="hljs-string">"anonymous"</span>,
+          <span class="hljs-attr">"type"</span>: <span class="hljs-string">"httpTrigger"</span>,
+          <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"in"</span>,
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"req"</span>,
+          <span class="hljs-attr">"methods"</span>: [<span class="hljs-string">"post"</span>],
+          <span class="hljs-attr">"route"</span>: <span class="hljs-string">"funcionarios"</span>
+      },
+      {
+          <span class="hljs-attr">"type"</span>: <span class="hljs-string">"http"</span>,
+          <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"out"</span>,
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"res"</span>
+      }
+  ]
+}</code></pre>
+
+<p>Agora vamos alterar o arquivo <code>index.js</code>:</p>
+<ul>
+<li><strong>arquivo: CreateFuncionario/index.js</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">/**
+ * Arquivo: CreateFuncionario/index.js
+ * Data: 10/11/2019
+ * Descrição: arquivo responsável por criar um novo 'Funcionário'
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> createMongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../shared/mongo'</span>)
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">context, req</span>) </span>{
+  <span class="hljs-keyword">const</span> funcionario = req.body || {}
+
+  <span class="hljs-keyword">if</span> (funcionario) {
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">400</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Os dados do(a) Funcionário(a) é obrigatório!'</span>
+    }
+  }
+
+  <span class="hljs-keyword">const</span> { db, connection } = <span class="hljs-keyword">await</span> createMongoClient()
+
+  <span class="hljs-keyword">const</span> Funcionarios = db.collection(<span class="hljs-string">'funcionarios'</span>)
+
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> funcionarios = <span class="hljs-keyword">await</span> Funcionarios.insert(funcionario)
+    connection.close()
+
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">201</span>,
+      <span class="hljs-attr">body</span>: funcionarios.ops[<span class="hljs-number">0</span>]
+    }
+  } <span class="hljs-keyword">catch</span> (error) {
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">500</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Error ao criar um novo Funcionário(a)'</span>
+    }
+  }
+}</code></pre>
+
+<p>Aqui estamos praticamente definindo a rota do <code>Post</code> e desenvolvendo a lógica do <code>Criar um novo Funcionário</code>.</p>
+<p>Vamos executar esse endpoint?! Para executar, bastam digitar o seguinte comando:</p>
+<pre><code class="hljs bash">&gt; func host start</code></pre>
+
+<p>E ele irá listar o nosso endpoint criado! Vejam no gif:</p>
+<p><a href="https://gifyu.com/image/hYI5"><img src="https://s3.gifyu.com/images/gif-serverless-11.gif" alt="gif-serverless-11.gif"></a></p>
+<p>Ele lista para nós o seguinte endpoint: <code>[POST] http://localhost:7071/api/funcionario</code></p>
+<p>A porta <code>7071</code> é a porta default do Azure Functions. E é justamente ela que iremos precisar para colocar no nosso Front-End!</p>
+<p>Bom, vamos agora pegar essa rota e adicionar no Front-End! Para isso, precisamos realizar algumas alterações no projeto <code>Front</code>. Vão até a pasta <code>front</code> em: <code>front -&gt; src -&gt; app -&gt; funcionario.service.ts</code> e alterem o seguinte arquivo <code>funcionario.service.ts</code></p>
+<ul>
+<li><strong>arquivo: funcionario.service.ts</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-keyword">import</span> { Injectable } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<span class="hljs-keyword">import</span> { HttpClient } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/common/http'</span>;
+
+@Injectable({
+  <span class="hljs-attr">providedIn</span>: <span class="hljs-string">'root'</span>
+})
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FuncionarioService</span> </span>{
+
+  <span class="hljs-comment">// ==&gt; Uri da api (Back-End)</span>
+  uri = <span class="hljs-string">'http://localhost:7071/api'</span>;
+
+  <span class="hljs-keyword">constructor</span>(private http: HttpClient) { }
+
+
+(...)</code></pre>
+
+<p>Só precisamos alterar a <code>uri</code> definida no service do Angular. </p>
+<p>Nesse momento, precisaremos executar o Mongo Compass e o Front-End. Observem no gif como persistirá o novo funcionário e que não precisaremos mais da pasta <code>api</code> do projeto! </p>
+<p><strong>(Clique na imagem abaixo para visualizar o gif)</strong></p>
+<p><a href="https://gifyu.com/image/hYuM"><img src="https://s3.gifyu.com/images/gif-serverless-122d9fa9f9e2c32e04.md.gif" alt="gif-serverless-122d9fa9f9e2c32e04.md.gif"></a></p>
+<p>Persistiu lindamente! 😍 </p>
+<p>Agora, vamos fazer o listar!</p>
+<h2 id="criando-a-função-getfuncionarios">Criando a função &#39;GetFuncionarios&#39;</h2>
+<p>É a mesma premissa que foi feita acima, vamos criar uma nova função com o comando: <code>func new</code>, nomear a função de <code>GetFuncionarios</code> e alterar os arquivos: <code>function.json</code> e <code>index.js</code></p>
+<p><strong>(Clique na imagem abaixo para visualizar o gif)</strong></p>
+<p><a href="https://gifyu.com/image/hYuz"><img src="https://s3.gifyu.com/images/gif-serverless-1390be8d86cc5d4218.md.gif" alt="gif-serverless-1390be8d86cc5d4218.md.gif"></a></p>
+<ul>
+<li><strong>GetFuncionarios/function.json</strong></li>
+</ul>
+<pre><code class="hljs json">{
+    <span class="hljs-attr">"bindings"</span>: [{
+            <span class="hljs-attr">"authLevel"</span>: <span class="hljs-string">"anonymous"</span>,
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"httpTrigger"</span>,
+            <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"in"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"req"</span>,
+            <span class="hljs-attr">"methods"</span>: [<span class="hljs-string">"get"</span>],
+            <span class="hljs-attr">"route"</span>: <span class="hljs-string">"funcionarios"</span>
+        },
+        {
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"http"</span>,
+            <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"out"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"res"</span>
+        }
+    ]
+}</code></pre>
+
+<ul>
+<li><strong>GetFuncionarios/index.js</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">/**
+ * Arquivo: GetFuncionarios/index.js
+ * Data: 10/11/2019
+ * Descrição: arquivo responsável por listar todos os 'Funcionários'
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> createMongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../shared/mongo'</span>)
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">async</span> context =&gt; {
+  <span class="hljs-keyword">const</span> { db, connection } = <span class="hljs-keyword">await</span> createMongoClient()
+
+  <span class="hljs-keyword">const</span> Funcionarios = db.collection(<span class="hljs-string">'funcionarios'</span>)
+  <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> Funcionarios.find({})
+  <span class="hljs-keyword">const</span> body = <span class="hljs-keyword">await</span> res.toArray()
+
+  connection.close()
+
+  context.res = {
+    <span class="hljs-attr">status</span>: <span class="hljs-number">200</span>,
+    body
+  }
+}</code></pre>
+
+<p>Vamos testar novamente! Vejam novamente o gif abaixo!</p>
+<p><a href="https://gifyu.com/image/hYdI"><img src="https://s3.gifyu.com/images/gif-serverless-14.gif" alt="gif-serverless-14.gif"></a></p>
+<p>Novamente está funcionando perfeitamente. Já observaram que é fácil criar um CRUD com o Azure Functions, não é mesmo?! Agora é só seguir os mesmos passos para criar as próximas funções!</p>
+<h2 id="criando-a-função-getfuncionariobyid">Criando a função &#39;GetFuncionarioById&#39;</h2>
+<p>Agora que já ficou muito claro a todos aqui como é fácil criar um CRUD com o Azure Functions, vou começar a acelerar o processo de criação e só informar o que foi alterado nos arquivos <code>function.json</code> e <code>index.js</code></p>
+<ul>
+<li><strong>GetFuncionarioById/index.js</strong></li>
+</ul>
+<pre><code class="hljs json">{
+    <span class="hljs-attr">"bindings"</span>: [{
+            <span class="hljs-attr">"authLevel"</span>: <span class="hljs-string">"anonymous"</span>,
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"httpTrigger"</span>,
+            <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"in"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"req"</span>,
+            <span class="hljs-attr">"methods"</span>: [<span class="hljs-string">"get"</span>],
+            <span class="hljs-attr">"route"</span>: <span class="hljs-string">"funcionarios/{id}"</span>
+        },
+        {
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"http"</span>,
+            <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"out"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"res"</span>
+        }
+    ]
+}</code></pre>
+
+<ul>
+<li><strong>GetFuncionarioById/function.json</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">// @ts-nocheck</span>
+<span class="hljs-comment">/**
+ * Arquivo: GetFuncionarioById/index.js
+ * Data: 10/11/2019
+ * Descrição: arquivo responsável por listar Funcionário pelo Id
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> { ObjectID } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mongodb'</span>)
+<span class="hljs-keyword">const</span> createMongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../shared/mongo'</span>)
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">context, req</span>) </span>{
+  <span class="hljs-keyword">const</span> { id } = req.params
+
+  <span class="hljs-keyword">if</span> (!id) {
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">400</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Por favor, passe o número correto do Id do Funcionário!'</span>
+    }
+
+    <span class="hljs-keyword">return</span>
+  }
+
+  <span class="hljs-keyword">const</span> { db, connection } = <span class="hljs-keyword">await</span> createMongoClient()
+
+  <span class="hljs-keyword">const</span> Funcionarios = db.collection(<span class="hljs-string">'funcionarios'</span>)
+
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> body = <span class="hljs-keyword">await</span> Funcionarios.findOne({ <span class="hljs-attr">_id</span>: ObjectID(id) })
+
+    connection.close()
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">200</span>,
+      body
+    }
+  } <span class="hljs-keyword">catch</span> (error) {
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">500</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Erro ao listar o Funcionário pelo Id.'</span>
+    }
+  }
+}</code></pre>
+
+<p>Não vamos testar agora. Vamos desenvolver as duas últimas funções: <code>Update</code> e <code>Delete</code>.</p>
+<h2 id="criando-a-função-updatefuncionario">Criando a função: &#39;UpdateFuncionario&#39;</h2>
+<p>Novamente, vamos criar uma nova função e alterar os arquivos <code>function.json</code> e <code>index.js</code>:</p>
+<ul>
+<li><strong>UpdateFuncionario/index.js</strong></li>
+</ul>
+<pre><code class="hljs json">{
+    <span class="hljs-attr">"bindings"</span>: [{
+            <span class="hljs-attr">"authLevel"</span>: <span class="hljs-string">"anonymous"</span>,
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"httpTrigger"</span>,
+            <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"in"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"req"</span>,
+            <span class="hljs-attr">"methods"</span>: [<span class="hljs-string">"put"</span>],
+            <span class="hljs-attr">"route"</span>: <span class="hljs-string">"funcionarios/{id}"</span>
+        },
+        {
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"http"</span>,
+            <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"out"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"res"</span>
+        }
+    ]
+}</code></pre>
+
+<ul>
+<li><strong>UpdateFuncionario/index.js</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">// @ts-nocheck</span>
+<span class="hljs-comment">/**
+ * Arquivo: UpdateFuncionario/index.js
+ * Data: 10/11/2019
+ * Descrição: arquivo responsável por atualizar 'Funcionário' por Id
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> { ObjectID } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mongodb'</span>)
+<span class="hljs-keyword">const</span> createMongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../shared/mongo'</span>)
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">context, req</span>) </span>{
+  <span class="hljs-keyword">const</span> { id } = req.params
+  <span class="hljs-keyword">const</span> funcionario = req.body || {}
+
+  <span class="hljs-keyword">if</span> (!id || !funcionario) {
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">400</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Os campos são obrigatórios'</span>
+    }
+
+    <span class="hljs-keyword">return</span>
+  }
+
+  <span class="hljs-keyword">const</span> { db, connection } = <span class="hljs-keyword">await</span> createMongoClient()
+  <span class="hljs-keyword">const</span> Funcionarios = db.collection(<span class="hljs-string">'funcionarios'</span>)
+
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> funcionarios = <span class="hljs-keyword">await</span> Funcionarios.findOneAndUpdate(
+      { <span class="hljs-attr">_id</span>: ObjectID(id) },
+      { <span class="hljs-attr">set</span>: funcionario }
+    )
+
+    connection.close()
+
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">200</span>,
+      <span class="hljs-attr">body</span>: funcionarios
+    }
+  } <span class="hljs-keyword">catch</span> (error) {
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">500</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Erro ao atualizar o Funcionário'</span>
+    }
+  }
+}</code></pre>
+
+<p>Show! Agora vamos desenvolver a nossa última função: <code>Delete</code>!</p>
+<h2 id="criando-a-função-deletefuncionario">Criando a função: &#39;DeleteFuncionario&#39;</h2>
+<p>Novamente, bastam criar uma nova função, escolher a opção: <code>HttpTrigger</code>, nomear a função de <code>DeleteFuncionario</code> e alterar os arquivos <code>function.json</code> e <code>index.js</code>:</p>
+<ul>
+<li><strong>DeleteFuncionario/function.json</strong></li>
+</ul>
+<pre><code class="hljs json">{
+  <span class="hljs-attr">"bindings"</span>: [{
+          <span class="hljs-attr">"authLevel"</span>: <span class="hljs-string">"anonymous"</span>,
+          <span class="hljs-attr">"type"</span>: <span class="hljs-string">"httpTrigger"</span>,
+          <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"in"</span>,
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"req"</span>,
+          <span class="hljs-attr">"methods"</span>: [<span class="hljs-string">"delete"</span>],
+          <span class="hljs-attr">"route"</span>: <span class="hljs-string">"funcionarios/{id}"</span>
+      },
+      {
+          <span class="hljs-attr">"type"</span>: <span class="hljs-string">"http"</span>,
+          <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"out"</span>,
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"res"</span>
+      }
+  ]
+}</code></pre>
+
+<ul>
+<li><strong>DeleteFuncionario/index.js</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">// @ts-nocheck</span>
+<span class="hljs-comment">/**
+ * Arquivo: DeleteFuncionario/index.js
+ * Data: 10/11/2019
+ * Descrição: arquivo responsável excluir um 'Funcionário' pelo Id
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> { ObjectID } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mongodb'</span>)
+<span class="hljs-keyword">const</span> createMongoClient = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../shared/mongo'</span>)
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">context, req</span>) </span>{
+  <span class="hljs-keyword">const</span> { id } = req.params
+
+  <span class="hljs-keyword">if</span> (!id) {
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">400</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Os campos são obrigatórios!'</span>
+    }
+
+    <span class="hljs-keyword">return</span>
+  }
+
+  <span class="hljs-keyword">const</span> { db, connection } = <span class="hljs-keyword">await</span> createMongoClient()
+
+  <span class="hljs-keyword">const</span> Funcionarios = db.collection(<span class="hljs-string">'funcionarios'</span>)
+
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">await</span> Funcionarios.findOneAndDelete({ <span class="hljs-attr">_id</span>: ObjectID(id) })
+    connection.close()
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">204</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Funcionário excluído com sucesso!'</span>
+    }
+  } <span class="hljs-keyword">catch</span> (error) {
+    context.res = {
+      <span class="hljs-attr">status</span>: <span class="hljs-number">500</span>,
+      <span class="hljs-attr">body</span>: <span class="hljs-string">'Erro ao excluir Funcionário'</span> + id
+    }
+  }
+}</code></pre>
+
+<p>E está pronto o nosso CRUD! Vamos testar todos os endpoints?! Vejam o gif abaixo!</p>
+<p><strong>(Clique na imagem abaixo para visualizar o gif)</strong></p>
+<p><a href="https://gifyu.com/image/hYnX"><img src="https://s3.gifyu.com/images/gif-serverless-156824eb58eaca624e.md.gif" alt="gif-serverless-156824eb58eaca624e.md.gif"></a></p>
+<p>Coisa mais linda, não é mesmo?! Notem mais uma vez que, aquela pasta <code>api</code> onde há inúmeros arquivos, não terá mais necessidade! Podemos praticamente deletar aquela pasta inteira!!! </p>
+<p>Todo o código fonte desenvolvido estão aqui:</p>
+<p>👉 <strong><a href="https://github.com/glaucia86/workshop-mean-serverless">Projeto Front-End</a></strong></p>
+<p>👉 <strong><a href="https://github.com/glaucia86/crud-serverless-mongodb">Projeto Api - Serverless</a></strong></p>
+<h2 id="palavras-finais">Palavras Finais</h2>
+<p>Hoje aprendemos a realizar a migração de uma aplicação MEAN para o Azure Functions, porém persistindo esses dados localmente e executando essas funções localmente. E se porventura precisarmos hospedar essa aplicação na Nuvem? E o nosso Back-end como ficaria?</p>
+<p>No próximo post, estarei explicando a vocês como realizar a migração do MongoDb para o CosmosDb e como realizar o deploy dessas funções usando uma extensão do Azure Tools no próprio Visual Studio Code.</p>
+<p>Se vocês desejam saber mais detalhes sobre Azure Functions recomendo a todos vocês os seguintes cursos totalmente gratuitos de Serverless &amp; Azure Functions e alguns outros recursos importantes:</p>
+<p>✅ <strong><a href="https://docs.microsoft.com/pt-br/learn/paths/create-serverless-applications/?WT.mc_id=servsept_personal-blog-gllemos">Cursos Grátis - Azure Functions</a></strong></p>
+<p>✅ <strong><a href="https://docs.microsoft.com/pt-br/javascript/azure/?WT.mc_id=servsept_personal-blog-gllemos&amp;view=azure-node-latest">Azure para devs JavaScript &amp; Node.js</a></strong></p>
+<p>✅ <strong><a href="https://docs.microsoft.com/pt-br/azure/azure-functions/?WT.mc_id=servsept_personal-blog-gllemos">Documentação Azure Functions</a></strong></p>
+<p>✅ <strong><a href="https://docs.microsoft.com/pt-br/azure/azure-functions/functions-create-first-function-vs-code?WT.mc_id=servsept_personal-blog-gllemos">Criando a sua Primeira Função no Visual Studio Code</a></strong></p>
+<p>✅ <strong><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&amp;WT.mc_id=servsept_personal-blog-gllemos">Extensão Vs Code – Azure Functions</a></strong></p>
+<p>✅ <strong><a href="https://azure.microsoft.com/pt-br/resources/azure-serverless-computing-cookbook/?WT.mc_id=servsept_personal-blog-gllemos">E-Book Grátis - Azure Serverless Computing Cookbook</a></strong></p>
+<p>E, para ficarem por dentro das últimas atualizações não deixem de me seguir no Twitter! 😃</p>
+<p><a href="https://twitter.com/glaucia_lemos86"><img src="https://code4coders.files.wordpress.com/2019/05/image-12.png" alt="Twitter"></a> </p>
+<p>Até a próxima pessoal! ❤️ ❤️ ❤️</p>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

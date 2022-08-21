@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Realize Deploy Automático de Projetos Estáticos com Azure Static Web Apps! // Glaucia Lemos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <link rel="shortcut icon" href="/code.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/highlight.css" />
+    <link rel="stylesheet" href="/css/senna.css" />
+
+    <script src="/js/senna.min.js"></script>
+    <script src="/js/headroom.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- Inspectlet -->
+    <script>
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 772378335]);
+      (function () {
+        function __ldinsp() {
+          const insp = document.createElement('script');
+          insp.type = 'text/javascript';
+          insp.async = true;
+          insp.id = 'inspsync';
+          insp.src = `${document.location.protocol == 'https:' ? 'https' : 'http'
+    }://cdn.inspectlet.com/inspectlet.js`;
+          const x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(insp, x);
+        }
+        if (window.attachEvent) {
+          window.attachEvent('onload', __ldinsp);
+        } else {
+          window.addEventListener('load', __ldinsp, false);
+        }
+      }());
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i.GoogleAnalyticsObject = r;
+        (i[r] = i[r]
+    || function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+        (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      }(
+  window,
+  document,
+  'script',
+  '//www.google-analytics.com/analytics.js',
+  'ga',
+));
+      ga('create', 'UA-4114546-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body data-senna data-senna-surface>
+    <div class="senna-loading-bar"></div>
+
+    <header class="site-header site-header-white">
+      <a href="/" class="logo">Glaucia Lemos</a>
+    
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/articles/">Artigos</a></li>
+          <li><a href="/resume/">Currículo</a></li>
+          <li><a href="/talks/">Palestras</a></li>
+          <li><a href="/projects/">Projetos Pessoais</a></li>
+          <li><a href="/about/">Sobre Mim</a></li>
+          <li><a href="/thoughts/">Pensamentos</a></li>
+          <li><a href="/contact/">Entre em Contato</a></li>
+        </ul>
+      </nav>
+    
+      <div class="nav-social">
+        <a href="https://github.com/glaucia86" title="GitHub">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+  </body>
+</html>
+
+<main class="post">
+  <div class="post-content post-article">
+    <div class="post-container">
+      <h1 class="post-title">Realize Deploy Automático de Projetos Estáticos com Azure Static Web Apps!</h1>
+      <h2 class="post-subtitle">May 28, 2020</h2>
+       <p>Fala Coders! Tudo bem? 😃 </p>
+<p>A partir de hoje começaremos uma série de artigos a qual estaremos comentando sobre os últimos lançamentos da Microsoft durante o <strong><a href="https://mybuild.microsoft.com/">Build 2020</a></strong>.</p>
+<p>E um desses lançamentos é sobre o <strong><a href="https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=staticwebapps-personal-gllemos">Azure Static Web Apps</a></strong>. Se você deseja entender mais sobre esse incrível serviço, para que serve e como começar a usar, você está no lugar certo! Esse artigo é justamente sobre isso!</p>
+<p>Então aqui vamos! 😃</p>
+<h2 id="mas-afinal-o-que-é-azure-static-web-apps">Mas, afinal.. O que é Azure Static Web Apps?!</h2>
+<p>O <strong><a href="https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=staticwebapps-personal-gllemos">Azure Static Web Apps</a></strong> é um serviço que cria e realiza deploy automaticamente de aplicações Web com toda a stack completa do Azure a partir de um determinado repositório do GitHub! Sim, isso mesmo que vocês estão ouvindo! Diretamente de um repositório do GitHub! 😮😮</p>
+<p>E como é que funciona esse fluxo?! A imagem abaixo nos ajuda a entender melhor como funciona:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/9w83bqq6wrv6qz27ez7p.png" alt="Alt Text"></p>
+<p>Na imagem acima, vocês podem perceber que, o fluxo de trabalho da implantação das aplicações do Azure Static Web Apps são criados com base nas interações e fluxos do GitHub! Resumindo: quando você configura um determinado fluxo de trabalho via <strong><a href="https://azure.microsoft.com/blog/github-actions-for-azure-is-now-generally-available/?WT.mc_id=staticwebapps-personal-gllemos">GitHub Actions</a></strong> por meio do seu repositório onde se encontra o seu código ou aplicação, no momento em que você enviar um push ou for aceitar um determinado Pull Request que esteja monitorada pelo Actions, automaticamente será realizada o deploy da sua aplicação automaticamente para o Azure! Incrível não é mesmo?! 😄</p>
+<h2 id="e-esse-serviço-é-gratuito">E esse serviço... é Gratuito?!</h2>
+<p>Sim! A resposta é um grande <strong>SIM!!!</strong> </p>
+<p>As hospedagens de aplicações estáticas como: HTML, CSS, JavaScript e imagens são totalmente gratuita! Sim! Sabe aquele site ou aplicação estática ou feita num <strong><a href="https://jamstack.org/">JamStack</a></strong> que você tem e não sabe onde colocar de maneira gratuita?! Agora já sabem onde hospedar de graça! Diretamente no <strong><a href="https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=staticwebapps-personal-gllemos">Azure Static Web Apps</a></strong>!</p>
+<p>Entre outras coisas bastante interessantes que estão inclusas nesse serviço e que são gratuitas:</p>
+<ul>
+<li>✅ <strong>Suporte e integração ao Azure Functions</strong></li>
+<li>✅ <strong>Integração com o GitHub</strong></li>
+<li>✅ <strong>Certificados SSL gratuitos</strong></li>
+<li>✅ <strong>Geração de versões Staging</strong></li>
+</ul>
+<p>Se vocês desejam entender um pouco mais todo esse fluxo e as principais características desse novo serviço, indico a <strong><a href="https://azure.microsoft.com/blog/github-actions-for-azure-is-now-generally-available/?WT.mc_id=staticwebapps-personal-gllemos">Documentação Oficial do Azure Static Web Apps - AQUI</a></strong></p>
+<h2 id="e-quais-linguagens-e-frameworks-estão-disponíveis">E quais linguagens e frameworks estão disponíveis?</h2>
+<p>Todos os frameworks e sites JamStack generators. Para listar:</p>
+<ul>
+<li>✅ <strong><a href="https://angular.io/">Angular</a></strong></li>
+<li>✅ <strong><a href="https://reactjs.org/">React</a></strong></li>
+<li>✅ <strong><a href="https://vuejs.org/">Vue</a></strong></li>
+<li>✅ <strong><a href="https://www.gatsbyjs.org/">Gatsby</a></strong></li>
+<li>✅ <strong><a href="https://gohugo.io/">Hugo</a></strong></li>
+<li>✅ <strong><a href="https://vuepress.vuejs.org/">VuePress</a></strong></li>
+<li>✅ <strong><a href="https://nextjs.org/">Next.js</a></strong></li>
+<li>✅ <strong><a href="https://nuxtjs.org/">Nuxt.js</a></strong></li>
+</ul>
+<p>E se for no lado do Back-End se usa o <strong><a href="https://azure.microsoft.com/services/functions/?WT.mc_id=staticwebapps-personal-gllemos">Azure Functions</a></strong>. Mas, essa parte deixaremos para o próximo artigo! 😉</p>
+<p>Bom... acho que eu falei demais aqui... vamos para a demo?! </p>
+<h2 id="demo-time">Demo Time!</h2>
+<p>Para essa demo, vamos precisar dos seguintes recursos:</p>
+<ul>
+<li>✅ <strong><a href="https://code.visualstudio.com/?WT.mc_id=staticwebapps-personal-gllemos">Visual Studio Code</a></strong></li>
+<li>✅ <strong><a href="https://vuejs.org/">Vue</a></strong></li>
+<li>✅ <strong><a href="https://azure.microsoft.com/free?WT.mc_id=staticwebapps-personal-gllemos">Conta Azure</a></strong></li>
+<li>✅ <strong><a href="https://github.com/">Conta no GitHub</a></strong></li>
+</ul>
+<h5 id="conta---azure-for-students-⭐️">Conta - Azure for Students ⭐️</h5>
+<blockquote>
+<p>Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade ou Universidade, poderá criar sua conta no <strong><a href="https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=staticwebapps-personal-gllemos">Azure for Students</a></strong>. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: <strong><a href="https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=staticwebapps-personal-gllemos">AQUI</a></strong></p>
+</blockquote>
+<p>Para fins de demo, estaremos fazendo uso do recurso do GitHub: <strong><a href="https://help.github.com/pt/github/creating-cloning-and-archiving-repositories/creating-a-template-repository">GitHub Templates</a></strong>. Se deseja saber mais como criar um template e entender o que é bastam acessar <strong><a href="https://help.github.com/pt/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template">AQUI</a></strong>.</p>
+<p>Cliquem nesse link <strong><a href="https://github.com/staticwebdev/vue-basic/generate">https://github.com/staticwebdev/vue-basic/generate</a></strong> e logo em seguida crie um nome para esse repositório, conforme segue a imagem abaixo:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/jsj24yxq4e4pezwiqc0k.PNG" alt="Alt Text"></p>
+<p>Logo em seguida clique no botão: <strong>Create Repository from Template</strong>. Após isso, estará já criada uma aplicação modelo em Vue.js para que possamos testar a nossa aplicação direto do GitHub!</p>
+<p>Agora, vamos ao próximo passo. Abre o <strong><a href="https://azure.microsoft.com/free/?WT.mc_id=staticwebapps-personal-gllemos">Portal Azure</a></strong> e segue os seguintes passos:</p>
+<ol>
+<li>Clique em: Create a Resource</li>
+<li>Depois digite: Static Web Apps </li>
+</ol>
+<p>E logo em seguida aparecerá a seguinte janela:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/kxsl7fi8r2qbrsw2kgbg.PNG" alt="Alt Text"></p>
+<blockquote>
+<p>obs.: versão preview</p>
+</blockquote>
+<p>Agora vamos preencher todas as informações necessárias para criar o nosso recurso dentro do Azure! Vejam na imagem abaixo:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/wpj13mhhts8ok14okxoc.PNG" alt="Alt Text"></p>
+<p>Observem no botão <strong>Sign in with GitHub</strong>. É justamente aí que faremos a nossa integração do Azure Web Static Apps com a nossa aplicação contida no GitHub! Cliquem nesse botão e inclua o seu handler e senha do GitHub e clique em: <strong>Authorize Azure-App-Service-Static-Web-Apps</strong>.</p>
+<p>Você retornará ao Portal Azure e aparecerá mais informações para que possamos incluir. Vamos incluir agora, para isso, bastam seguir conforme a imagem abaixo:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/jx62cybt7nz55njorgl9.PNG" alt="Alt Text"></p>
+<p>Observem que, no ato que permitimos e autorizamos o Azure Static Web Apps, conseguimos listar todos os repositórios! Bom, como já criamos uma app de modelo, vamos usar o repositório: <strong><a href="https://github.com/glaucia86/aswa-demo-vue">aswa-demo-vue</a></strong>. E depois clique no botão: <strong>Next -&gt; Build</strong></p>
+<p>Aparecerá uma nova janela. É nessa parte que incluiremos as informações mais importantes. Observem na imagem abaixo:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/buyu1vaac81wi7d0opvw.PNG" alt="Alt Text"></p>
+<ol>
+<li>Inclua <strong>/</strong> em App Location. </li>
+<li>Remova o valor: <strong>api</strong> de Api location</li>
+<li>E inclua a pasta que gera os arquivos estáticos da sua aplicação. No caso do Vue.js essa pasta é a <strong>dist</strong></li>
+<li>Clique no botão: <strong>Review + Create</strong> e depois <strong>Create</strong></li>
+</ol>
+<p>Abrirá uma nova janela informando que a implantação do Recurso foi criado com sucesso e depois bastam clicar em: <strong>Go to Resource</strong></p>
+<p>Antes de vermos a nossa aplicação no ar, quero mostrar algo bastante interessante para todos vocês que foi criado no nosso repositório depois de fazer essa implementação.</p>
+<p>Retornem ao repositório da aplicação e observem que foi criada uma pasta chamada: <strong>.github/workflows</strong>. Cliquem nela:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/uey7040jx5p6g9akcovl.PNG" alt="Alt Text"></p>
+<p>Observem que ele criou no momento da implementação um arquivo <strong>.yml</strong> com todo o fluxo do GitHub Actions para nós!</p>
+<p>Vamos testar esse fluxo?! Para isso, cliquem em <strong>Actions</strong> no próprio repositório conforme imagem abaixo:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/qmbiw1ij088xbvtp1ky3.PNG" alt="Alt Text"></p>
+<p>Ótimo! Agora observem uma coisa linda! Ele já cria para nós todo um processo de C.I &amp; C.D automaticamente. Ou seja, todas as vezes que formos fazer um push, pull request ou commit, ele vai gerar um Build e deploy dessa aplicação! Sensacional isso, não é mesmo?!</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/6yrln0s67hr8m91f2ms1.PNG" alt="Alt Text"></p>
+<p>Quero ver a aplicação no ar? Não tem problema. Voltemos para o Portal Azure onde o recurso foi criado e clique em: <strong>URL</strong> e vejam o resultado:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/5lu4hqhgyg13d7hlqxmq.PNG" alt="Alt Text"></p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/i/hpdb89bg7hbvck8mfv2i.PNG" alt="Alt Text"></p>
+<p>Legal, não é mesmo?! Mas, e se essa aplicação tiver um Back-End, o que acontece?</p>
+<p>Deixemos para o próximo artigo!</p>
+<h2 id="palavras-finais">Palavras Finais</h2>
+<p>Agora ficou muito fácil de implementar de forma automática suas aplicações estáticas com o <strong><a href="https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=staticwebapps-personal-gllemos">Azure Static Web Apps</a></strong>. E se vocês desejarem saber um pouco mais sobre esse novo serviço, deixo abaixo uma lista incrível de recursos, vídeos e documentação que te auxiliarão no seu conhecimento:</p>
+<ul>
+<li><p>✅ <strong><a href="https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=staticwebapps-personal-gllemos">Documentação Oficial do Azure Static Web Apps</a></strong></p>
+</li>
+<li><p>✅ <strong><a href="https://docs.microsoft.com/pt-br/learn/modules/publish-app-service-static-web-app-api/?WT.mc_id=staticwebapps-personal-gllemos">Curso Grátis - Publique uma Aplicação Estática no Angular, React, Vue ou Javascript &amp; API</a></strong></p>
+</li>
+<li><p>✅ <strong><a href="https://docs.microsoft.com/pt-br/learn/modules/create-deploy-static-webapp-gatsby-app-service/?WT.mc_id=staticwebapps-personal-gllemos">Curso Grátis - Crie e Publique um site estático com Gatsby</a></strong></p>
+</li>
+<li><p>✅ <strong><a href="https://docs.microsoft.com/azure/static-web-apps/publish-gatsby/?WT.mc_id=staticwebapps-personal-gllemos">Implementando Azure Static Web Apps no Gatsby</a></strong></p>
+</li>
+<li><p>✅ <strong><a href="https://docs.microsoft.com/azure/static-web-apps/publish-hugo/?WT.mc_id=staticwebapps-personal-gllemos">Implementando Azure Static Web Apps no Hugo</a></strong></p>
+</li>
+<li><p>✅ <strong><a href="https://docs.microsoft.com/azure/static-web-apps/publish-vuepress/?WT.mc_id=staticwebapps-personal-gllemos">Implementando Azure Static Web Apps no VuePress</a></strong></p>
+</li>
+<li><p>✅ <strong><a href="https://docs.microsoft.com/azure/static-web-apps/publish-vuepress/?WT.mc_id=staticwebapps-personal-gllemos">Implementando Azure Static Web Apps no Next.js</a></strong></p>
+</li>
+<li><p>✅ <strong><a href="https://docs.microsoft.com/azure/static-web-apps/deploy-nuxtjs/?WT.mc_id=staticwebapps-personal-gllemos">Implementando Azure Static Web Apps no Nuxt.js</a></strong></p>
+</li>
+</ul>
+<p>E para ficarem por dentro de várias outras novidades, não deixem de me seguir lá no twitter!</p>
+<p><a href="https://twitter.com/glaucia_lemos86"><img src="https://code4coders.files.wordpress.com/2019/05/image-12.png" alt="Twitter"></a></p>
+<p>Nos vemos! Até a próxima pessoal! 😍</p>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

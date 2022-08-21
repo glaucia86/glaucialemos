@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Desenvolvendo uma Aplicação CRUD Node.js com PostgreSQL // Glaucia Lemos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <link rel="shortcut icon" href="/code.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/highlight.css" />
+    <link rel="stylesheet" href="/css/senna.css" />
+
+    <script src="/js/senna.min.js"></script>
+    <script src="/js/headroom.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- Inspectlet -->
+    <script>
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 772378335]);
+      (function () {
+        function __ldinsp() {
+          const insp = document.createElement('script');
+          insp.type = 'text/javascript';
+          insp.async = true;
+          insp.id = 'inspsync';
+          insp.src = `${document.location.protocol == 'https:' ? 'https' : 'http'
+    }://cdn.inspectlet.com/inspectlet.js`;
+          const x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(insp, x);
+        }
+        if (window.attachEvent) {
+          window.attachEvent('onload', __ldinsp);
+        } else {
+          window.addEventListener('load', __ldinsp, false);
+        }
+      }());
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i.GoogleAnalyticsObject = r;
+        (i[r] = i[r]
+    || function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+        (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      }(
+  window,
+  document,
+  'script',
+  '//www.google-analytics.com/analytics.js',
+  'ga',
+));
+      ga('create', 'UA-4114546-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body data-senna data-senna-surface>
+    <div class="senna-loading-bar"></div>
+
+    <header class="site-header site-header-white">
+      <a href="/" class="logo">Glaucia Lemos</a>
+    
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/articles/">Artigos</a></li>
+          <li><a href="/resume/">Currículo</a></li>
+          <li><a href="/talks/">Palestras</a></li>
+          <li><a href="/projects/">Projetos Pessoais</a></li>
+          <li><a href="/about/">Sobre Mim</a></li>
+          <li><a href="/thoughts/">Pensamentos</a></li>
+          <li><a href="/contact/">Entre em Contato</a></li>
+        </ul>
+      </nav>
+    
+      <div class="nav-social">
+        <a href="https://github.com/glaucia86" title="GitHub">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+  </body>
+</html>
+
+<main class="post">
+  <div class="post-content post-article">
+    <div class="post-container">
+      <h1 class="post-title">Desenvolvendo uma Aplicação CRUD Node.js com PostgreSQL</h1>
+      <h2 class="post-subtitle">Mar 17, 2020</h2>
+       <p>Fala Coders! Tudo certo? Hoje vamos começar uma série de artigos onde estaremos desenvolvendo uma aplicação CRUD com Node.js &amp; PostgreSQL com enfoque no Back-End. Após isso, estaremos migrando o projeto para arquitetura serverless com <strong><a href="https://docs.microsoft.com/azure/javascript/node-howto-write-serverless-code?WT.mc_id=personal-blog-gllemos">Azure Functions</a></strong>, migrando a base de dados local para <strong><a href="https://azure.microsoft.com/services/postgresql/?WT.mc_id=personal-blog-gllemos">Azure PostgreSQL</a></strong> e finalmente realizando o deploy dessa aplicação usando o <strong><a href="https://docs.microsoft.com/azure/app-service/deploy-github-actions?WT.mc_id=personal-blog-gllemos">GitHub Actions</a></strong> com <strong><a href="https://docs.microsoft.com/azure/devops-project/azure-devops-project-nodejs?WT.mc_id=personal-blog-gllemos">Azure DevOps</a></strong>.</p>
+<p>Acredito que o artigo será divido em 5 partes, justamente visando ensinar passo a passo a todos vocês aqui. Dependendo, estarei transformando os posts em forma de vídeo, pois sei que muitas pessoas amam aprender coisas por meio de vídeos <strong>(sempre na semana seguinte ao artigo postado)</strong>. Abaixo seguem as 5 partes dessa série:</p>
+<table>
+<thead>
+<tr>
+<th>Código Exemplo</th>
+<th>Link do artigo</th>
+<th>Vídeo Aula</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong><a href="project-1/README.md">Project-1</a></strong></td>
+<td><strong><a href="project-1/README.md">Desenvolvendo uma Aplicação CRUD Node.js com PostgreSQL – Parte I</a></strong></td>
+<td><strong><a href="">Vídeo 01 - Em Breve</a></strong></td>
+</tr>
+<tr>
+<td><strong>Em Breve</strong></td>
+<td><strong><a href="">Realizando o deploy da Aplicação Back-End (Node.js) na Nuvem – Parte II</a></strong></td>
+<td><strong><a href="">Vídeo 02 - Em Breve</a></strong></td>
+</tr>
+<tr>
+<td><strong>Em Breve</strong></td>
+<td><strong><a href="">Migrando o Back-End para o Serverless e Persistindo no PostgreSQL – Parte III</a></strong></td>
+<td><strong><a href="">Vídeo 03 - Em Breve</a></strong></td>
+</tr>
+<tr>
+<td><strong>Em Breve</strong></td>
+<td><strong><a href="">Migrando a base de dados local da Aplicação para o Azure PostgreSQL – Parte IV</a></strong></td>
+<td><strong><a href="">Vídeo 04 - Em Breve</a></strong></td>
+</tr>
+<tr>
+<td><strong>Em Breve</strong></td>
+<td><strong><a href="">Automatizando o deploy da aplicação para Nuvem com Azure DevOps &amp; GitHub Actions – Parte V</a></strong></td>
+<td><strong><a href="">Vídeo 05 - Em Breve</a></strong></td>
+</tr>
+</tbody></table>
+<p>Criei um repositório <strong><a href="https://github.com/glaucia86/nodejs-postgresql-azure">Link do Repositório</a></strong>, onde estará alocado todos os código fontes desse projeto e mais os recursos que estarei mencionando durante os 5 artigos. </p>
+<blockquote>
+<p><strong>Informação importante:</strong> o enfoque do projeto será no Back-End. Caso ao chegarmos no final do projeto, quisermos testar a API do Back-End criado em alguma aplicação no Front-End, posso depois estar criando um Front-End genérico justamente para testar a api criada!</p>
+</blockquote>
+<p>Bom, já falei muito, vamos nessa?!</p>
+<h2 id="recursos-utilizados-no-desenvolvimento-da-aplicação">Recursos Utilizados no Desenvolvimento da Aplicação</h2>
+<p>Vou citar aqui alguns recursos que estaremos utilizando durante o desenvolvimento dessa aplicação no decorrer desse artigo. São eles:</p>
+<ul>
+<li><strong><a href="https://code.visualstudio.com/?WT.mc_id=personal-blog-gllemos">Visual Studio Code</a></strong></li>
+<li><strong><a href="https://nodejs.org/en/">Node.js</a></strong></li>
+<li><strong><a href="https://www.getpostman.com/">Postman</a></strong></li>
+<li><strong><a href="https://node-postgres.com/">Pacote - node-postgres</a></strong></li>
+<li><strong><a href="https://www.postgresql.org/">PostgreSQL</a></strong></li>
+</ul>
+<p>Uma das coisas que atrai a muitos a usarem o PostgreSQL é que ele é totalmente gratuito, disponível em qualquer Sistema Operacional e o melhor de tudo: é totalmente <strong><a href="https://github.com/postgres">Open Source</a></strong>! Inúmeras grandes empresas como: Uber, Netflix, Spotify, Instagram, Reddit e tantas outras fazem uso do PostgreSQL. Por isso, a sua grande popularidade! </p>
+<p>O PostgreSQL foi a primeira base de dados que eu tive contato e foi com ele que aprendi nas aulas de Banco de Dados I e II no ano de 2012 na Faculdade. Sempre gostei dele porque é muito simples e fácil de usar!</p>
+<p>Precisaremos instalar o PostgreSQL na nossa máquina. Mas, também fiquem à vontade de usarem alguma imagem Docker para dar continuidade nesse tutorial.</p>
+<h2 id="instalando-o-postgresql">Instalando o PostgreSQL</h2>
+<p>Bom, estarei ensinando aqui para diferentes usuários de S.O:</p>
+<ul>
+<li><p><strong>Windows</strong>: para usuários Windows, bastam realizar o download <strong><a href="https://www.postgresql.org/download/windows/">AQUI</a></strong>. Instalação comum, como se estivesse instalando um programa no Windows. </p>
+</li>
+<li><p><strong>MacOS</strong>: para usuários do Mac, bastam realizar o download dos pacotes <strong><a href="https://www.postgresql.org/download/macosx/">AQUI</a></strong>. E também, precisará já ter instalado o <strong><a href="https://brew.sh/">Homebrew</a></strong>. Caso tenham dificuldades para instalar, recomendo que deem uma olhada nesse vídeo <strong><a href="https://www.youtube.com/watch?v=5AOkxqFaYEE">AQUI</a></strong></p>
+</li>
+<li><p><strong>Linux</strong>: para usuários Linux, como existem inúmeras versões diferentes de Linux, recomendo que deem uma olhada nesse guia do PostgreSQL <strong><a href="http://postgresguide.com/setup/install.html">AQUI</a></strong></p>
+</li>
+</ul>
+<p>No meu caso, estarei usando o Windows, uma vez que é a minha máquina principal de desenvolvimento. Estarei fazendo uso da versão 12 do PostgreSQL. Depois de instalar, basta pesquisar por <strong>pgAdmin</strong>. Abrirá um browser: <a href="http://127.0.0.1:16450/browser/">http://127.0.0.1:16450/browser/</a> e começar a usar!</p>
+<p><a href="https://postimg.cc/phg5X268"><img src="https://i.postimg.cc/fybcCy7H/Screen-Shot-03-01-20-at-10-01-PM.png" alt="Screen-Shot-03-01-20-at-10-01-PM.png"></a></p>
+<h2 id="criando-tabela-no-postgresql">Criando Tabela no PostgreSQL</h2>
+<p>Vamos criar agora a tabela com as propriedades que serão usadas para persistir e serem usadas no nosso Back-End.</p>
+<p>A classe será: <code>Produto</code></p>
+<pre><code class="hljs bash">Classe: Product
+
+- productId: <span class="hljs-built_in">integer</span> primary
+- product_name_: varchar
+- quantity: int
+- price: real</code></pre>
+
+<p>Agora abrem o PgAdmin. É provável que você precise incluir a senha para realizar algumas ações dentro do PgAdmin. É provável que você precise criar um <code>Database</code>. Bastam criar com o nome que vocês desejarem. Depois que você criou o seu Database, clique com o botão direito em <strong>Create Script</strong> e execute o script abaixo no PostgreSQL (conforme o gif abaixo):</p>
+<pre><code class="hljs sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> products (
+    productId <span class="hljs-built_in">SERIAL</span> PRIMARY <span class="hljs-keyword">KEY</span>,
+    productName <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    quantity <span class="hljs-built_in">INTEGER</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,
+    price <span class="hljs-built_in">NUMERIC</span>(<span class="hljs-number">5</span>,<span class="hljs-number">2</span>)
+);</code></pre>
+
+<p><a href="https://gifyu.com/image/IKZa"><img src="https://s5.gifyu.com/images/postgresql-01.gif" alt="postgresql-01.gif"></a></p>
+<p>Agora, bastam acessar a tabela recém criada!</p>
+<p><a href="https://gifyu.com/image/IKZt"><img src="https://s5.gifyu.com/images/postgresql-02.gif" alt="postgresql-02.gif"></a></p>
+<p>Ótimo! Já temos a nossa tabela criada!</p>
+<h2 id="criando-a-arquitetura-da-aplicação-no-nodejs">Criando a Arquitetura da Aplicação no Node.js</h2>
+<p>Agora que a nossa tabela está criada, vamos criar o projeto no Node.js. Nesse projeto, estarei seguindo o princípio de SOLID &amp; Clean Code. Caso vocês queiram saber mais sobre esses dois assuntos, recomendo os links abaixo:</p>
+<ul>
+<li>📺 <strong><a href="https://youtu.be/XzdhzyAukMM">Clean Code: SOLID - Beau teaches JavaScript</a></strong></li>
+<li>📄 <strong><a href="https://medium.com/@nanofaroque/solid-code-in-nodejs-a87685b4cdfe">SOLID Code in Node.JS</a></strong></li>
+</ul>
+<p>Bom, vamos começar a arquitetar o nosso projeto. Crie uma pasta chamada <code>api</code> e execute o seguinte comando:</p>
+<pre><code class="hljs bash">&gt; npm init -y</code></pre>
+
+<p>Esse comando criará um arquivo padrão do <code>package.json</code>. E vamos agora instalar os seguintes pacotes:</p>
+<pre><code class="hljs bash">&gt; npm i --save-dev husky nodemon</code></pre>
+
+<p>E também instalar os demais pacotes como <code>dependencies</code></p>
+<pre><code class="hljs bash">&gt; npm i cors dotenv express express-promise-router pg</code></pre>
+
+<p>No final, o arquivo <code>package.json</code> ficará da seguinte forma:</p>
+<pre><code class="hljs json">{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"crud-nodejs-psql"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Aplicação CRUD com Node.js &amp; PostgreSQL"</span>,
+  <span class="hljs-attr">"main"</span>: <span class="hljs-string">"server.js"</span>,
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"dev"</span>: <span class="hljs-string">"nodemon"</span>,
+    <span class="hljs-attr">"lint"</span>: <span class="hljs-string">"eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix"</span>,
+    <span class="hljs-attr">"prepush"</span>: <span class="hljs-string">"npm run lint"</span>,
+    <span class="hljs-attr">"start"</span>: <span class="hljs-string">"node server.js"</span>
+  },
+  <span class="hljs-attr">"keywords"</span>: [
+    <span class="hljs-string">"node.js"</span>,
+    <span class="hljs-string">"javascript"</span>,
+    <span class="hljs-string">"postgresel"</span>,
+    <span class="hljs-string">"azure"</span>,
+    <span class="hljs-string">"serverless"</span>,
+    <span class="hljs-string">"azure-functions"</span>,
+    <span class="hljs-string">"azure-devops"</span>,
+    <span class="hljs-string">"azure-storage"</span>,
+    <span class="hljs-string">"github-actions"</span>,
+    <span class="hljs-string">"app-service"</span>,
+    <span class="hljs-string">"express"</span>
+  ],
+  <span class="hljs-attr">"author"</span>: <span class="hljs-string">"Glaucia Lemos"</span>,
+  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"MIT"</span>,
+  <span class="hljs-attr">"bugs"</span>: {
+    <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://github.com/glaucia86/nodejs-postgresql-azure/issues"</span>
+  },
+  <span class="hljs-attr">"homepage"</span>: <span class="hljs-string">"https://github.com/glaucia86/nodejs-postgresql-azure#readme"</span>,
+  <span class="hljs-attr">"devDependencies"</span>: {
+    <span class="hljs-attr">"eslint"</span>: <span class="hljs-string">"^6.8.0"</span>,
+    <span class="hljs-attr">"eslint-config-airbnb-base"</span>: <span class="hljs-string">"^14.0.0"</span>,
+    <span class="hljs-attr">"eslint-plugin-import"</span>: <span class="hljs-string">"^2.20.1"</span>,
+    <span class="hljs-attr">"husky"</span>: <span class="hljs-string">"^4.2.3"</span>,
+    <span class="hljs-attr">"nodemon"</span>: <span class="hljs-string">"^2.0.2"</span>
+  },
+  <span class="hljs-attr">"dependencies"</span>: {
+    <span class="hljs-attr">"cors"</span>: <span class="hljs-string">"^2.8.5"</span>,
+    <span class="hljs-attr">"dotenv"</span>: <span class="hljs-string">"^8.2.0"</span>,
+    <span class="hljs-attr">"eslint-friendly-formatter"</span>: <span class="hljs-string">"^4.0.1"</span>,
+    <span class="hljs-attr">"eslint-plugin-html"</span>: <span class="hljs-string">"^6.0.0"</span>,
+    <span class="hljs-attr">"express"</span>: <span class="hljs-string">"^4.17.1"</span>,
+    <span class="hljs-attr">"express-promise-router"</span>: <span class="hljs-string">"^3.0.3"</span>,
+    <span class="hljs-attr">"pg"</span>: <span class="hljs-string">"^7.18.2"</span>
+  }
+}</code></pre>
+
+<p>Notem que há pacotes adicionais que incluí aqui. Caso desejam saber um pouco mais sobre o <code>husky</code> e o <code>eslint</code>, fiz um vídeo explicando sobre eles e como instalar e configurar no projeto.</p>
+<p>Youtube: {% youtube D9L6yYaQY2o %}</p>
+<p>Crie a estrutura das pastas e arquivos conforme a imagem abaixo:</p>
+<p><a href="https://postimg.cc/9D1qwhgb"><img src="https://i.postimg.cc/Xv6KhNwR/Screen-Shot-03-05-20-at-10-50-PM.png" alt="Screen-Shot-03-05-20-at-10-50-PM.png"></a></p>
+<p>Se tiverem dúvidas como está a estrutura das pastas e dos arquivos, bastam acessar o repositório do projeto <strong><a href="https://github.com/glaucia86/nodejs-postgresql-azure/tree/master/project-1">AQUI</a></strong>. E caso queiram saber um pouco mais e entender a estrutura inicial do projeto, fiz também um vídeo ensinando um padrão que eu costumo adotar para criar um projeto Node.js em todos os meus projetos:</p>
+<p>Youtube: {% youtube 5ahj4TM3GxQ %}</p>
+<h2 id="desenvolvimento-da-aplicação">Desenvolvimento da Aplicação</h2>
+<p>Daqui em diante, não vou explicar o que cada arquivo faz. Pois o foco principal do artigo é criar uma API RESTful e que no final deve ser persistada no PostgreSQL. Mas, se ficarem curiosos a respeito de cada linha desenvolvida, recomendo que deem uma olhada nos vídeos que eu fiz de uma API parecida com essa, onde eu explico detalhadamente o que é cada arquivo e as suas respectivas responsabilidades <strong><a href="https://www.youtube.com/playlist?list=PLb2HQ45KP0Wv5ZKHK-qHENtY_63LiumFq">AQUI - Vídeos: Aula 13 à Aula 26.1</a></strong>.</p>
+<p>Abram o <strong><a href="https://code.visualstudio.com/?WT.mc_id=personal-blog-gllemos">Visual Studio Code</a></strong> e vamos começar a desenvolver o arquivo: <code>server.js</code> e inclua o seguinte bloco de código:</p>
+<ul>
+<li><strong>arquivo: server.js</strong></li>
+</ul>
+<pre><code class="hljs js"><span class="hljs-comment">/**
+ * Arquivo: server.js
+ * Descrição: arquivo responsável por toda a configuração e execução da aplicação.
+ * Data: 02/03/2020
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./src/app'</span>);
+
+<span class="hljs-keyword">const</span> port = process.env.PORT || <span class="hljs-number">3000</span>;
+
+app.listen(port, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Aplicação executando na porta '</span>, port);
+});</code></pre>
+
+<p>Agora, abram o arquivo <code>src -&gt; app.js</code> e inclua o bloco de código abaixo:</p>
+<ul>
+<li><strong>arquivo: app.js</strong></li>
+</ul>
+<pre><code class="hljs js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cors'</span>);
+
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-comment">// ==&gt; Rotas da API:</span>
+<span class="hljs-keyword">const</span> index = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/index'</span>);
+<span class="hljs-comment">// const productRoute = require('./routes/product.routes');</span>
+
+app.use(express.urlencoded({ <span class="hljs-attr">extended</span>: <span class="hljs-literal">true</span> }));
+app.use(express.json());
+app.use(express.json({ <span class="hljs-attr">type</span>: <span class="hljs-string">'application/vnd.api+json'</span> }));
+app.use(cors());
+
+app.use(index);
+<span class="hljs-comment">// app.use('/api/', productRoute);</span>
+
+<span class="hljs-built_in">module</span>.exports = app;</code></pre>
+
+<p>Observem que, nesse arquivo <code>app.js</code>, há várias linhas de código comentadas, justamente para poder fazer executar inicialmente a nossa API e ver se estamos desenvolvendo corretamente. Mas, lá para frente estaremos fazendo algumas alterações significativas nesse arquivo e depois descomentar essas linhas.</p>
+<p>E finalmente, abram o arquivo <code>src -&gt; routes -&gt; index.js</code> e incluam o bloco de código abaixo:</p>
+<ul>
+<li><strong>arquivo: src -&gt; routes -&gt; index.js</strong></li>
+</ul>
+<pre><code class="hljs js"><span class="hljs-comment">/**
+ * Arquivo: src/routes/index.js
+ * Descrição: arquivo responsável pela chamada da Api da aplicação.
+ * Data: 02/03/2020
+ * Author Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+
+<span class="hljs-keyword">const</span> router = express.Router();
+
+router.get(<span class="hljs-string">'/api'</span>, (req, res) =&gt; {
+  res.status(<span class="hljs-number">200</span>).send({
+    <span class="hljs-attr">success</span>: <span class="hljs-string">'true'</span>,
+    <span class="hljs-attr">message</span>: <span class="hljs-string">'Seja bem-vindo(a) a API Node.js + PostgreSQL + Azure!'</span>,
+    <span class="hljs-attr">version</span>: <span class="hljs-string">'1.0.0'</span>,
+  });
+});
+
+<span class="hljs-built_in">module</span>.exports = router;</code></pre> 
+
+<p>Agora, abram o prompt de comando dentro da pasta <code>api</code> e executem o comando:</p>
+<pre><code class="hljs bash">&gt; nodemon</code></pre>
+
+<p>E, em seguida, abram o postman e incluam a seguinte URL no (GET): <code>localhost:3000/api/</code> e vejam o resultado:</p>
+<p><a href="https://postimg.cc/jn4yZMKC"><img src="https://i.postimg.cc/L5rv4Wbk/Screen-Shot-03-02-20-at-12-47-AM.png" alt="Screen-Shot-03-02-20-at-12-47-AM.png"></a></p>
+<p>Se apareceu conforme a imagem acima é porque está funcionando a nossa API de forma correta! Agora, vamos nos aprofundar no desenvolvimento. Aqui vamos!</p>
+<h2 id="entendendo-um-pouco-mais-sobre-pacote-node-postgres">Entendendo um pouco mais sobre pacote: &#39;node-postgres&#39;</h2>
+<p>Vocês devem ter notado que, no momento que instalamos alguns pacotes, incluímos o pacote <strong><a href="https://node-postgres.com/">node-postgres</a></strong>. Esse pacote será fundamental para que possamos trabalhar com o Client do PostgreSQL no Node.js.
+Esse pacote é um projeto <strong><a href="https://github.com/brianc/node-postgres">open source</a></strong>. E possui uma documentação simples e direta - ensinando como podemos implementar esse pacote em Promises ou usando Async/Await. Me ajudou e muito a desenvolver esse tutorial! </p>
+<p>Recomendo a leitura da documentação do pacote, que encontra-se aqui <strong><a href="https://node-postgres.com/features/pooling">AQUI</a></strong></p>
+<p>Nesse projeto preferi usar ele do que o <strong><a href="https://sequelize.org/">Sequelize</a></strong>, que é um ORM muito usado para quem usa o PostgreSQL, MySQL, MariaDB, SQLite e o Microsoft SQL Server. Justo para deixar esse <code>projeto-1</code> mais simples. </p>
+<p>Se vocês desejarem, quando eu terminar essa série, posso criar um projeto na mesma estrutura usando o Sequelize. Deixem nos comentários abaixo se desejam que eu faça um artigo com o Sequelize! 😉</p>
+<p>Como já instalamos o pacote <code>node-postgres</code> no início, vamos avançar!</p>
+<h2 id="criando-uma-variável-de-ambiente-com-dotenv">Criando uma variável de ambiente com &#39;dotenv&#39;</h2>
+<p>Outro ponto que vocês devem ter percebido é que também instalamos o pacote <strong><a href="https://github.com/motdotla/dotenv">dotenv</a></strong>. Esse pacote server para que possamos armazenar as nossas variáveis de ambiente que não desejamos deixar disponível para o público ao realizar um <code>commit</code>. </p>
+<p>E como usaremos a <strong>connection String</strong> da base de dados e como essa connection string possui dados sensíveis não queremos disponibilizar isso para todo mundo. Vamos tratar isso agora no nosso projeto. Para isso, sigam os seguintes passos abaixo:</p>
+<p>Na raiz do projeto, dentro da pasta <code>api</code> crie o arquivo <code>.env</code>. E dentro dele inclua o seguinte bloco de código:</p>
+<pre><code class="hljs sql">DATABASE_URL=postgres://{db_username}:{db_password}@{host}:{port}/{db_name}</code></pre>
+
+<p>No meu caso, ficou da seguinte forma:</p>
+<pre><code class="hljs sql">DATABASE_URL=postgres://postgres:glau123@localhost:5432/crud-nodejs-psql</code></pre>
+
+<p>Se vocês não souberem qual é o <code>db_username</code> do seu PostgreSQL, bastam  clicar com o botão direito do Server do PgAdmin e ir em <code>Properties -&gt; Connections</code> que vocês encontrarão o username. Vejam no gif abaixo:</p>
+<p><a href="https://gifyu.com/image/IuWY"><img src="https://s5.gifyu.com/images/postgresql-03.gif" alt="postgresql-03.gif"></a></p>
+<h2 id="configurando-a-conexão-com-a-base-dados-no-arquivo-databasejs">Configurando a conexão com a Base dados no arquivo: &#39;database.js&#39;</h2>
+<p>Agora que já incluímos a nossa connectionstring no arquivo <code>.env</code>, agora é o momento de comerçamos a desenvolver e configurar a conexão da base dados da nossa aplicação ao PostgreSQL. </p>
+<p>Para isso, abram o arquivo <code>database.js</code> e incluam o seguinte bloco de código:</p>
+<ul>
+<li><strong>config/database.js</strong> </li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">/**
+ * Arquivo: config/database.js
+ * Descrição: arquivo responsável pelas 'connectionStrings da aplicação: PostgreSQL.
+ * Data: 04/03/2020
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> { Pool } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'pg'</span>);
+<span class="hljs-keyword">const</span> dotenv = <span class="hljs-built_in">require</span>(<span class="hljs-string">'dotenv'</span>);
+
+dotenv.config();
+
+<span class="hljs-comment">// ==&gt; Conexão com a Base de Dados:</span>
+<span class="hljs-keyword">const</span> pool = <span class="hljs-keyword">new</span> Pool({
+  <span class="hljs-attr">connectionString</span>: process.env.DATABASE_URL
+});
+
+pool.on(<span class="hljs-string">'connect'</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Base de Dados conectado com sucesso!'</span>);
+});
+
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">query</span>: <span class="hljs-function">(<span class="hljs-params">text, params</span>) =&gt;</span> pool.query(text, params),
+};</code></pre>
+
+<p>Esse bloco está nada mais do que fazendo a conexão com a nossa connection string para que assim possamos enfim, começar a persistir os dados no PostgreSQL através do Node.js.</p>
+<p>Notem que estamos usando o pacote <code>node-postgres</code>. Se desejarem entender um pouco mais sobre o <code>pg.Pool</code>, recomendo a leitura <strong><a href="https://node-postgres.com/api/pool">AQUI</a></strong>, pois a partir de agora usaremos bastante ele, incluso as propriedades desse construtor! </p>
+<h2 id="criando-a-rota-post-create-product">Criando a rota: (POST) &#39;Create Product&#39;</h2>
+<p>Já fizemos a configuração da nossa aplicação e já estamos realizando a conexão com a base de dados! Agora é que de fato começará a brincadeira! E para isso, vamos desenvolver a primeira rota. Para isso, vamos usar bastante a partir de agora dois arquivos: <code>product.controller.js</code> e <code>product.routes.js</code>.  </p>
+<p>Sigam os seguintes passos:</p>
+<p>Inclua o bloco de código abaixo no arquivo <code>product.routes.js</code></p>
+<ul>
+<li><strong>arquivo: product.routes.js</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">// @ts-nocheck</span>
+<span class="hljs-comment">/**
+ * Arquivo: src/routes/product.routes.js
+ * Descrição: arquivo responsável pelas rotas da api relacionado a classe 'Product'.
+ * Data: 04/03/2020
+ * Author Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> router = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-promise-router'</span>)();
+<span class="hljs-keyword">const</span> productController = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../controllers/product.controller'</span>);
+
+<span class="hljs-comment">// ==&gt; Definindo as rotas do CRUD - 'Product':</span>
+
+<span class="hljs-comment">// ==&gt; Rota responsável por criar um novo 'Product': (POST): localhost:3000/api/products</span>
+router.post(<span class="hljs-string">'/products'</span>, productController.createProduct);
+
+<span class="hljs-built_in">module</span>.exports = router;</code></pre>
+
+<p>Agora vamos desenvolver a lógica do método <code>createProduct</code>dentro do arquivo <code>product.controller.js</code></p>
+<ul>
+<li><strong>controllers/product.controller.js</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-keyword">const</span> db = <span class="hljs-built_in">require</span>(<span class="hljs-string">"../config/database"</span>);
+
+<span class="hljs-comment">// ==&gt; Método responsável por criar um novo 'Product':</span>
+
+exports.createProduct = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> { product_name, quantity, price } = req.body;
+  <span class="hljs-keyword">const</span> { rows } = <span class="hljs-keyword">await</span> db.query(
+    <span class="hljs-string">"INSERT INTO products (product_name, quantity, price) VALUES ($1, $2, $3)"</span>,
+    [product_name, quantity, price]
+  );
+
+  res.status(<span class="hljs-number">201</span>).send({
+    <span class="hljs-attr">message</span>: <span class="hljs-string">"Product added successfully!"</span>,
+    <span class="hljs-attr">body</span>: {
+      <span class="hljs-attr">product</span>: { product_name, quantity, price }
+    },
+  });
+};</code></pre> 
+
+<p>Observe, que simplesmente usamos a query de inserção no código, assim como faríamos num script de SQL. Simples assim. E claro que, para retornar todos os valores inseridos colocamos uma mensagem para confirmar o produto criado e retornando todos os values desse produto.</p>
+<p>Agora precisamos atualizar o arquivo <code>app.js</code> antes de testar a nossa aplicação. Para isso, descomente as linhas onde estavam as rotas de <code>product.routes</code>:</p>
+<ul>
+<li><strong>arquivo: app.js</strong></li>
+</ul>
+<pre><code class="hljs javascript"><span class="hljs-comment">/**
+ * Arquivo: app.js
+ * Descrição: arquivo responsável por toda a configuração da aplicação.
+ * Data: 02/03/2020
+ * Author: Glaucia Lemos
+ */</span>
+
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cors'</span>);
+
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-comment">// ==&gt; Rotas da API:</span>
+<span class="hljs-keyword">const</span> index = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/index'</span>);
+<span class="hljs-keyword">const</span> productRoute = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/product.routes'</span>);
+
+app.use(express.urlencoded({ <span class="hljs-attr">extended</span>: <span class="hljs-literal">true</span> }));
+app.use(express.json());
+app.use(express.json({ <span class="hljs-attr">type</span>: <span class="hljs-string">'application/vnd.api+json'</span> }));
+app.use(cors());
+
+app.use(index);
+app.use(<span class="hljs-string">'/api/'</span>, productRoute);
+
+<span class="hljs-built_in">module</span>.exports = app;</code></pre>
+
+<p>Abre o prompt de comando e digite o seguinte comando dentro da pasta <code>api</code></p>
+<pre><code class="hljs bash">&gt; nodemon</code></pre>
+
+<ol start="5">
+<li>Agora sim, podemos testar a nossa primeira rota criada. Para isso, abram o <strong><a href="https://www.postman.com/">Postman</a></strong> no seguinte endpoint: (POST)<code>localhost:3000/api/products</code>, conforme o gif abaixo:</li>
+</ol>
+<p><a href="https://gifyu.com/image/IucG"><img src="https://s5.gifyu.com/images/postgresql-04.gif" alt="postgresql-04.gif"></a></p>
+<p>Se aparecer a seguinte mensagem como abaixo:</p>
+<pre><code class="hljs json">{
+    <span class="hljs-attr">"message"</span>: <span class="hljs-string">"Product added successfully!"</span>,
+    <span class="hljs-attr">"body"</span>: {
+        <span class="hljs-attr">"product"</span>: {
+            <span class="hljs-attr">"product_name"</span>: <span class="hljs-string">"Logitech MK270 Wireless Keyboard and Mouse Combo"</span>,
+            <span class="hljs-attr">"quantity"</span>: <span class="hljs-string">"2"</span>,
+            <span class="hljs-attr">"price"</span>: <span class="hljs-string">"18.99"</span>
+        }
+    }
+}</code></pre>
+
+<p>É porque persistiu perfeitamente. Para termos certeza disso, abram o PgAdmin da tabela criada e façam conforme o gif abaixo:</p>
+<p><a href="https://gifyu.com/image/IugE"><img src="https://s5.gifyu.com/images/postgresql-05.gif" alt="postgresql-05.gif"></a></p>
+<p>Perfeito! Uma vez que a gente consegue criar a primeira rota, as demais serão fáceis! </p>
+<p>Vamos dar continuidade!</p>
+<h2 id="criando-a-rota-get-list-all-products">Criando a rota: (GET) &#39;List All Products&#39;</h2>
+<p>Agora vamos criar a rota que listará todos os produtos criados e persistidos no PostgreSQL. Seria interessante vocês aproveitarem que a rota <code>POST</code> já está criada e incluírem mais dados, para ajudar nas rotas futuras!</p>
+<p>Retorne novamente ao arquivo <strong>product.routes.js</strong> e inclua a rota para listar todos os produtos:</p>
+<ul>
+<li><strong>arquivo: product.routes.js</strong></li>
+</ul>
+<pre><code class="hljs js"><span class="hljs-comment">// ==&gt; Rota responsável por listar todos os 'Products': (GET): localhost:3000/api/products</span>
+router.get(<span class="hljs-string">'/products'</span>, productController.listAllProducts);</code></pre>
+
+<p>Agora, volte ao arquivo <strong>funcionario.controller.js</strong> e vamos desenvolver a lógica do método <strong>listAllProducts</strong>:</p>
+<ul>
+<li><strong>arquivo: funcionario.controller.js</strong></li>
+</ul>
+<pre><code class="hljs js"><span class="hljs-comment">// ==&gt; Método responsável por listar todos os 'Products':</span>
+exports.listAllProducts = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> db.query(<span class="hljs-string">'SELECT * FROM products ORDER BY product_name ASC'</span>);
+  res.status(<span class="hljs-number">200</span>).send(response.rows);
+};</code></pre> 
+
+<p>Notem a query que fiz aqui: <strong>SELECT * FROM products ORDER BY product_name ASC</strong>. Aqui estou pedindo para retornar todos os produtos persistidos no PostegreSQL em ordem alfabética! Fiz isso para deixar um pouco diferente! ;)</p>
+<p>Vamos testar, abram o Postman e vejam o resultado:</p>
+<p><a href="https://gifyu.com/image/Iu4g"><img src="https://s5.gifyu.com/images/postgresql-06.gif" alt="postgresql-06.gif"></a></p>
+<p>Funcionou perfeitamente! Notem que, se precisarmos fazer um <code>SELECT</code> mais elaborado com subconsultas, seguindo a lógica, vai funcionar perfeitamente! :)</p>
+<h2 id="criando-a-rota-get-list-product-by-id">Criando a rota: (GET) &#39;List Product by Id&#39;</h2>
+<p>Agora, ficou muito fácil. Basta juntar os nossos conhecimentos de SQL com os demais CRUD&#39;s que já criamos em outras aplicações Node.js.</p>
+<p>Vamos agora criar a rota para listar um determinado produto pelo Id. Novamente, abram o arquivo <code>product.routes.js</code> e incluam mais uma rota:</p>
+<ul>
+<li><strong>arquivo: product.routes.js</strong></li>
+</ul>
+<pre><code class="hljs javascript">(...)
+
+<span class="hljs-comment">// ==&gt; Rota responsável por selecionar 'Product' pelo 'Id': (GET): localhost:3000/api/products/:id</span>
+router.get(<span class="hljs-string">'/products/:id'</span>, productController.findProductById);
+
+(...)</code></pre>
+
+<p>Agora abram o arquivo <code>funcionario.controller.js</code> e vamos desenvolver a lógica dessa rota:</p>
+<ul>
+<li><strong>arquivo: funcionario.controller.js</strong></li>
+</ul>
+<pre><code class="hljs javascript">(...)
+
+<span class="hljs-comment">// ==&gt; Método responsável por selecionar 'Product' pelo 'Id':</span>
+exports.findProductById = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> productId = <span class="hljs-built_in">parseInt</span>(req.params.id);
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> db.query(<span class="hljs-string">'SELECT * FROM products WHERE productid = $1'</span>, [productId]);
+  res.status(<span class="hljs-number">200</span>).send(response.rows);
+}</code></pre>
+
+<p>Vamos testar agora essa rota no Postman e vejamos o que acontece:</p>
+<p><a href="https://gifyu.com/image/Iu6x"><img src="https://s5.gifyu.com/images/postgresql-07.gif" alt="postgresql-07.gif"></a></p>
+<p>E vamos prosseguir!</p>
+<h2 id="criando-a-rota-put-update-product-by-id">Criando a rota: (PUT) &#39;Update Product by Id&#39;</h2>
+<p>Vamos agora novamente retornar ao arquivo <code>product.routes.js</code> para criar a rota <code>updateProductById</code> que será responsável por atualizar o produto pelo Id:</p>
+<ul>
+<li><strong>arquivo: product.routes.js</strong></li>
+</ul>
+<pre><code class="hljs javascript">(...)
+
+<span class="hljs-comment">// ==&gt; Rota responsável por atualizar 'Product' pelo 'Id': (PUT): localhost: 3000/api/products/:id</span>
+router.put(<span class="hljs-string">'/products/:id'</span>, productController.updateProductById);</code></pre>
+
+<p>Retornemos ao arquivo <code>updateProductById</code> para desenvolver a lógica do método <code>funcionario.controller.js</code>:</p>
+<ul>
+<li><strong>arquivo: funcionario.controller.js</strong></li>
+</ul>
+<pre><code class="hljs javascript">(...)
+
+<span class="hljs-comment">// ==&gt; Método responsável por atualizar um 'Product' pelo 'Id':</span>
+exports.updateProductById = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> productId = <span class="hljs-built_in">parseInt</span>(req.params.id);
+  <span class="hljs-keyword">const</span> { product_name, quantity, price } = req.body;
+
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> db.query(
+    <span class="hljs-string">"UPDATE products SET product_name = $1, quantity = $2, price = $3 WHERE productId = $4"</span>,
+    [product_name, quantity, price, productId]
+  );
+
+  res.status(<span class="hljs-number">200</span>).send({ <span class="hljs-attr">message</span>: <span class="hljs-string">"Product Updated Successfully!"</span> });
+};</code></pre>
+
+<p>Está atualizando perfeitamente! Vejam no gif abaixo: </p>
+<p><a href="https://gifyu.com/image/IWMz"><img src="https://s5.gifyu.com/images/postgresql-08.gif" alt="postgresql-08.gif"></a></p>
+<p>Agora vamos para a nossa última rota!</p>
+<h2 id="criando-a-rota-delete-delete-product-by-id">Criando a rota: (DELETE) &#39;Delete Product by Id&#39;</h2>
+<p>Enfim, chegamos a última rota da nossa api! Voltemos ao arquivo <code>product.routes.js</code> e vamos criar a rota para o método <code>deleteProductById</code>:</p>
+<ul>
+<li><strong>arquivo: product.routes.js</strong></li>
+</ul>
+<pre><code class="hljs javascript">(...)
+
+<span class="hljs-comment">// ==&gt; Rota responsável por excluir 'Product' pelo 'Id': (DELETE): localhost:3000/api/products/:id</span>
+router.delete(<span class="hljs-string">'/products/:id'</span>, productController.deleteProductById);
+
+(...)</code></pre>
+
+<p>E enfim, desenvolver a lógica dessa rota no arquivo <code>funcionario.controller.js</code>:</p>
+<ul>
+<li><strong>arquivo: funcionario.controller.js</strong></li>
+</ul>
+<pre><code class="hljs javascript">(...)
+
+<span class="hljs-comment">// ==&gt; Método responsável por excluir um 'Product' pelo 'Id':</span>
+exports.deleteProductById = <span class="hljs-keyword">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> productId = <span class="hljs-built_in">parseInt</span>(req.params.id);
+  <span class="hljs-keyword">await</span> db.query(<span class="hljs-string">'DELETE FROM products WHERE productId = $1'</span>, [
+    productId
+  ]);
+
+  res.status(<span class="hljs-number">200</span>).send({ <span class="hljs-attr">message</span>: <span class="hljs-string">'Product deleted successfully!'</span>, productId });
+};</code></pre>
+
+<p>Tudo funcionando perfeitamente, se abrirmos o PostgreSQL veremos que agora só temos 5 produtos cadastrados!</p>
+<p><a href="https://gifyu.com/image/IWMx"><img src="https://s5.gifyu.com/images/postgresql-10.gif" alt="postgresql-10.gif"></a></p>
+<h2 id="palavras-finais">Palavras Finais</h2>
+<p>Hoje aprendemos a criar um CRUD API RESTFul com Node.js persistindo localmente no PostgreSQL. No próximo artigo estaremos ensinando a como realizar o deploy dessa aplicação no <strong><a href="https://docs.microsoft.com/azure/app-service/app-service-web-get-started-nodejs?WT.mc_id=personal-blog-gllemos">Azure App Service</a></strong>! Depois de realizar esse deploy iremos testar no Postman e consequentemente no Swagger!</p>
+<p>Lembrando que essa série está dividida em 5 partes, a qual vocês podem acompanhar desde os códigos desenvolvidos, os links de cada parte dos artigos e os vídeos de cada série: <strong><a href="https://github.com/glaucia86/nodejs-postgresql-azure">AQUI</a></strong></p>
+<p>Outra coisa muito importante que gostaria de falar com todos vocês. Eu realizei uma votação na minha <strong><a href="https://twitter.com/glaucia_lemos86">Conta do Twitter</a></strong> para saberem se vocês desejariam que eu transformasse essa série de artigos em um e-book. E já temos o resultado final!</p>
+<p>{% twitter 1235217545998880769 %}</p>
+<p>Então sim. Já estarei providenciando isso o quanto isso e todas as vezes que eu terminar de escrever um artigo, já irá para o e-book, que provavelmente farei no VuePress! </p>
+<p>E para ficarem por dentro de várias outras novidades, não deixem de me seguir lá no twitter!</p>
+<p><a href="https://twitter.com/glaucia_lemos86"><img src="https://code4coders.files.wordpress.com/2019/05/image-12.png" alt="Twitter"></a></p>
+<p>Nos vemos! Até a próxima pessoal! 😍</p>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
