@@ -31,10 +31,18 @@ image: /images/palestra.jpg
 
 # 2022
 
+## [Roga Developer Experience](https://doity.com.br/rogadx)
+
+- **Quando:** 09/02/2022 - 09/03/2022
+- **Onde:** Presencial
+- **Participantes (evento):** ≈10.000 (Presencial) - Maceió, Brasil
+- **Link Transmissão:** N/A
+- **Tema:** Modernize Aplicações Robustas com Azure Functions, Prisma & Azure SQL
+
 ## [TDC Business São Paulo 2022 - Trilha JavaScript/Node.js](https://thedevconf.com/tdc/2022/business/trilha-javascript-e-nodejs)
 
 - **Quando:** 08/22/2022 - 08/24/2022
-- **Onde:** Presencial/Online
+- **Onde:** Presencial/Online (São Paulo, Brasil)
 - **Participantes (evento):** ≈20.000 (Presencial)/ ≈10.000 (On-line)
 - **Link Transmissão:** N/A
 - **Tema:** Modernize Aplicações Robustas com Azure Functions, Prisma & Azure SQL
