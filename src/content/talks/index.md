@@ -31,7 +31,7 @@ image: /images/palestra.jpg
 
 # 2022
 
-## [Roga Developer Experience](https://doity.com.br/rogadx)
+## [Roga Developer Experience 2022](https://doity.com.br/rogadx)
 
 - **Quando:** 09/02/2022 - 09/03/2022
 - **Onde:** Presencial
