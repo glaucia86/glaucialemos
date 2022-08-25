@@ -31,6 +31,23 @@ image: /images/palestra.jpg
 
 # 2022
 
+## [Codecon 2022](https://www.codecon.dev/programacao/o-protagonismo-das-soft-skills)
+
+- **Quando:** 09/23/2022
+- **Onde:** On-line
+- **Participantes (evento):** ≈10.000 (On-line)
+- **Link Transmissão:** N/A
+- **Tema:** O protagonismo das Soft Skills
+
+
+## [NodeJsOne - Africa Conference Johannesburg 2022](https://nodejsone.com/speakers/)
+
+- **Quando:** 09/08/2022
+- **Onde:** On-line
+- **Participantes (evento):** ≈5.000 (On-line)
+- **Link Transmissão:** N/A
+- **Tema:** Power up Your Back-End Applications with Serverless Architecture & Azure SQL!
+
 ## [Roga Developer Experience 2022](https://doity.com.br/rogadx)
 
 - **Quando:** 09/02/2022 - 09/03/2022
