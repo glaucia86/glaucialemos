@@ -31,6 +31,14 @@ image: /images/palestra.jpg
 
 # 2022
 
+## [TDC Business São Paulo 2022 - Trilha JavaScript/Node.js](https://thedevconf.com/tdc/2022/business/trilha-javascript-e-nodejs)
+
+- **Quando:** 08/22/2022 - 08/24/2022
+- **Onde:** Presencial/Online
+- **Participantes (evento):** ≈20.000 (Presencial)/ ≈10.000 (On-line)
+- **Link Transmissão:** N/A
+- **Tema:** Modernize Aplicações Robustas com Azure Functions, Prisma & Azure SQL
+
 ## [Microsoft Build - Connection Zone](https://mybuild.microsoft.com/en-US/sessions/f50edcfc-ef38-4f2a-aa23-0007dab4f825?source=sessions)
 
 - **Quando:** 05/24/2022 - 05/26/2022
