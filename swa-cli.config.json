@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "glaucialemos-website": {
+      "appLocation": ".",
+      "outputLocation": "dist",
+      "appBuildCommand": "npm start",
+      "run": "npm run dev",
+      "devServerUrl": "http://localhost:8000"
+    }
+  }
+}
