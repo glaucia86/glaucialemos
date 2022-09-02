@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com]()**",
   "scripts": {
-    "start": "node metalsmith build",
+    "build": "node metalsmith build",
     "deploy": "node metalsmith deploy",
     "watch": "node metalsmith watch",
-    "dev": "npm start & npm run watch",
+    "dev": "npm build & npm run watch",
     "prepare": "husky install"
   },
   "repository": {
