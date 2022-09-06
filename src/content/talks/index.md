@@ -52,7 +52,7 @@ image: /images/palestra.jpg
 
 - **Quando:** 09/02/2022 - 09/03/2022
 - **Onde:** Presencial
-- **Participantes (evento):** ≈10.000 (Presencial) - Maceió, Brasil
+- **Participantes (evento):** ≈600 (Presencial) - Maceió, Brasil
 - **Link Transmissão:** N/A
 - **Tema:** Modernize Aplicações Robustas com Azure Functions, Prisma & Azure SQL
 
