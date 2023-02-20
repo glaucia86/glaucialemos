@@ -22,12 +22,23 @@ image: /images/palestra.jpg
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
 
+- **[Palestras em 2022](#2023)**
 - **[Palestras em 2022](#2022)**
 - **[Palestras em 2021](#2021)**
 - **[Palestras em 2020](#2020)**
 - **[Palestras em 2019](#2019)**
 - **[Palestras em 2018](#2018)**
 - **[Palestras em 2017](#2017)**
+
+# 2023
+
+## [CityJs Brazil 2023](https://brazil.cityjsconf.org/speaker/5X9Qc11kXuy6XtagN72MsS)
+
+- **Quando:** 04/26/2023
+- **Onde:** São Paulo, Brazil (Hybrid)
+- **Participantes (evento):** ≈300 (Presencial)
+- **Link Transmissão:** N/A
+- **Tema:** Unleashing the Power of Microsoft Graph with Next.js
 
 # 2022
 
@@ -44,7 +55,7 @@ image: /images/palestra.jpg
 
 - **Quando:** 09/08/2022
 - **Onde:** On-line
-- **Participantes (evento):** ≈5.000 (On-line)
+- **Participantes (evento):** ≈1000 (On-line)
 - **Link Transmissão:** N/A
 - **Tema:** Power up Your Back-End Applications with Serverless Architecture & Azure SQL!
 
