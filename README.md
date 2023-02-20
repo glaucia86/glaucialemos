@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/080d10e5-358e-4c6c-ac7d-ca7c62055f18/deploy-status)](https://app.netlify.com/sites/glaucialemos/deploys)
-[![Build Status](https://travis-ci.org/glaucia86/glaucialemos.svg?branch=master)](https://travis-ci.org/glaucia86/glaucialemos)
 ![GHTopLanguages](https://img.shields.io/github/languages/top/glaucia86/glaucialemos.svg?colorB=gree)
 ![RepoSize](https://img.shields.io/github/repo-size/glaucia86/glaucialemos.svg?colorB=gree)
 ![Downloads](https://img.shields.io/github/downloads/glaucia86/glaucialemos/total.svg)
@@ -23,7 +21,8 @@ Esse projeto foi baseado em dois outros projetos:
 
 Porém, procurei fazer alterações pessoais, como adoção de uso de:
 
-* Continuous Integration com Travis
+* Continuous Integration com GitHub Actions
+* Hospedagem do site no **[Azure Static Web Apps](https://azure.microsoft.com/en-gb/products/app-service/static/)**
 * Padronização de Código com EsLint
 * Entre outros fatores...
 
@@ -32,7 +31,7 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 - **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-gllemos)**
 - **[Node.js](https://nodejs.org/en/)**
 - **[Static Site generator: Metalsmith.io](https://metalsmith.io/)**
-- Hospedado no Netlify;
+- Hospedado no **[Azure Static Web Apps](https://azure.microsoft.com/en-gb/products/app-service/static/)**
 
 ## 🚀 Executando a Aplicação Localmente 
 
@@ -56,6 +55,8 @@ Porém, procurei fazer alterações pessoais, como adoção de uso de:
 
 4. Após isso, abrir o browser em **localhost:8000**
 
+5. Se desejarem, podem acessar o site on-line: **[https://www.glaucialemos.dev/](https://www.glaucialemos.dev)**
+
 ## 🚩 Dúvidas?! 
 
 Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o ambiente bastam criar uma **[ISSUE](https://github.com/glaucia86/glaucialemos.com/issues)** no repositório que estarei respondendo a todos vocês!! ❤️❤️ ❤️😊
@@ -64,9 +65,10 @@ Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o
 
 Aqui estarei listando prováveis mudanças futuras que estarei realizando para o v.2 do meu site.
 
-* [ ] Comprar domínio .com
+* [x] Comprar domínio .dev
+* [x] Realizar migração para o Azure Static Web Apps + GitHub Actions
 * [ ] Internacionalização do Site: Inglês & Espanhol
-* [ ] Realizar migração para o Azure Static Web Apps + GitHub Actions
 
-Se tiverem amis alguma sugestão a fazer... bastam incluir na Issue que criei **[AQUI](https://github.com/glaucia86/glaucialemos/issues/2)** que estarei lendo assim que possível!
+
+Se tiverem mais alguma sugestão a fazer... bastam incluir na Issue que criei **[AQUI](https://github.com/glaucia86/glaucialemos/issues/2)** que estarei lendo assim que possível!
 

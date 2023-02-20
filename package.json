@@ -1,6 +1,6 @@
 {
   "name": "glaucialemos",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Repositório responsável pelo desenvolvimento do meu site pessoal **[glaucialemos.com]()**",
   "scripts": {
     "build": "node metalsmith build",
