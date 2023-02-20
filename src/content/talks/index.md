@@ -13,7 +13,7 @@ image: /images/palestra.jpg
   Gosto muito de contribuir em Comunidades Técnicas! Gosto e amo o que faço! Assim que, caso queiram alguma palestra minha ou workshop na sua região, estado ou cidade, vocês poderão ter a mais plena certeza 
   de que farei com: muito amor e dedicação, visando justamente entregar o melhor conteúdo tanto para 
   a organização do evento e principalmente para o público-alvo. Então, não hesitem em entrar em contato
-  comigo através do meu e-mail: <b><a href="gllemos@microsoft.com">AQUI</a></b>. Assim que possível, estarei entrando em contato com vocês o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em palestrar no seu evento! ❤️❤️❤️
+  comigo através dos meus e-mails de: <b><a href="gllemos@microsoft.com">(Trabalho)</a></b> ou <b><a href="glaucia_lemos86@hotmail.com">(Pessoal)</a></b>. Assim que possível, estarei entrando em contato com vocês o quanto antes e podem ter a mais plena certeza de que terei o maior prazer em palestrar no seu evento! ❤️❤️❤️
 </p>
 
 <p> 
@@ -22,7 +22,7 @@ image: /images/palestra.jpg
 
 # Participações em Eventos Técnicos, Webinars, Workshops & Vídeo Tutoriais
 
-- **[Palestras em 2022](#2023)**
+- **[Palestras em 2023](#2023)**
 - **[Palestras em 2022](#2022)**
 - **[Palestras em 2021](#2021)**
 - **[Palestras em 2020](#2020)**
